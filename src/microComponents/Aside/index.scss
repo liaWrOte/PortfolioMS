@@ -1,0 +1,12 @@
+@use '../../styles/vars';
+
+.aside {
+    &__link {
+        transform: rorate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        margin:  5rem 0; 
+    }
+}
