@@ -1,0 +1,9 @@
+@use '../../styles/vars';
+
+.bigSquaredTag {
+  text-transform: uppercase;
+  font-size: vars.$bigGutter;
+  font-weight: 500;
+  border: solid 2px vars.$beige;
+  padding: (vars.$smallGutter)/2;
+}

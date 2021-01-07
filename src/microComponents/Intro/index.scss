@@ -1,0 +1,21 @@
+@use '../../styles/vars';
+
+.intro {
+  padding: (vars.$bigGutter)*2 0;
+  &__name {
+    font-family: vars.$largeFont ;
+    font-size: (vars.$bigGutter)*4;
+   font-weight: 400;
+  }
+  &__skills {
+    display: flex;
+    position: relative;
+    padding: vars.$smallGutter 0;
+    &__and {
+      font-size: vars.$bigGutter;
+      font-weight: 400;
+      padding: (vars.$smallGutter)/2 (vars.$bigGutter)/2;
+    }
+  }
+}
+

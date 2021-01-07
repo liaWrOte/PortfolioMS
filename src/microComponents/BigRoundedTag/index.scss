@@ -1,0 +1,12 @@
+@use '../../styles/vars';
+
+.bigRoundedTag {
+  text-transform: uppercase;
+  color: vars.$darkBrown;
+  background-color: vars.$yellow;
+  font-size: vars.$bigGutter;
+  font-weight: 500;
+  border: solid 2px vars.$yellow;
+  border-radius: vars.$smallGutter;
+  padding: (vars.$smallGutter)/2;
+}

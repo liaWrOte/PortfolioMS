@@ -1,16 +1,25 @@
 import React from 'react';
 
 // import components
-import BigTag from '../BigTag';
+import BigSquaredTag from '../BigSquaredTag';
+import BigRoundedTag from '../BigRoundedTag';
+
+import './index.scss';
 
 const Intro = () => {
-    return (
-        <p>
-            <h1>SANDRINE M'ZE</h1>
-            <BigTag /> & <BigTag />
-            <p>RENNES, BRETAGNE</p>
-        </p>
-    )
+  const devText = 'developer front';
+  const designText = 'ux | ui lover';
+  return (
+    <div className="intro">
+      <h1 className="intro__name">SANDRINE M'ZE</h1>
+      <div className="intro__skills">
+        <BigSquaredTag text={devText} />
+        <p className="intro__skills__and">&</p>
+        <BigRoundedTag text={designText} />
+      </div>
+      <p>RENNES, BRETAGNE</p>
+    </div>
+  );
 };
 
 export default Intro;
