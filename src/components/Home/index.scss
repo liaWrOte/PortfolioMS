@@ -69,3 +69,109 @@
       
     }
 }
+
+.home__squares_test {
+    columns: 2 500px;
+    max-height: 800px;
+    margin-left: -8px; /* Adjustment for the gutter */
+    width: 100%;
+}
+
+.home__squares_test > * {
+  width: 400px;
+  height: 400px;
+  border: 2px solid #fff;
+  background-color: blue;
+  margin: 0 8px 8px 0; /* Some gutter */
+}
+
+.home__module {
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(12, 1fr);
+  width: 80vw;
+  list-style: none;
+  display: grid;
+  height: 120vh;
+  &__square {
+    grid-column: 1;
+    position: relative;
+    &__dev {
+      grid-row: span 7;
+      grid-column: 1;
+      height: 100%;
+      &__block {
+        background-image: url('../../assets/images/dev.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: vars.$darkBrown;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        vertical-align: center;
+        width: 100%;
+        position: relative;
+        &__mainTitle {
+          display: block;
+          width: 100%;
+          position: relative;
+          &__small__title {
+            display: block;
+            font-size: (vars.$bigGutter)*1.5;
+            font-family: vars.$smallFont;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+          }
+          &__big__title {
+            display: block;
+            font-size:( vars.$bigGutter*10);
+            font-family: vars.$largeFont;
+            text-transform: uppercase;
+            text-align: center;
+          }
+        }
+         &__description {
+            position: absolute;
+            width: 100%;
+            bottom: (vars.$bigGutter)*2;
+            text-align: center;
+            font-size: vars.$smallGutter;
+          }
+      }
+    }
+    &__me {
+      grid-row: span 5;
+      grid-column: 2;    
+      &__block {
+        background-image: url('../../assets/images/me.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+      }
+    }
+    &__blog {
+      grid-row: span 5;
+      grid-column: 1; 
+      &__block {
+        background-image: url('../../assets/images/blog.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+      } 
+    }
+    &__contact {
+      grid-row: 6/span 7;
+      grid-column: 2;
+      &__block {
+        background-image: url('../../assets/images/contact.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 100%;
+      } 
+    }
+  }
+}

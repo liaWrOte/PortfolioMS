@@ -6,6 +6,12 @@ import Aside from '../../microComponents/Aside';
 import Footer from '../../microComponents/Footer';
 import Intro from '../../microComponents/Intro';
 
+// import images
+import dev from '../../assets/images/dev.jpg';
+import contact from '../../assets/images/contact.jpg';
+import blog from '../../assets/images/blog.jpg';
+import me from '../../assets/images/me.jpg';
+
 import './index.scss';
 
 const Home = () => {
@@ -21,26 +27,29 @@ const Home = () => {
 
         <div>
           <Intro />
-          <div className="home__squares">
-            <div className="home__squares__flex">
-              <div className="home__squares__flex__projects">
-                <div className="home__squares__flex__projects__title">
-                  <p className="home__squares__flex__projects__title__top">projets</p>
-                  <p className="home__squares__flex__projects__title__bottom">dev</p>
-                </div>
-                <h3 className="home__squares__flex__projects__description">explorez mes projets.</h3>
+          <ul className="home__module">
+            <li className="home__module__square__dev">
+              <div className="home__module__square__dev__block">
+                <h2 className="home__module__square__dev__block__mainTitle">
+                  <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
+                  <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
+                </h2>
+                <p className="home__module__square__dev__block__description">Explorez mes projets</p>
               </div>
-              <div className="home__squares__flex__aboutMe">me</div>
-            </div>
-            <div className="home__squares__flex">
-              <div className="home__squares__flex__blog">blog</div>
-              <div className="home__squares__flex__contact">contact</div>
-            </div>
-          </div>
+            </li>
+            <li className="home__module__square__me">
+              <div className="home__module__square__me__block" />
+            </li>
+            <li className="home__module__square__blog">
+              <div className="home__module__square__blog__block" />
+            </li>
+            <li className="home__module__square__contact">
+              <div className="home__module__square__contact__block" />
+            </li>
+          </ul>
         </div>
 
       </div>
-
       <Footer />
     </>
   );
