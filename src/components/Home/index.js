@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // Components
 import Header from '../../microComponents/Header';
@@ -7,15 +7,26 @@ import Footer from '../../microComponents/Footer';
 import Intro from '../../microComponents/Intro';
 
 // import images
-import dev from '../../assets/images/dev.jpg';
-import contact from '../../assets/images/contact.jpg';
-import blog from '../../assets/images/blog.jpg';
-import me from '../../assets/images/me.jpg';
+import blueCircle from '../../assets/images/circle_blue.png';
 
 import './index.scss';
 
 const Home = () => {
-  const a = 1;
+  const [animate, setAnimation] = useState(false);
+  const cssExpand = 'home__module__square__dev__block__expand';
+  const cssShrink = 'home__module__square__dev__block__shrink';
+
+  const onMouseEnterHandler = () => {
+    console.log('enter');
+    setAnimation(true);
+  };
+
+  const onMouseLeaveHandler = () => {
+    console.log('leave');
+    setAnimation(false);
+  };
+
+
   return (
     <>
       <Header />
@@ -28,12 +39,13 @@ const Home = () => {
         <div>
           <Intro />
           <ul className="home__module">
-            <li className="home__module__square__dev">
+            <li className="home__module__square__dev" onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
               <div className="home__module__square__dev__block">
                 <h2 className="home__module__square__dev__block__mainTitle">
                   <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
                   <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
                 </h2>
+                <img className={animate ? cssExpand : cssShrink } src={blueCircle} alt="circle animation" />
                 <p className="home__module__square__dev__block__description">Explorez mes projets</p>
               </div>
             </li>

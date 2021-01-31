@@ -115,6 +115,7 @@
           display: block;
           width: 100%;
           position: relative;
+          z-index: 10;
           &__small__title {
             display: block;
             font-size: (vars.$bigGutter)*1.5;
@@ -129,7 +130,7 @@
             font-family: vars.$largeFont;
             text-transform: uppercase;
             text-align: center;
-          }
+          } 
         }
          &__description {
             position: absolute;
@@ -137,6 +138,23 @@
             bottom: (vars.$bigGutter)*2;
             text-align: center;
             font-size: vars.$smallGutter;
+          }
+          &__shrink {
+            position: absolute;
+            z-index: 0;
+            opacity: 0;
+            -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+            transition: all .2s ease-in-out;
+          }
+          &__expand {
+            position: absolute;
+            z-index: 0;
+            opacity: 0;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            opacity: 1;
+            transition: all .2s ease-in-out;
           }
       }
     }
