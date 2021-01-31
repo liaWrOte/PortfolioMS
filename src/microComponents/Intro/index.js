@@ -7,8 +7,8 @@ import BigRoundedTag from '../BigRoundedTag';
 import './index.scss';
 
 const Intro = () => {
-  const devText = 'developer front';
-  const designText = 'ux | ui lover';
+  const devText = 'développeuse front';
+  const designText = 'designer ux | ui';
   return (
     <div className="intro">
       <h1 className="intro__name">SANDRINE M'ZE</h1>

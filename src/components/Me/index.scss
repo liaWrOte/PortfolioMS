@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 
-.home {
+.me {
     display: flex;
     &__squares {
       &__flex {
@@ -12,7 +12,6 @@
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          height: 80vh;
           &__title {
             display: flex;
             flex-direction: column;
@@ -49,54 +48,23 @@
           background-size: cover;
           height: 70vh;
         }
-        &__blog {
-          width:  40vw;
-          background-image: url('../../assets/images/blog.jpg');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-          height: 40vh;
-        }
-        &__contact {
-          width:  40vw;
-          background-image: url('../../assets/images/contact.jpg');
-          background-repeat: no-repeat;
-          background-position: center;
-          background-size: cover;
-          height: 40vh;
-        }
       }
-      
     }
 }
 
-.home__squares_test {
-    columns: 2 500px;
-    max-height: 800px;
-    margin-left: -8px; /* Adjustment for the gutter */
-    width: 100%;
-}
-
-.home__squares_test > * {
-  width: 400px;
-  height: 400px;
-  border: 2px solid #fff;
-  background-color: blue;
-  margin: 0 8px 8px 0; /* Some gutter */
-}
-
-.home__module {
+.me__module {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(12, 1fr);
   width: 80vw;
   list-style: none;
   display: grid;
-  height: 120vh;
+  height: 260vh;
   &__square {
     grid-column: 1;
     position: relative;
-    &__dev {
-      grid-row: span 7;
+
+    &__me {
+      grid-row: span 3;
       grid-column: 1;
       height: 100%;
       &__block {
@@ -148,8 +116,8 @@
           }
       }
     }
-    &__me {
-      grid-row: span 5;
+    &__aspirations{
+      grid-row: span 2;
       grid-column: 2;
       height: 100%;
       &__block {
@@ -159,7 +127,6 @@
         background-size: cover;
         color: vars.$darkBrown;
         height: 100%;
-        display: flex;
         align-items: center;
         vertical-align: center;
         width: 100%;
@@ -201,7 +168,7 @@
           }
       }
     }
-    &__blog {
+    &__competences {
       grid-row: span 5;
       grid-column: 1; 
       height: 100%;
@@ -212,7 +179,6 @@
         background-size: cover;
         color: vars.$darkBrown;
         height: 100%;
-        display: flex;
         align-items: center;
         vertical-align: center;
         width: 100%;
@@ -262,8 +228,8 @@
           }
       }
     }
-    &__contact {
-      grid-row: 6/span 7;
+    &__experience {
+      grid-row: 3/span 5;
       grid-column: 2;
       height: 100%;
       &__block {
@@ -273,7 +239,6 @@
         background-size: cover;
         color: vars.$darkBrown;
         height: 100%;
-        display: flex;
         align-items: center;
         vertical-align: center;
         width: 100%;
@@ -313,6 +278,110 @@
             z-index: 0;
             -webkit-transform: scale(0.8) rotate(20deg);
             transform: scale(0.8) rotate(20deg);
+            transition: all .2s ease-in-out;
+          }
+      }
+    }
+    &__hobbies {
+      grid-row: span 4;
+      grid-column: 1;
+      height: 100%;
+      &__block {
+        background-image: url('../../assets/images/me.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: vars.$darkBrown;
+        height: 100%;
+        align-items: center;
+        vertical-align: center;
+        width: 100%;
+        position: relative;
+        &__mainTitle {
+          display: block;
+          width: 100%;
+          position: relative;
+          z-index: 10;
+          &__small__title {
+            display: block;
+            font-size: (vars.$bigGutter)*1.7;
+            font-family: vars.$smallFont;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+          }
+          &__big__title {
+            display: block;
+            font-size:( vars.$bigGutter*7);
+            font-family: vars.$largeFont;
+            text-transform: uppercase;
+            text-align: center;
+          } 
+        }
+         &__description {
+            position: absolute;
+            width: 100%;
+            bottom: (vars.$bigGutter)*1;
+            text-align: center;
+            font-size: vars.$smallGutter;
+          }
+          &__expand {
+            position: absolute;
+            z-index: 0;
+            -webkit-transform: scale(0.65) rotate(20deg);
+            transform: scale(0.65);
+            transition: all .2s ease-in-out;
+          }
+      }
+    }
+    &__formation {
+      grid-row: 8/span 5;
+      grid-column: 2;
+      height: 100%;
+      &__block {
+        background-image: url('../../assets/images/me.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: vars.$darkBrown;
+        height: 100%;
+        align-items: center;
+        vertical-align: center;
+        width: 100%;
+        position: relative;
+        &__mainTitle {
+          display: block;
+          width: 100%;
+          position: relative;
+          z-index: 10;
+          &__small__title {
+            display: block;
+            font-size: (vars.$bigGutter)*1.7;
+            font-family: vars.$smallFont;
+            font-style: italic;
+            text-transform: uppercase;
+            text-align: center;
+          }
+          &__big__title {
+            display: block;
+            font-size:( vars.$bigGutter*7);
+            font-family: vars.$largeFont;
+            text-transform: uppercase;
+            text-align: center;
+          } 
+        }
+         &__description {
+            position: absolute;
+            width: 100%;
+            bottom: (vars.$bigGutter)*1;
+            text-align: center;
+            font-size: vars.$smallGutter;
+          }
+          &__expand {
+            position: absolute;
+            z-index: 0;
+            -webkit-transform: scale(0.65) rotate(20deg);
+            transform: scale(0.65);
             transition: all .2s ease-in-out;
           }
       }

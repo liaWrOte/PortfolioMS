@@ -1,12 +1,13 @@
 @use '../../styles/vars';
 
 .aside {
+  position : relative;
     &__link {
-        transform: rorate(-90deg);
+        transform: rotate(-90deg);
         -webkit-transform: rotate(-90deg);
         -moz-transform: rotate(-90deg);
         -ms-transform: rotate(-90deg);
         -o-transform: rotate(-90deg);
-        margin:  5rem 0; 
+        margin:  calc(100% + 10rem) 0 0 0; 
     }
 }
