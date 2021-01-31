@@ -7,25 +7,58 @@ import Footer from '../../microComponents/Footer';
 import Intro from '../../microComponents/Intro';
 
 // import images
-import blueCircle from '../../assets/images/circle_blue.png';
+import eyes from '../../assets/images/eye_3.svg';
+import stars from '../../assets/images/stars_8.svg';
+import blueCircle from '../../assets/images/bananas_2.svg';
+import bananas from '../../assets/images/bananas_2.svg';
 
 import './index.scss';
 
 const Home = () => {
-  const [animate, setAnimation] = useState(false);
-  const cssExpand = 'home__module__square__dev__block__expand';
-  const cssShrink = 'home__module__square__dev__block__shrink';
+  const [animateDev, setAnimationDev] = useState(false);
+  const [animateMe, setAnimationMe] = useState(false);
+  const [animateBlog, setAnimationBlog] = useState(false);
+  const [animateContact, setAnimationContact] = useState(false);
 
-  const onMouseEnterHandler = () => {
+  const [blockName, pickBlock] = useState(null);
+
+  const cssExpand = `home__module__square__${blockName}__block__expand`;
+
+  const onMouseEnterHandlerDev = (block) => {
     console.log('enter');
-    setAnimation(true);
+    console.log('the block :', block);
+    pickBlock(block);
+    setAnimationDev(true);
+  };
+
+  const onMouseEnterHandlerMe = (block) => {
+    console.log('enter');
+    console.log('the block :', block);
+    pickBlock(block);
+    setAnimationMe(true);
+  };
+
+  const onMouseEnterHandlerBlog = (block) => {
+    console.log('enter');
+    console.log('the block :', block);
+    pickBlock(block);
+    setAnimationBlog(true);
+  };
+
+  const onMouseEnterHandlerContact = (block) => {
+    console.log('enter');
+    console.log('the block :', block);
+    pickBlock(block);
+    setAnimationContact(true);
   };
 
   const onMouseLeaveHandler = () => {
     console.log('leave');
-    setAnimation(false);
+    setAnimationDev(false);
+    setAnimationMe(false);
+    setAnimationBlog(false);
+    setAnimationContact(false);
   };
-
 
   return (
     <>
@@ -39,25 +72,55 @@ const Home = () => {
         <div>
           <Intro />
           <ul className="home__module">
-            <li className="home__module__square__dev" onMouseEnter={() => onMouseEnterHandler()} onMouseLeave={() => onMouseLeaveHandler()}>
+
+          {/*-- Dev block */}
+            <li className="home__module__square__dev" onMouseEnter={() => onMouseEnterHandlerDev('dev')} onMouseLeave={() => onMouseLeaveHandler()}>
               <div className="home__module__square__dev__block">
                 <h2 className="home__module__square__dev__block__mainTitle">
                   <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
                   <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
                 </h2>
-                <img className={animate ? cssExpand : cssShrink } src={blueCircle} alt="circle animation" />
+                <img className={animateDev ? cssExpand : 'cssDefault' } src={eyes} alt="circle animation" />
                 <p className="home__module__square__dev__block__description">Explorez mes projets</p>
               </div>
             </li>
-            <li className="home__module__square__me">
-              <div className="home__module__square__me__block" />
+
+            {/*-- Me block */}
+            <li className="home__module__square__me" onMouseEnter={() => onMouseEnterHandlerMe(('me'))} onMouseLeave={() => onMouseLeaveHandler()}>
+              <div className="home__module__square__me__block">
+                <h2 className="home__module__square__me__block__mainTitle">
+                  <span className="home__module__square__me__block__mainTitle__small__title">Qui je</span>
+                  <span className="home__module__square__me__block__mainTitle__big__title">Suis</span>
+                </h2>
+                <img className={animateMe ? cssExpand : 'cssDefault'} src={stars} alt="circle animation" />
+                <p className="home__module__square__me__block__description">Aptitudes & aspirations</p>
+              </div>
             </li>
-            <li className="home__module__square__blog">
-              <div className="home__module__square__blog__block" />
+
+            {/*-- Blog block */}
+            <li className="home__module__square__blog" onMouseEnter={() => onMouseEnterHandlerBlog('blog')} onMouseLeave={() => onMouseLeaveHandler()}>
+              <div className="home__module__square__blog__block">
+                <h2 className="home__module__square__blog__block__mainTitle">
+                  <span className="home__module__square__blog__block__mainTitle__small__title">Un autre</span>
+                  <span className="home__module__square__blog__block__mainTitle__big__title">Blog</span>
+                </h2>
+                <img className={animateBlog ? cssExpand : 'cssDefault'} src={blueCircle} alt="circle animation" />
+                <p className="home__module__square__blog__block__description">Réflexions</p>
+              </div>
             </li>
-            <li className="home__module__square__contact">
-              <div className="home__module__square__contact__block" />
+
+            {/*-- Contact block */}
+            <li className="home__module__square__contact" onMouseEnter={() => onMouseEnterHandlerContact(('contact'))} onMouseLeave={() => onMouseLeaveHandler()}>
+              <div className="home__module__square__contact__block">
+                <h2 className="home__module__square__contact__block__mainTitle">
+                  <span className="home__module__square__contact__block__mainTitle__small__title">Contactez</span>
+                  <span className="home__module__square__contact__block__mainTitle__big__title">Moi</span>
+                </h2>
+                <img className={animateContact ? cssExpand : 'cssDefault'} src={bananas} alt="circle animation" />
+                <p className="home__module__square__contact__block__description">Et rencontrons-nous</p>
+              </div>
             </li>
+
           </ul>
         </div>
 
