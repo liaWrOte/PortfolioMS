@@ -1,0 +1,13 @@
+@use '../../styles/vars';
+
+.smallTag {
+  text-transform: uppercase;
+  color: vars.$darkBrown;
+  background-color: vars.$yellow;
+  font-size: vars.$smallGutter;
+  font-weight: 700;
+  border: solid 2px vars.$darkBrown;
+  border-radius: vars.$bigGutter;
+  padding: (vars.$smallGutter)/2;
+  display: inline-block;
+}

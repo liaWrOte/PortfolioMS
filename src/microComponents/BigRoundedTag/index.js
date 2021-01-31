@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './index.scss';
 
 const BigTag = ({ text }) => (
-  <h2 className="bigRoundedTag">{text}</h2>
+  <h3 className="bigRoundedTag">{text}</h3>
 );
 
 BigTag.propTypes = {
