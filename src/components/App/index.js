@@ -5,6 +5,8 @@ import { Route, Switch } from 'react-router-dom';
 import Home from '../Home';
 import DevProjects from '../DevProjects';
 import Me from '../Me';
+import UxUiProjects from '../UxUiProjects';
+import Contact from '../Contact';
 
 // == Composant
 const App = () => (
@@ -19,8 +21,11 @@ const App = () => (
       <Route exact path="/qui-je-suis">
         <Me />
       </Route>
+      <Route exact path="/projets-ux-ui">
+        <UxUiProjects />
+      </Route>
       <Route exact path="/contact">
-        <Home />
+        <Contact />
       </Route>
     </Switch>
   </div>
