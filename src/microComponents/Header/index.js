@@ -5,8 +5,8 @@ import './index.scss';
 const Header = () => {
     return (
         <ul className='header'>
-            <li>DERNIER PROJET</li>
-            <li>CONTACT</li>
+            <li className='header__link'>GIT</li>
+            <li className='header__link'>LINKEDIN</li>
         </ul>
     )
 };

@@ -17,8 +17,6 @@ const Me = () => {
   return (
     <>
       <div className="me">
-
-        <div>
           <ul className="me__module">
 
             {/* -- Me block */}
@@ -135,7 +133,6 @@ const Me = () => {
             </li>
           </ul>
         </div>
-      </div>
     </>
   );
 };

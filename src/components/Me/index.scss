@@ -3,6 +3,9 @@
 
 .me {
     display: flex;
+    margin-left: (vars.$bigGutter)*5;
+    margin-right: (vars.$bigGutter)*5;
+    max-width: 100%;
     &__squares {
       &__flex {
         display: flex;
@@ -55,14 +58,13 @@
 .me__module {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(12, 1fr);
-  width: 80vw;
+  width: 100%;
   list-style: none;
   display: grid;
   height: 200vh;
   &__square {
     grid-column: 1;
     position: relative;
-
     &__me {
       grid-row: span 4;
       grid-column: 1;

@@ -10,6 +10,7 @@ import Contact from '../Contact';
 
 // == Import micro-composants
 import Aside from '../../microComponents/Aside';
+import Header from '../../microComponents/Header';
 import Intro from '../../microComponents/Intro';
 import Footer from '../../microComponents/Footer';
 
@@ -17,6 +18,7 @@ import Footer from '../../microComponents/Footer';
 const App = () => (
   <div className="app">
     <Aside />
+    <Header />
     <Intro />
     <Switch>
       <Route exact path="/">

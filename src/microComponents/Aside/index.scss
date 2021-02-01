@@ -7,6 +7,7 @@
   flex-direction: column-reverse;
   bottom: 0;
   justify-content: flex-start;
+  width: (vars.$bigGutter)*5;
     &__link {
       display: inline-block;
         transform: rotate(-90deg);

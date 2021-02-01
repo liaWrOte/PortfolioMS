@@ -4,6 +4,7 @@
 .contact {
     display: flex;
     margin-left: (vars.$bigGutter)*5;
+    margin-right: (vars.$bigGutter)*5;
     &__squares {
       &__flex {
         display: flex;
@@ -56,7 +57,7 @@
 .contact__module {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(12, 1fr);
-  width: 80vw;
+  width: 100%;
   list-style: none;
   display: grid;
   height: 80vh;

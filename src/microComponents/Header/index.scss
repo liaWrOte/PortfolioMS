@@ -1,8 +1,14 @@
 @use '../../styles/vars';
 
 .header {
+    margin-right: (vars.$bigGutter)*5;
     display: flex;
-    justify-content: space-between;
-    padding-left: 60%;
-    margin-left: (vars.$bigGutter)*5;
+    justify-content: flex-end;
+    height: (vars.$bigGutter)*4;
+    align-items: center;
+    &__link {
+      display: inline-block;
+      margin-left: vars.$bigGutter;
+      text-align: right;
+    }
 }

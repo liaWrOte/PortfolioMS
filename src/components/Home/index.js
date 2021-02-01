@@ -56,51 +56,53 @@ const Home = () => {
     <>
       <div className="home">
 
-        <div>
-          <ul className="home__module">
+        <ul className="home__module">
 
-            {/* -- Dev block */}
-            <li className="home__module__square__dev" onMouseEnter={() => onMouseEnterHandlerDev('dev')} onMouseLeave={() => onMouseLeaveHandler()}>
-              <Link to="/projets-dev">
-                <div className="home__module__square__dev__block">
-                  <h2 className="home__module__square__dev__block__mainTitle">
-                    <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
-                    <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
-                  </h2>
-                  <img className={animateDev ? cssExpand : 'cssDefault'} src={eyes} alt="circle animation" />
-                  <p className="home__module__square__dev__block__description">Explorez mes projets</p>
-                </div>
-              </Link>
-            </li>
+          {/* -- Dev block */}
+          <li className="home__module__square__dev" onMouseEnter={() => onMouseEnterHandlerDev('dev')} onMouseLeave={() => onMouseLeaveHandler()}>
+            <Link to="/projets-dev">
+              <div className="home__module__square__dev__block">
+                <h2 className="home__module__square__dev__block__mainTitle">
+                  <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
+                  <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
+                </h2>
+                <img className={animateDev ? cssExpand : 'cssDefault'} src={eyes} alt="circle animation" />
+                <p className="home__module__square__dev__block__description">Explorez mes projets</p>
+              </div>
+            </Link>
+          </li>
 
-            {/* -- Me block */}
-            <li className="home__module__square__me" onMouseEnter={() => onMouseEnterHandlerMe(('me'))} onMouseLeave={() => onMouseLeaveHandler()}>
-              <Link to="/qui-je-suis">
-                <div className="home__module__square__me__block">
-                  <h2 className="home__module__square__me__block__mainTitle">
-                    <span className="home__module__square__me__block__mainTitle__small__title">Qui je</span>
-                    <span className="home__module__square__me__block__mainTitle__big__title">Suis</span>
-                  </h2>
-                  <img className={animateMe ? cssExpand : 'cssDefault'} src={stars} alt="circle animation" />
-                  <p className="home__module__square__me__block__description">Aptitudes & aspirations</p>
-                </div>
-              </Link>
-            </li>
+          {/* -- Me block */}
+          <li className="home__module__square__me" onMouseEnter={() => onMouseEnterHandlerMe(('me'))} onMouseLeave={() => onMouseLeaveHandler()}>
+            <Link to="/qui-je-suis">
+              <div className="home__module__square__me__block">
+                <h2 className="home__module__square__me__block__mainTitle">
+                  <span className="home__module__square__me__block__mainTitle__small__title">Qui je</span>
+                  <span className="home__module__square__me__block__mainTitle__big__title">Suis</span>
+                </h2>
+                <img className={animateMe ? cssExpand : 'cssDefault'} src={stars} alt="circle animation" />
+                <p className="home__module__square__me__block__description">Aptitudes & aspirations</p>
+              </div>
+            </Link>
+          </li>
 
-            {/* -- Blog block */}
-            <li className="home__module__square__blog" onMouseEnter={() => onMouseEnterHandlerBlog('blog')} onMouseLeave={() => onMouseLeaveHandler()}>
-              <div className="home__module__square__blog__block">
-                <h2 className="home__module__square__blog__block__mainTitle">
-                  <span className="home__module__square__blog__block__mainTitle__small__title">Un autre</span>
-                  <span className="home__module__square__blog__block__mainTitle__big__title">Blog</span>
+          {/* -- Projets UxUi block */}
+          <li className="home__module__square__uxUi" onMouseEnter={() => onMouseEnterHandlerBlog('uxUi')} onMouseLeave={() => onMouseLeaveHandler()}>
+            <Link to="/projets-ux-ui">
+              <div className="home__module__square__uxUi__block">
+                <h2 className="home__module__square__uxUi__block__mainTitle">
+                  <span className="home__module__square__uxUi__block__mainTitle__small__title">Un autre</span>
+                  <span className="home__module__square__uxUi__block__mainTitle__big__title">Blog</span>
                 </h2>
                 <img className={animateBlog ? cssExpand : 'cssDefault'} src={blueCircle} alt="circle animation" />
-                <p className="home__module__square__blog__block__description">Réflexions</p>
+                <p className="home__module__square__uxUi__block__description">Réflexions</p>
               </div>
-            </li>
+            </Link>
+          </li>
 
-            {/* -- Contact block */}
-            <li className="home__module__square__contact" onMouseEnter={() => onMouseEnterHandlerContact(('contact'))} onMouseLeave={() => onMouseLeaveHandler()}>
+          {/* -- Contact block */}
+          <li className="home__module__square__contact" onMouseEnter={() => onMouseEnterHandlerContact(('contact'))} onMouseLeave={() => onMouseLeaveHandler()}>
+            <Link to="/contact">
               <div className="home__module__square__contact__block">
                 <h2 className="home__module__square__contact__block__mainTitle">
                   <span className="home__module__square__contact__block__mainTitle__small__title">Contactez</span>
@@ -109,12 +111,12 @@ const Home = () => {
                 <img className={animateContact ? cssExpand : 'cssDefault'} src={bananas} alt="circle animation" />
                 <p className="home__module__square__contact__block__description">Et rencontrons-nous</p>
               </div>
-            </li>
+            </Link>
+          </li>
 
-          </ul>
-        </div>
-
+        </ul>
       </div>
+
     </>
   );
 };

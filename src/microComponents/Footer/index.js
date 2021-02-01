@@ -1,13 +1,13 @@
 import React from 'react';
 
-const Header = () => {
-    return (
-        <ul>
-            <li>Légal</li>
-            <li>Privacy</li>
-            <li>Cookies</li>
-        </ul>
-    )
-};
+import './index.scss';
 
-export default Header;
+const Footer = () => (
+  <ul className="footer">
+    <li className="footer__link">Légal</li>
+    <li className="footer__link">Privacy</li>
+    <li className="footer__link">Cookies</li>
+  </ul>
+);
+
+export default Footer;

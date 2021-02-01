@@ -16,9 +16,7 @@ const Contact = () => {
 
   return (
     <>
-      <Header />
       <div className="contact">
-        <div>
           <ul className="contact__module">
 
             {/* -- contact block */}
@@ -68,7 +66,6 @@ const Contact = () => {
 
           </ul>
         </div>
-      </div>
     </>
   );
 };

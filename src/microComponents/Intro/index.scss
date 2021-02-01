@@ -1,11 +1,11 @@
 @use '../../styles/vars';
 
 .intro {
-  padding: (vars.$bigGutter)*2 0;
+  padding: 0 0 (vars.$bigGutter)*3 0;
   margin-left: (vars.$bigGutter)*5;
   &__name {
     font-family: vars.$largeFont ;
-    font-size: (vars.$bigGutter)*4;
+    font-size: (vars.$bigGutter)*5;
    font-weight: 400;
   }
   &__skills {
