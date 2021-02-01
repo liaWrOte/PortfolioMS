@@ -34,7 +34,7 @@ const DevProjects = () => {
                   <span className="devProjects__module__square__devProjects__block__mainTitle__small__title">Projets</span>
                   <span className="devProjects__module__square__devProjects__block__mainTitle__big__title">Dev</span>
                 </h2>
-                <p className="devProjects__module__square__dev__block__description">Explorez mes projets</p>
+                <p className="devProjects__module__square__devProjects__block__description">Explorez mes projets</p>
               </div>
             </li>
 
@@ -43,9 +43,9 @@ const DevProjects = () => {
               <div className="devProjects__module__square__kikiveu__block">
                 <h2 className="devProjects__module__square__kikiveu__block__mainTitle">
                   <span className="devProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Suis</span>
+                  <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Kikiveu</span>
                 </h2>
-                <p className="devProjects__module__square__kikiveu__block__description">Aptitudes & aspirations</p>
+                <p className="devProjects__module__square__kikiveu__block__description">React / Symfony</p>
               </div>
             </li>
 
@@ -53,10 +53,10 @@ const DevProjects = () => {
             <li className="devProjects__module__square__blog">
               <div className="devProjects__module__square__blog__block">
                 <h2 className="devProjects__module__square__blog__block__mainTitle">
-                  <span className="devProjects__module__square__blog__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__blog__block__mainTitle__big__title">Suis</span>
+                  <span className="devProjects__module__square__blog__block__mainTitle__small__title">Blog</span>
+                  <span className="devProjects__module__square__blog__block__mainTitle__big__title">Blog</span>
                 </h2>
-                <p className="devProjects__module__square__blog__block__description">Aptitudes & aspirations</p>
+                <p className="devProjects__module__square__blog__block__description">PHP / Bootstrap</p>
               </div>
             </li>
 
@@ -65,9 +65,9 @@ const DevProjects = () => {
               <div className="devProjects__module__square__api__block">
                 <h2 className="devProjects__module__square__api__block__mainTitle">
                   <span className="devProjects__module__square__api__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__api__block__mainTitle__big__title">Suis</span>
+                  <span className="devProjects__module__square__api__block__mainTitle__big__title">GIT API</span>
                 </h2>
-                <p className="devProjects__module__square__api__block__description">Aptitudes & aspirations</p>
+                <p className="devProjects__module__square__api__block__description">Javascript / Ajax</p>
               </div>
             </li>
 
@@ -76,9 +76,9 @@ const DevProjects = () => {
               <div className="devProjects__module__square__toDoList__block">
                 <h2 className="devProjects__module__square__toDoList__block__mainTitle">
                   <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__toDoList__block__mainTitle__big__title">Suis</span>
+                  <span className="devProjects__module__square__toDoList__block__mainTitle__big__title">To Do List</span>
                 </h2>
-                <p className="devProjects__module__square__toDoList__block__description">Aptitudes & aspirations</p>
+                <p className="devProjects__module__square__toDoList__block__description">Javascript</p>
               </div>
             </li>
 
