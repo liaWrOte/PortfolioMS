@@ -2,6 +2,7 @@
 
 .intro {
   padding: (vars.$bigGutter)*2 0;
+  margin-left: (vars.$bigGutter)*5;
   &__name {
     font-family: vars.$largeFont ;
     font-size: (vars.$bigGutter)*4;

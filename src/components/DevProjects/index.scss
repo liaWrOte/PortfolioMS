@@ -3,6 +3,7 @@
 
 .devProjects {
     display: flex;
+    margin-left: (vars.$bigGutter)*5;
     &__squares {
       &__flex {
         display: flex;
