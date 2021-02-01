@@ -18,13 +18,7 @@ const Contact = () => {
     <>
       <Header />
       <div className="contact">
-
         <div>
-          <Aside />
-        </div>
-
-        <div>
-          <Intro />
           <ul className="contact__module">
 
             {/* -- contact block */}
@@ -75,7 +69,6 @@ const Contact = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

@@ -54,15 +54,9 @@ const Home = () => {
 
   return (
     <>
-      <Header />
       <div className="home">
 
         <div>
-          <Aside />
-        </div>
-
-        <div>
-          <Intro />
           <ul className="home__module">
 
             {/* -- Dev block */}
@@ -121,7 +115,6 @@ const Home = () => {
         </div>
 
       </div>
-      <Footer />
     </>
   );
 };

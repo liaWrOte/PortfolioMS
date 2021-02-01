@@ -16,15 +16,9 @@ const Me = () => {
 
   return (
     <>
-      <Header />
       <div className="me">
 
         <div>
-          <Aside />
-        </div>
-
-        <div>
-          <Intro />
           <ul className="me__module">
 
             {/* -- Me block */}
@@ -142,7 +136,6 @@ const Me = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

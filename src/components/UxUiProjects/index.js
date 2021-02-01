@@ -16,15 +16,9 @@ const UxUiProjects = () => {
 
   return (
     <>
-      <Header />
       <div className="devProjects">
 
         <div>
-          <Aside />
-        </div>
-
-        <div>
-          <Intro />
           <ul className="devProjects__module">
 
             {/* -- DevProjects block */}
@@ -85,7 +79,6 @@ const UxUiProjects = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

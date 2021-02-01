@@ -1,16 +1,23 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 
-// == Import
+// == Import composants
 import Home from '../Home';
 import DevProjects from '../DevProjects';
 import Me from '../Me';
 import UxUiProjects from '../UxUiProjects';
 import Contact from '../Contact';
 
+// == Import micro-composants
+import Aside from '../../microComponents/Aside';
+import Intro from '../../microComponents/Intro';
+import Footer from '../../microComponents/Footer';
+
 // == Composant
 const App = () => (
   <div className="app">
+    <Aside />
+    <Intro />
     <Switch>
       <Route exact path="/">
         <Home />
@@ -28,6 +35,7 @@ const App = () => (
         <Contact />
       </Route>
     </Switch>
+    <Footer />
   </div>
 );
 

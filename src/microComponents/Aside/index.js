@@ -5,9 +5,11 @@ import './index.scss';
 const Aside = () => {
     return (
         <ul className="aside">
-            <li className="aside__link">GITHUB</li>
-            <li className="aside__link">LINKEDIN</li>
-            <li className="aside__link">PINTEREST</li>
+            <li className="aside__link">HOME</li>
+            <li className="aside__link">PROJETS DEV</li>
+            <li className="aside__link">PROJETS UX/UI</li>
+            <li className="aside__link">QUI JE SUIS</li>
+            <li className="aside__link">CONTACT</li>
         </ul>
     )
 };

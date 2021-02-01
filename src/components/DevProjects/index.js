@@ -16,15 +16,9 @@ const DevProjects = () => {
 
   return (
     <>
-      <Header />
       <div className="devProjects">
 
         <div>
-          <Aside />
-        </div>
-
-        <div>
-          <Intro />
           <ul className="devProjects__module">
 
             {/* -- DevProjects block */}
@@ -85,7 +79,6 @@ const DevProjects = () => {
           </ul>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
