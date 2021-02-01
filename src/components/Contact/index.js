@@ -17,7 +17,7 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <div className="devProjects">
+      <div className="contact">
 
         <div>
           <Aside />
@@ -25,60 +25,27 @@ const Contact = () => {
 
         <div>
           <Intro />
-          <ul className="devProjects__module">
+          <ul className="contact__module">
 
-            {/* -- DevProjects block */}
-            <li className="devProjects__module__square__devProjects">
-              <div className="devProjects__module__square__devProjects__block">
-                <h2 className="devProjects__module__square__devProjects__block__mainTitle">
-                  <span className="devProjects__module__square__devProjects__block__mainTitle__small__title">Projets</span>
-                  <span className="devProjects__module__square__devProjects__block__mainTitle__big__title">Dev</span>
+            {/* -- contact block */}
+            <li className="contact__module__square__contact">
+              <div className="contact__module__square__contact__block">
+                <h2 className="contact__module__square__contact__block__mainTitle">
+                  <span className="contact__module__square__contact__block__mainTitle__small__title">Contactez</span>
+                  <span className="contact__module__square__contact__block__mainTitle__big__title">Moi</span>
                 </h2>
-                <p className="devProjects__module__square__devProjects__block__description">Explorez mes projets</p>
+                <p className="contact__module__square__contact__block__description">Et rencontrons-nous</p>
               </div>
             </li>
 
-            {/* -- Kikiveu block */}
-            <li className="devProjects__module__square__kikiveu">
-              <div className="devProjects__module__square__kikiveu__block">
-                <h2 className="devProjects__module__square__kikiveu__block__mainTitle">
-                  <span className="devProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Kikiveu</span>
+            {/* -- Form block */}
+            <li className="contact__module__square__form">
+              <div className="contact__module__square__form__block">
+                <h2 className="contact__module__square__form__block__mainTitle">
+                  <span className="contact__module__square__form__block__mainTitle__small__title">Qui je</span>
+                  <span className="contact__module__square__form__block__mainTitle__big__title">form</span>
                 </h2>
-                <p className="devProjects__module__square__kikiveu__block__description">React / Symfony</p>
-              </div>
-            </li>
-
-            {/* -- Blog block */}
-            <li className="devProjects__module__square__blog">
-              <div className="devProjects__module__square__blog__block">
-                <h2 className="devProjects__module__square__blog__block__mainTitle">
-                  <span className="devProjects__module__square__blog__block__mainTitle__small__title">Blog</span>
-                  <span className="devProjects__module__square__blog__block__mainTitle__big__title">Blog</span>
-                </h2>
-                <p className="devProjects__module__square__blog__block__description">PHP / Bootstrap</p>
-              </div>
-            </li>
-
-            {/* -- Api block */}
-            <li className="devProjects__module__square__api">
-              <div className="devProjects__module__square__api__block">
-                <h2 className="devProjects__module__square__api__block__mainTitle">
-                  <span className="devProjects__module__square__api__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__api__block__mainTitle__big__title">GIT API</span>
-                </h2>
-                <p className="devProjects__module__square__api__block__description">Javascript / Ajax</p>
-              </div>
-            </li>
-
-            {/* -- ToDoList block */}
-            <li className="devProjects__module__square__toDoList">
-              <div className="devProjects__module__square__toDoList__block">
-                <h2 className="devProjects__module__square__toDoList__block__mainTitle">
-                  <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__toDoList__block__mainTitle__big__title">To Do List</span>
-                </h2>
-                <p className="devProjects__module__square__toDoList__block__description">Javascript</p>
+                <p className="contact__module__square__form__block__description">React / Symfony</p>
               </div>
             </li>
 

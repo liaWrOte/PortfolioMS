@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 
-.devProjects {
+.contact {
     display: flex;
     &__squares {
       &__flex {
@@ -52,27 +52,26 @@
     }
 }
 
-.devProjects__module {
+.contact__module {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(6, 1fr);
   width: 80vw;
   list-style: none;
   display: grid;
-  height: 200vh;
+  height: 70vh;
   &__square {
     grid-column: 1;
     position: relative;
-
-    &__devProjects {
-      grid-row: span 4;
+    &__contact {
+      grid-row: span 6;
       grid-column: 1;
       height: 100%;
       &__block {
-        background-image: url('../../assets/images/dev.jpg');
+        background-image: url('../../assets/images/contact.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        color: vars.$darkBrown;
+        color: vars.$yellow;
         height: 100%;
         display: flex;
         align-items: center;
@@ -109,55 +108,9 @@
           }
       }
     }
-    &__kikiveu {
-      grid-row: span 3;
-      grid-column: 2;
-      height: 100%;
-      &__block {
-        background-image: url('../../assets/images/dev.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: vars.$darkBrown;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        vertical-align: center;
-        width: 100%;
-        position: relative;
-        &__mainTitle {
-          display: block;
-          width: 100%;
-          position: relative;
-          z-index: 10;
-          &__small__title {
-            display: block;
-            font-size: (vars.$bigGutter)*1.5;
-            font-family: vars.$smallFont;
-            font-style: italic;
-            text-transform: uppercase;
-            text-align: center;
-          }
-          &__big__title {
-            display: block;
-            font-size:( vars.$bigGutter*10);
-            font-family: vars.$largeFont;
-            text-transform: uppercase;
-            text-align: center;
-          } 
-        }
-         &__description {
-            position: absolute;
-            width: 100%;
-            bottom: (vars.$bigGutter)*2;
-            text-align: center;
-            font-size: vars.$smallGutter;
-          }
-      }
-    }
-    &__blog {
-      grid-row: span 5;
-      grid-column: 1; 
+    &__form{
+      grid-row: span 6;
+      grid-column: 2; 
       height: 100%;
       &__block {
         background-image: url('../../assets/images/dev.jpg');
