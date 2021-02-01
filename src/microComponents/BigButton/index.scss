@@ -1,11 +1,13 @@
 @use '../../styles/vars';
 
-.bigRoundedTag {
+.bigButton{
   text-transform: uppercase;
   color: vars.$darkBrown;
   background-color: vars.$yellow;
+  background-image: url(../../assets/images/blog.jpg);
   font-size: vars.$bigGutter;
   font-weight: 500;
+  font-size: vars.$smallGutter;
   border: solid 2px vars.$yellow;
   border-radius: vars.$smallGutter;
   padding: (vars.$smallGutter)/2;

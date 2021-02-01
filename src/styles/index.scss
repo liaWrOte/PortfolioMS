@@ -9,6 +9,12 @@ body {
   font-weight: 600;
 }
 
+p {
+  margin-bottom: (vars.$smallGutter);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02rem;
+}
+
 /* 
   // or you can import your own font
   @font-face {

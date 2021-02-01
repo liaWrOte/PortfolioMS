@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 
 // == Import
 import Home from '../Home';
+import DevProjects from '../DevProjects';
 import Me from '../Me';
 
 // == Composant
@@ -12,8 +13,8 @@ const App = () => (
       <Route exact path="/">
         <Home />
       </Route>
-      <Route exact path="/projets">
-        <Home />
+      <Route exact path="/projets-dev">
+        <DevProjects />
       </Route>
       <Route exact path="/qui-je-suis">
         <Me />

@@ -41,22 +41,19 @@ const Me = () => {
             {/* -- Aspirations block */}
             <li className="me__module__square__aspirations">
               <div className="me__module__square__aspirations__block">
-                <h2 className="me__module__square__aspirations__block__mainTitle">
-                  Aptitudes et inspirations
-                </h2>
-                <p className="me__module__square__dev__block__description">
-                  « Après deux formations consécutives en tant de Développeur web et de Web designer et 3 ans d’expérience en tant qu’intégratice Wordpress, je suis à la
-                  recherche d’un poste de développeur web front-end sur Rennes et sa région. »
+                <p className="me__module__square__aspirations__block__description">
+                  « Après deux formations consécutives en tant de Développeur web et de Web designer et 3 ans d’expérience en tant qu’intégratice Wordpress, <br/> je suis à la recherche d’un poste de <br/>développeur web front-end sur Rennes et sa région.
+                  <br/><br/>Passionnée par la création d'expériences utilisateur digitales, mes qualités créatives et d'organisation me rendent polyvalente dans le développement d'applications web »
                 </p>
               </div>
             </li>
 
-                        {/* -- Skills block */}
-                        <li className="me__module__square__competences">
+            {/* -- Skills block */}
+            <li className="me__module__square__competences">
               <div className="me__module__square__competences__block">
                 <BigSquaredTag text="Compétences" />
                 <SmallTag text="Languages" />
-                <p>HTML, CSS (BEM), Javascript, PHP, SCSS/SASS
+                <p>HTML, CSS/SCSS/SASS (BEM), Javascript, PHP
                 </p>
                 <SmallTag text="Librairies" />
                 <p>React (Redux), Bootstrap,
@@ -75,30 +72,26 @@ const Me = () => {
               </div>
             </li>
 
-
-
             {/* -- Experience block */}
             <li className="me__module__square__experience">
               <div className="me__module__square__experience__block">
                 <BigSquaredTag text="Experience" />
-                <SmallTag text="Lead front end developer" />
-                <p className="me__module__square__experience__block__description">2021</p>
+                <SmallTag text="Lead front end developer - 2021" />
                 <p>Projet de fin de formation en React/Symfony
-                  App qui aide à l’organisation de balades entre chiens.
-                  Lead dev front & product owner d’une équipe
-                  de 4 développeurs pendant 3 semaines
-                  Architecture React Redux
-                  App de géolocalisation en mobile-first (React Leaflet)
                 </p>
+                <p>App qui aide à l’organisation de balades entre chiens.</p>
+                <p>Lead dev front & product owner d’une équipe de 4 développeurs pendant 3 semaines</p>
+                <p>Architecture React Redux</p>
+                <p>Requêtes API Rest</p>
+                <p>App de géolocalisation en mobile-first (React Leaflet)</p>
                 <BigButton text="en savoir plus" />
-                <SmallTag text="Intégratrice Wordpress / Webdesigner" />
-                <p className="me__module__square__experience__block__description">2017 - 2020</p>
+                <SmallTag text="Intégratrice Wordpress / Webdesigner 2017-2020" />
                 <p>Client principal Cogi-T Québec
-                  Intégration Wordpress (sites vitrine et e-commerce)
-                  Personnalisation de thèmes Wordpress
-                  Création d’image de marque (logo, charte graphique,
-                  motion design)
                 </p>
+                <p>Intégration Wordpress (sites vitrine et e-commerce)</p>
+                <p>Personnalisation de thèmes Wordpress</p>
+                <p>Création d’image de marque (logo, charte graphique, motion design)</p>
+
                 <BigButton text="en savoir plus" />
               </div>
             </li>
@@ -112,46 +105,42 @@ const Me = () => {
                 <p>Peinture à l’huile, pastel, poste de secrétaire bénévole
                   à l’association Art2Rennes (Salon LPMA 3000 visiteurs)
                 </p>
-                <BigButton text="en savoir plus" />
                 <SmallTag text="Voyage" />
                 <p className="me__module__square__hobbies__block__description">2017 - 2020</p>
                 <p>Roadtrip en Indonésie pendant 3 mois, Séjour de 2 ans
                   dans le nord de la Thaïlande, Aménagement de mon van
                   en vue de roadtrip en Europe
                 </p>
-                <BigButton text="en savoir plus" />
               </div>
             </li>
 
-                        {/* -- Formation block */}
-                        <li className="me__module__square__formation">
+            {/* -- Formation block */}
+            <li className="me__module__square__formation">
               <div className="me__module__square__formation__block">
                 <BigSquaredTag text="Formation" />
-                <SmallTag text="O'Clock" />
-                <p className="me__module__square__experience__block__description">Titre pro de développeur web et web mobile</p>
+                <SmallTag text="Titre professionnel de niveau III de développeur web et web mobile - 2021" />
+                <p className="me__module__square__experience__block__description">O'Clock</p>
                 <p>O’Clock est une école spécialisée dans le
                   Développement web.
-                  L’apprentissage est basé sur le suivi de cours
+                </p>
+                <p>L’apprentissage est basé sur le suivi de cours
                   en télé-présentiel et la mise en pratique des
                   notions avec des challenges quotidiens.
-                  J’y ai notamment appris le PHP, le javascript
-                  et j’ai choisi de me spécialiser en fin de formation
-                  sur React
+                </p>
+                <p>J’y ai notamment appris le PHP, le javascript
+                  et j’ai choisi desuivre la spécialisation d'un mois sur React
                 </p>
                 <BigButton text="en savoir plus" />
-                <SmallTag text="Greta Est Bretagne" />
-                <p className="me__module__square__experience__block__description">Titre professionnel de niveau III en Webdesign (2020)</p>
+                <SmallTag text="Titre professionnel de niveau III en Webdesign (2020)" />
+                <p className="me__module__square__experience__block__description">Greta Est-Bretagne</p>
                 <p>Au travers d’une pédagogie active, j’y ai appris
                   Les fondements de l’UX et de l’UI.
                   C’est ici que j’ai découvert le HTML et le CSS.
                 </p>
-                <BigButton text="en savoir plus" />
               </div>
             </li>
-
           </ul>
         </div>
-
       </div>
       <Footer />
     </>

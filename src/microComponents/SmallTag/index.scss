@@ -6,8 +6,10 @@
   background-color: vars.$yellow;
   font-size: vars.$smallGutter;
   font-weight: 700;
-  border: solid 2px vars.$darkBrown;
+  border: solid 1px vars.$darkBrown;
   border-radius: vars.$bigGutter;
-  padding: (vars.$smallGutter)/2;
+  padding: (vars.$smallGutter)/2 vars.$smallGutter;
   display: inline-block;
+  margin-top: vars.$bigGutter;
+  margin-bottom: vars.$smallGutter;
 }

@@ -1,12 +1,12 @@
 @use '../../styles/vars';
 
 
-.me {
+.devProjects {
     display: flex;
     &__squares {
       &__flex {
         display: flex;
-        &__projects {
+        &__block {
           width:  40vw;
           background-image: url('../../assets/images/dev.jpg');
           background-repeat: no-repeat;
@@ -42,7 +42,7 @@
         }
         &__aboutMe {
           width:  40vw;
-          background-image: url('../../assets/images/me.jpg');
+          background-image: url('../../assets/images/dev.jpg');
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
@@ -52,7 +52,7 @@
     }
 }
 
-.me__module {
+.devProjects__module {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(12, 1fr);
   width: 80vw;
@@ -63,12 +63,12 @@
     grid-column: 1;
     position: relative;
 
-    &__me {
+    &__devProjects {
       grid-row: span 4;
       grid-column: 1;
       height: 100%;
       &__block {
-        background-image: url('../../assets/images/me.jpg');
+        background-image: url('../../assets/images/dev.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -116,7 +116,7 @@
           }
       }
     }
-    &__aspirations {
+    &__kikiveu {
       grid-row: span 3;
       grid-column: 2;
       height: 100%;
@@ -141,7 +141,7 @@
         }
       }
     }
-    &__competences {
+    &__blog {
       grid-row: span 5;
       grid-column: 1; 
       height: 100%;
@@ -157,7 +157,7 @@
         padding: vars.$bigGutter;
       }
     }
-    &__experience {
+    &__api{
       grid-row: 4/span 5;
       grid-column: 2;
       height: 100%;
@@ -173,7 +173,7 @@
         padding: vars.$bigGutter;
       }
     }
-    &__hobbies {
+    &__toDoList {
       grid-row: span 3;
       grid-column: 1;
       height: 100%;
@@ -184,20 +184,6 @@
         align-items: center;
         vertical-align: center;
         width: 100%;
-        position: relative;
-        padding: vars.$bigGutter;
-      }
-    }
-    &__formation {
-      grid-row: 9/span 5;
-      grid-column: 2;
-      height: 100%;
-      &__block {
-        background-color: vars.$yellow;
-        color: vars.$darkBrown;
-        height: 100%;
-        align-items: center;
-        vertical-align: center;
         position: relative;
         padding: vars.$bigGutter;
       }

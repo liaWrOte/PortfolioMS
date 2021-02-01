@@ -1,0 +1,93 @@
+import React, { useState } from 'react';
+
+// Components
+import Header from '../../microComponents/Header';
+import Aside from '../../microComponents/Aside';
+import Footer from '../../microComponents/Footer';
+import Intro from '../../microComponents/Intro';
+import BigSquaredTag from '../../microComponents/BigSquaredTag';
+import SmallTag from '../../microComponents/SmallTag';
+import BigButton from '../../microComponents/BigButton';
+
+import './index.scss';
+
+const DevProjects = () => {
+  const test = 1;
+
+  return (
+    <>
+      <Header />
+      <div className="devProjects">
+
+        <div>
+          <Aside />
+        </div>
+
+        <div>
+          <Intro />
+          <ul className="devProjects__module">
+
+            {/* -- DevProjects block */}
+            <li className="devProjects__module__square__devProjects">
+              <div className="devProjects__module__square__devProjects__block">
+                <h2 className="devProjects__module__square__devProjects__block__mainTitle">
+                  <span className="devProjects__module__square__devProjects__block__mainTitle__small__title">Projets</span>
+                  <span className="devProjects__module__square__devProjects__block__mainTitle__big__title">Dev</span>
+                </h2>
+                <p className="devProjects__module__square__dev__block__description">Explorez mes projets</p>
+              </div>
+            </li>
+
+            {/* -- Kikiveu block */}
+            <li className="devProjects__module__square__kikiveu">
+              <div className="devProjects__module__square__kikiveu__block">
+                <h2 className="devProjects__module__square__kikiveu__block__mainTitle">
+                  <span className="devProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
+                  <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Suis</span>
+                </h2>
+                <p className="devProjects__module__square__kikiveu__block__description">Aptitudes & aspirations</p>
+              </div>
+            </li>
+
+            {/* -- Blog block */}
+            <li className="devProjects__module__square__blog">
+              <div className="devProjects__module__square__blog__block">
+                <h2 className="devProjects__module__square__blog__block__mainTitle">
+                  <span className="devProjects__module__square__blog__block__mainTitle__small__title">Qui je</span>
+                  <span className="devProjects__module__square__blog__block__mainTitle__big__title">Suis</span>
+                </h2>
+                <p className="devProjects__module__square__blog__block__description">Aptitudes & aspirations</p>
+              </div>
+            </li>
+
+            {/* -- Api block */}
+            <li className="devProjects__module__square__api">
+              <div className="devProjects__module__square__api__block">
+                <h2 className="devProjects__module__square__api__block__mainTitle">
+                  <span className="devProjects__module__square__api__block__mainTitle__small__title">Qui je</span>
+                  <span className="devProjects__module__square__api__block__mainTitle__big__title">Suis</span>
+                </h2>
+                <p className="devProjects__module__square__api__block__description">Aptitudes & aspirations</p>
+              </div>
+            </li>
+
+            {/* -- ToDoList block */}
+            <li className="devProjects__module__square__toDoList">
+              <div className="devProjects__module__square__toDoList__block">
+                <h2 className="devProjects__module__square__toDoList__block__mainTitle">
+                  <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">Qui je</span>
+                  <span className="devProjects__module__square__toDoList__block__mainTitle__big__title">Suis</span>
+                </h2>
+                <p className="devProjects__module__square__toDoList__block__description">Aptitudes & aspirations</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default DevProjects;

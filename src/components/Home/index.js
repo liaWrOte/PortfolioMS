@@ -67,14 +67,16 @@ const Home = () => {
 
             {/* -- Dev block */}
             <li className="home__module__square__dev" onMouseEnter={() => onMouseEnterHandlerDev('dev')} onMouseLeave={() => onMouseLeaveHandler()}>
-              <div className="home__module__square__dev__block">
-                <h2 className="home__module__square__dev__block__mainTitle">
-                  <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
-                  <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
-                </h2>
-                <img className={animateDev ? cssExpand : 'cssDefault'} src={eyes} alt="circle animation" />
-                <p className="home__module__square__dev__block__description">Explorez mes projets</p>
-              </div>
+              <Link to="/projets-dev">
+                <div className="home__module__square__dev__block">
+                  <h2 className="home__module__square__dev__block__mainTitle">
+                    <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
+                    <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
+                  </h2>
+                  <img className={animateDev ? cssExpand : 'cssDefault'} src={eyes} alt="circle animation" />
+                  <p className="home__module__square__dev__block__description">Explorez mes projets</p>
+                </div>
+              </Link>
             </li>
 
             {/* -- Me block */}
