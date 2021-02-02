@@ -68,10 +68,10 @@
       grid-column: 1;
       height: 100%;
       &__block {
-        background-image: url('../../assets/images/dev.jpg');
+        background-image: url('../../assets/images/uxUi/illu_japan_style_vignette.jpg');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         color: vars.$darkBrown;
         height: 100%;
         display: flex;

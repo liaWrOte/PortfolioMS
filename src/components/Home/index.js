@@ -10,8 +10,8 @@ import Intro from '../../microComponents/Intro';
 // import images
 import eyes from '../../assets/images/eye_3.svg';
 import stars from '../../assets/images/stars_8.svg';
-import blueCircle from '../../assets/images/bananas_2.svg';
-import bananas from '../../assets/images/bananas_2.svg';
+import diamonds from '../../assets/images/diamonds_4.svg';
+import lights from '../../assets/images/lights_1.svg';
 
 import './index.scss';
 
@@ -91,11 +91,11 @@ const Home = () => {
             <Link to="/projets-ux-ui">
               <div className="home__module__square__uxUi__block">
                 <h2 className="home__module__square__uxUi__block__mainTitle">
-                  <span className="home__module__square__uxUi__block__mainTitle__small__title">Un autre</span>
-                  <span className="home__module__square__uxUi__block__mainTitle__big__title">Blog</span>
+                  <span className="home__module__square__uxUi__block__mainTitle__small__title">Projets</span>
+                  <span className="home__module__square__uxUi__block__mainTitle__big__title">UX / UI</span>
                 </h2>
-                <img className={animateBlog ? cssExpand : 'cssDefault'} src={blueCircle} alt="circle animation" />
-                <p className="home__module__square__uxUi__block__description">Réflexions</p>
+                <img className={animateBlog ? cssExpand : 'cssDefault'} src={diamonds} alt="circle animation" />
+                <p className="home__module__square__uxUi__block__description">Design, illustrations</p>
               </div>
             </Link>
           </li>
@@ -108,7 +108,7 @@ const Home = () => {
                   <span className="home__module__square__contact__block__mainTitle__small__title">Contactez</span>
                   <span className="home__module__square__contact__block__mainTitle__big__title">Moi</span>
                 </h2>
-                <img className={animateContact ? cssExpand : 'cssDefault'} src={bananas} alt="circle animation" />
+                <img className={animateContact ? cssExpand : 'cssDefault'} src={lights} alt="circle animation" />
                 <p className="home__module__square__contact__block__description">Et rencontrons-nous</p>
               </div>
             </Link>
