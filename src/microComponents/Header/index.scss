@@ -10,5 +10,9 @@
       display: inline-block;
       margin-left: vars.$bigGutter;
       text-align: right;
+      &:hover {
+        transition: all .2s ease-in-out;
+        color: vars.$yellow;
+      }
     }
 }
