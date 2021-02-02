@@ -17,5 +17,20 @@
         -o-transform: rotate(-90deg);
         margin-bottom : 7rem;
         text-align: center;
+        color: vars.$beige;
+        transition: all .2s ease-in-out;
+        &:hover {
+          transition: all .2s ease-in-out;
+          color: vars.$yellow;
+        }
+        &__selected {
+          transition: all .2s ease-in-out;
+          color: vars.$orange;
+        }
     }
+}
+
+.selected {
+  transition: all .2s ease-in-out;
+  color: vars.$orange;
 }

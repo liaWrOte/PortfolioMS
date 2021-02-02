@@ -1,34 +1,34 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import './index.scss';
 
 const Aside = () => (
   <ul className="aside">
     <li className="aside__link">
-      <Link to="/">
+      <NavLink exact to="/" activeClassName="aside__link__selected">
         HOME
-      </Link>
+      </NavLink>
     </li>
     <li className="aside__link">
-      <Link to="/projets-dev">
+      <NavLink exact to="/projets-dev" activeClassName="aside__link__selected">
         DEV
-      </Link>
+      </NavLink>
     </li>
     <li className="aside__link">
-      <Link to="/projets-ux-ui">
+      <NavLink exact to="/projets-ux-ui" activeClassName="aside__link__selected">
         UX/UI
-      </Link>
+      </NavLink>
     </li>
     <li className="aside__link">
-      <Link to="/qui-je-suis">
+      <NavLink exact to="/qui-je-suis" activeClassName="aside__link__selected">
         QUI JE SUIS
-      </Link>
+      </NavLink>
     </li>
     <li className="aside__link">
-      <Link to="/contact">
+      <NavLink exact to="/contact" activeClassName="aside__link__selected">
         CONTACT
-      </Link>
+      </NavLink>
     </li>
   </ul>
 );

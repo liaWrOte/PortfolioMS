@@ -10,7 +10,7 @@ import Intro from '../../microComponents/Intro';
 // import images
 import eyes from '../../assets/images/eye_3.svg';
 import stars from '../../assets/images/stars_8.svg';
-import diamonds from '../../assets/images/diamonds_4.svg';
+import diamonds from '../../assets/images/diamonds_5.svg';
 import lights from '../../assets/images/lights_1.svg';
 
 import './index.scss';
@@ -59,7 +59,11 @@ const Home = () => {
         <ul className="home__module">
 
           {/* -- Dev block */}
-          <li className="home__module__square__dev" onMouseEnter={() => onMouseEnterHandlerDev('dev')} onMouseLeave={() => onMouseLeaveHandler()}>
+          <li
+            className="home__module__square__dev"
+            onMouseEnter={() => onMouseEnterHandlerDev('dev')}
+            onMouseLeave={() => onMouseLeaveHandler()}
+          >
             <Link to="/projets-dev">
               <div className="home__module__square__dev__block">
                 <h2 className="home__module__square__dev__block__mainTitle">
