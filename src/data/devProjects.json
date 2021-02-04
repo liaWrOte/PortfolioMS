@@ -1,0 +1,39 @@
+{
+  "kikiveu": [
+     {
+      "title": "Pitch",
+      "data": [
+ "Kikiveu est une application basée sur la géolocalisation qui permet d'organiser et de particper à des balades canines autour de chez soi.",
+" Projet de fin de formation.",
+"Équipe de 4 développeurs sur le projet en 21 jours."
+      ]
+    },
+    {
+      "title": "Caractéristiques techniques",
+      "data": [
+        "Front : HTML, SCSS (BEM), React, Redux, React Leaflet, Axios, React Router, Yarn",
+        "Back : Symfony, PHP, npm, mySQL, Doctrine, Composer",
+        "Npm, Yarn"
+      ]
+    },
+    {
+      "title": "Mon travail sur le projet",
+      "data": [
+        "Product owner de Kikiveu et lead front end developer",
+        "Cahier des charges : Maquettage de l'application (wireframes), charte graphique (logo et icônes), MVP, fonctionnalités, user stories, fichier de routes.",
+        "Mise en place des composants, gestion du state avec React redux",
+        "Requêtes à l'API créée en Symfony avec Axios ",
+        "Sécurisation du formulaire d'inscription en front avec la vérification des champs contrôlés.",
+        "Débuggage du state avec Redux-dev-tools"
+      ]
+    },
+    {
+      "title": "Versionning et organisation",
+      "data": [
+        "GIT",
+        "Méthode Agile SCRUM"
+      ]
+    }
+  ]
+}
+

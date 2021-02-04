@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // Components
 import Header from '../../microComponents/Header';
@@ -20,7 +21,6 @@ const DevProjects = () => {
 
         <div>
           <ul className="devProjects__module">
-
             {/* -- DevProjects block */}
             <li className="devProjects__module__square__devProjects">
               <div className="devProjects__module__square__devProjects__block">
@@ -33,15 +33,17 @@ const DevProjects = () => {
             </li>
 
             {/* -- Kikiveu block */}
-            <li className="devProjects__module__square__kikiveu">
-              <div className="devProjects__module__square__kikiveu__block">
-                <h2 className="devProjects__module__square__kikiveu__block__mainTitle">
-                  <span className="devProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Kikiveu</span>
-                </h2>
-                <p className="devProjects__module__square__kikiveu__block__description">React / Symfony</p>
-              </div>
-            </li>
+            <Link to="/projets-dev/kikiveu">
+              <li className="devProjects__module__square__kikiveu">
+                <div className="devProjects__module__square__kikiveu__block">
+                  <h2 className="devProjects__module__square__kikiveu__block__mainTitle">
+                    <span className="devProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
+                    <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Kikiveu</span>
+                  </h2>
+                  <p className="devProjects__module__square__kikiveu__block__description">React / Symfony</p>
+                </div>
+              </li>
+            </Link>
 
             {/* -- Blog block */}
             <li className="devProjects__module__square__blog">
