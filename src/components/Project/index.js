@@ -13,8 +13,10 @@ import BigButton from '../../microComponents/BigButton';
 import './index.scss';
 
 const Project = ({ data, projectTitle }) => {
-  const dataToMap = `data.${projectTitle}`;
-  console.log(dataToMap);
+  // To have the right data in the json file
+  const dataInProject = { ...data };
+  const dataToMap = dataInProject[projectTitle];
+
   return (
     <>
       <div className="project">
@@ -35,16 +37,34 @@ const Project = ({ data, projectTitle }) => {
           <li className="project__module__square__form">
             <div className="me__module__square__competences__block">
               <BigSquaredTag text={projectTitle} />
-              {data.kikiveu.map((item) => (
-                <div key={Math.random()}>
-                  <SmallTag text={item.title} key={Math.random()} />
-                  {item.data.map((subItem) => (
+              {(dataToMap) && (
+                dataToMap.map((item, i, array) => {
+                  if (array.length - 1 === i) {
+                    console.log('dernier');
+                    return (
+                      <div key={Math.random()}>
+                      <SmallTag text={item.title} key={Math.random()} />
+                        {item.links.map((subItem) => (
+                          <div key={Math.random()}>
+                            <BigButton text={subItem} />
+                          </div>
+                        ))}
+                      </div>
+                    );
+                  }
+                  console.log('premier');
+                  return (
                     <div key={Math.random()}>
-                      <p key={Math.random()}>{subItem}</p>
+                      <SmallTag text={item.title} key={Math.random()} />
+                      {item.data.map((subItem) => (
+                        <div key={Math.random()}>
+                          <p key={Math.random()}>{subItem}</p>
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-              ))}
+                  );
+                })
+              )}
 
             </div>
           </li>
@@ -55,8 +75,8 @@ const Project = ({ data, projectTitle }) => {
   );
 };
 
-Project.PropTypes = {
-  data: PropTypes.array.isRequired,
+Project.propTypes = {
+  data: PropTypes.object.isRequired,
 };
 
 export default Project;

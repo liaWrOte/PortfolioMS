@@ -33,6 +33,13 @@
         "GIT",
         "Méthode Agile SCRUM"
       ]
+    },
+    {
+      "title": "Liens",
+      "links": [
+        "Voir l'application",
+        "Voir le code sur GIT"
+      ]
     }
   ]
 }
