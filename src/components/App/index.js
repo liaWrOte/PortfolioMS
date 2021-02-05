@@ -45,7 +45,7 @@ const App = () =>  {
         </Route>
       </Switch>
       <Route exact path="/projets-dev/kikiveu">
-        <Project data={devProjects} projectTitle="kikiveu" />
+        <Project data={devProjects} projectTitle="kikiveu" projectDate="2021" />
       </Route>
       <Footer />
     </div>

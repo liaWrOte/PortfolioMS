@@ -1,18 +1,14 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 // Components
-import Header from '../../microComponents/Header';
-import Aside from '../../microComponents/Aside';
-import Footer from '../../microComponents/Footer';
-import Intro from '../../microComponents/Intro';
 import BigSquaredTag from '../../microComponents/BigSquaredTag';
 import SmallTag from '../../microComponents/SmallTag';
 import BigButton from '../../microComponents/BigButton';
 
 import './index.scss';
 
-const Project = ({ data, projectTitle }) => {
+const Project = ({ data, projectTitle, projectDate }) => {
   // To have the right data in the json file
   const dataInProject = { ...data };
   const dataToMap = dataInProject[projectTitle];
@@ -37,13 +33,14 @@ const Project = ({ data, projectTitle }) => {
           <li className="project__module__square__form">
             <div className="me__module__square__competences__block">
               <BigSquaredTag text={projectTitle} />
+              <p>{projectDate}</p>
               {(dataToMap) && (
                 dataToMap.map((item, i, array) => {
+                  // if it's the last object of the array, display button links
                   if (array.length - 1 === i) {
-                    console.log('dernier');
                     return (
                       <div key={Math.random()}>
-                      <SmallTag text={item.title} key={Math.random()} />
+                        <SmallTag text={item.title} key={Math.random()} />
                         {item.links.map((subItem) => (
                           <div key={Math.random()}>
                             <BigButton text={subItem} />
@@ -52,7 +49,7 @@ const Project = ({ data, projectTitle }) => {
                       </div>
                     );
                   }
-                  console.log('premier');
+                  // else display text
                   return (
                     <div key={Math.random()}>
                       <SmallTag text={item.title} key={Math.random()} />
@@ -68,7 +65,6 @@ const Project = ({ data, projectTitle }) => {
 
             </div>
           </li>
-
         </ul>
       </div>
     </>
@@ -77,6 +73,8 @@ const Project = ({ data, projectTitle }) => {
 
 Project.propTypes = {
   data: PropTypes.object.isRequired,
+  projectTitle: PropTypes.string.isRequired,
+  projectDate: PropTypes.string.isRequired,
 };
 
 export default Project;
