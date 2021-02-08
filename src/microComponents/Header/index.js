@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 import './index.scss';
 
@@ -9,7 +8,7 @@ const Header = () => (
       <li className="header__link">GIT</li>
     </a>
     <a href="https://www.linkedin.com/in/sandrinemze/" target="_blank" rel="noreferrer noopener">
-    <li className="header__link">LINKEDIN</li>
+      <li className="header__link">LINKEDIN</li>
     </a>
   </ul>
 );
