@@ -12,10 +12,14 @@
     display: flex;
     position: relative;
     padding: vars.$smallGutter 0;
+    display: flex;
+    align-items: center;
     &__and {
       font-size: vars.$bigGutter;
       font-weight: 400;
-      padding: (vars.$smallGutter)/2 (vars.$bigGutter)/2;
+      padding: 0 (vars.$smallGutter)/2;
+      align-self: flex-end;
+      margin-top: 10px;
     }
   }
 }
