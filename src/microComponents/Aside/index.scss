@@ -1,0 +1,31 @@
+@use '../../styles/vars';
+
+.aside {
+  position : fixed;
+  height: 90%;
+  display: flex;
+  flex-direction: column-reverse;
+  bottom: 0;
+  justify-content: flex-start;
+  width: (vars.$bigGutter)*5;
+    &__link {
+      display: inline-block;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        -moz-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -o-transform: rotate(-90deg);
+        margin-bottom : 7rem;
+        text-align: center;
+        color: vars.$beige;
+        transition: all .2s ease-in-out;
+        &:hover {
+          transition: all .2s ease-in-out;
+          color: vars.$yellow;
+        }
+        &__selected {
+          transition: all .2s ease-in-out;
+          color: vars.$orange;
+        }
+    }
+}

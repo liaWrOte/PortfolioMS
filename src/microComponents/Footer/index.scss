@@ -1,0 +1,17 @@
+@use '../../styles/vars';
+
+.footer {
+  margin-right: (vars.$bigGutter)*5;
+  display: flex;
+  justify-content: flex-end;
+  height: (vars.$bigGutter)*4;
+  align-items: center;
+  margin-bottom: (vars.$bigGutter)*1;
+  &__link {
+    display: inline-block;
+    margin-left: vars.$bigGutter;
+    text-align: right;
+  }
+  }
+
+

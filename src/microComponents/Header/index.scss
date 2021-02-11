@@ -1,0 +1,31 @@
+@use '../../styles/vars';
+
+.header {
+    margin-right: (vars.$bigGutter)*5;
+    display: flex;
+    justify-content: flex-end;
+    height: (vars.$bigGutter)*4;
+    align-items: center;
+    &__logoContainer {
+      width: 100px;
+      height: 100px;
+      background-color: vars.$yellow;
+      position: relative;
+      display: inline-block;
+      &__circle {
+        position: absolute;
+        bottom: 17px;
+        right: 10px;
+
+      }
+    }
+    &__link {
+      display: inline-block;
+      margin-left: vars.$bigGutter;
+      text-align: right;
+      &:hover {
+        transition: all .2s ease-in-out;
+        color: vars.$yellow;
+      }
+    }
+}

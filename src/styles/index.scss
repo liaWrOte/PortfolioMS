@@ -1,0 +1,28 @@
+@use 'reset';
+@use 'vars';
+
+body {
+  font-family: sans-serif;
+  background-color: vars.$darkBrown;
+  color: vars.$beige;
+  font-family: vars.$bodyFont;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: (vars.$smallGutter);
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.02rem;
+}
+
+/* 
+  // or you can import your own font
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../assets/fonts/Roboto-Regular.ttf');
+  }
+
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+*/

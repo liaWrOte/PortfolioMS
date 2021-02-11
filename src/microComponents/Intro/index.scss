@@ -1,0 +1,28 @@
+@use '../../styles/vars';
+
+.intro {
+  padding: 0 0 (vars.$bigGutter)*3 0;
+  margin-left: (vars.$bigGutter)*5;
+  &__name {
+    font-family: vars.$largeFont ;
+    font-size: (vars.$bigGutter)*5;
+   font-weight: 400;
+   text-shadow: 5px 5px vars.$lightBrown;
+  transition: all .2s ease-in-out;
+  }
+  &__skills {
+    display: flex;
+    position: relative;
+    padding: vars.$smallGutter 0;
+    display: flex;
+    align-items: center;
+    &__and {
+      font-size: vars.$bigGutter;
+      font-weight: 400;
+      padding: 0 (vars.$smallGutter)/2;
+      align-self: flex-end;
+      margin-top: 10px;
+    }
+  }
+}
+
