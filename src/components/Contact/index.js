@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { fadeIn } from 'react-animations';
+import Radium, { StyleRoot } from 'radium';
 
 // Components
 import Header from '../../microComponents/Header';
@@ -12,15 +14,23 @@ import BigButton from '../../microComponents/BigButton';
 import './index.scss';
 
 const Contact = () => {
-  const test = 1;
+    // animations on load
+
+    const styles = {
+      fadeIn: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+      },
+    };
 
   return (
     <>
+    <StyleRoot>
       <div className="contact">
           <ul className="contact__module">
 
             {/* -- contact block */}
-            <li className="contact__module__square__contact">
+            <li className="contact__module__square__contact" style={styles.fadeIn}>
               <div className="contact__module__square__contact__block">
                 <h2 className="contact__module__square__contact__block__mainTitle">
                   <span className="contact__module__square__contact__block__mainTitle__small__title">Contactez</span>
@@ -31,7 +41,7 @@ const Contact = () => {
             </li>
 
             {/* -- Form block */}
-            <li className="contact__module__square__form">
+            <li className="contact__module__square__form" style={styles.fadeIn}>
               <div className="contact__module__square__form__block">
                 <form action="" method="get" className="contact__module__square__form__block__form">
                   <div className="contact__module__square__form__block__form__labelBlock">
@@ -66,6 +76,7 @@ const Contact = () => {
 
           </ul>
         </div>
+        </StyleRoot>
     </>
   );
 };

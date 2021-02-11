@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { fadeIn } from 'react-animations';
+import Radium, { StyleRoot } from 'radium';
 
 // Components
 import Header from '../../microComponents/Header';
@@ -13,14 +15,22 @@ import BigButton from '../../microComponents/BigButton';
 import './index.scss';
 
 const DevProjects = () => {
-  const test = 1;
+    // animations on load
+
+    const styles = {
+      fadeIn: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+      },
+    };
 
   return (
     <>
+    <StyleRoot>
       <div className="devProjects">
 
         <div>
-          <ul className="devProjects__module">
+          <ul className="devProjects__module" style={styles.fadeIn}>
             {/* -- DevProjects block */}
             <li className="devProjects__module__square__devProjects">
               <div className="devProjects__module__square__devProjects__block">
@@ -81,6 +91,7 @@ const DevProjects = () => {
           </ul>
         </div>
       </div>
+      </StyleRoot>
     </>
   );
 };

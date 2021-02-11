@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { fadeIn } from 'react-animations';
+import Radium, { StyleRoot } from 'radium';
 
 // Components
-import BigSquaredTag from '../../microComponents/BigSquaredTag';
+import BigRoundedTag from '../../microComponents/BigRoundedTag';
 import SmallTag from '../../microComponents/SmallTag';
 import BigButton from '../../microComponents/BigButton';
 
@@ -13,27 +15,36 @@ const Project = ({ data, projectTitle, projectDate }) => {
   const dataInProject = { ...data };
   const dataToMap = dataInProject[projectTitle];
 
+    // animations on load
+
+    const styles = {
+      fadeIn: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+      },
+    };
+
   return (
     <>
+    <StyleRoot>
       <div className="project">
-        <ul className="project__module">
+        <ul className="project__module" style={styles.fadeIn}>
 
           {/* -- project block */}
           <li className="project__module__square__project">
             <div className="project__module__square__project__block">
-              <h2 className="project__module__square__project__block__mainTitle">
-                <span className="project__module__square__project__block__mainTitle__small__title">projectez</span>
-                <span className="project__module__square__project__block__mainTitle__big__title">Moi</span>
-              </h2>
-              <p className="project__module__square__project__block__description">Et rencontrons-nous</p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1zFkeA-Gzek?start=2186" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </li>
 
-          {/* -- Form block */}
-          <li className="project__module__square__form">
-            <div className="me__module__square__competences__block">
-              <BigSquaredTag text={projectTitle} />
-              <p>{projectDate}</p>
+          {/* -- description block */}
+          <li className="project__module__square__description">
+            <div className="project__module__square__description__block">
+              <div className="project__module__square__description__block__title">
+                <BigRoundedTag text={projectTitle} />
+                <p className="project__module__square__description__block__title__date">{projectDate}</p>
+              </div>
+
               {(dataToMap) && (
                 dataToMap.map((item, i, array) => {
                   // if it's the last object of the array, display button links
@@ -67,6 +78,7 @@ const Project = ({ data, projectTitle, projectDate }) => {
           </li>
         </ul>
       </div>
+      </StyleRoot>
     </>
   );
 };

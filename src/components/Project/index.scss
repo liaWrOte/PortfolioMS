@@ -65,7 +65,7 @@
     grid-column: 1;
     position: relative;
 
-    &__project{
+    &__project {
       grid-row: span 12;
       grid-column: 1;
       height: 100%;
@@ -157,48 +157,27 @@
           }
       }
     }
-    &__form {
+    &__description {
       grid-row: span 12;
       grid-column: 2; 
       height: 100%;
       &__block {
-        background-color: vars.$yellow;
-        color: vars.$darkBrown;
+        background-color: vars.$lightBrown;
+        color: vars.$beige;
         height: 100%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
         vertical-align: center;
         width: 100%;
         position: relative;
         padding: vars.$bigGutter;
-        &__form {
-          width: 100%;
-          &__labelBlock {
-            &__label  {
-              display: block;
-              margin-bottom: vars.$smallGutter;
+        &__title {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          &__date {
+            align-self: flex-end;
             }
-            &__input {
-              display: inline-block;
-              margin-bottom: vars.$bigGutter;
-              width: 100%;
-              background-color: vars.$darkBrown;
-              padding: vars.$smallGutter;
-              border-radius: vars.$smallGutter;
-              border: none;
-              color: vars.$beige;
-              &__message {
-                display: inline-block;
-              margin-bottom: vars.$bigGutter;
-              width: 100%;
-              background-color: vars.$darkBrown;
-              padding: vars.$smallGutter;
-              border-radius: vars.$smallGutter;
-              border: none;
-              color: vars.$beige;
-              }
-            }
-          }
           }
           
         }

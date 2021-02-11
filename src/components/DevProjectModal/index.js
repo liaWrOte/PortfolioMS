@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { fadeIn } from 'react-animations';
+import Radium, { StyleRoot } from 'radium';
 
 // Components
 import Header from '../../microComponents/Header';
@@ -12,10 +14,18 @@ import BigButton from '../../microComponents/BigButton';
 import './index.scss';
 
 const DevProjectModal = () => {
-  const test = 1;
+    // animations on load
+
+    const styles = {
+      fadeIn: {
+        animation: 'x 1s',
+        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+      },
+    };
 
   return (
     <>
+    <StyleRoot>
       <div className="devProjectModal">
 
         <div>
@@ -46,6 +56,7 @@ const DevProjectModal = () => {
           </ul>
         </div>
       </div>
+      </StyleRoot>
     </>
   );
 };
