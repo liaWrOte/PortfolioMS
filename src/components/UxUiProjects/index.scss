@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 
-.devProjects {
+.uxUiProjects {
     display: flex;
     &__squares {
       &__flex {
@@ -52,7 +52,7 @@
     }
 }
 
-.devProjects__module {
+.uxUiProjects__module {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(12, 1fr);
   width: 80vw;
@@ -63,7 +63,7 @@
     grid-column: 1;
     position: relative;
 
-    &__devProjects {
+    &__uxUiProjects {
       grid-row: span 4;
       grid-column: 1;
       height: 100%;

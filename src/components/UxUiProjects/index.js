@@ -26,63 +26,63 @@ const UxUiProjects = () => {
   return (
     <>
       <StyleRoot>
-        <div className="devProjects" style={styles.fadeIn}>
+        <div className="uxUiProjects" style={styles.fadeIn}>
 
           <div>
-            <ul className="devProjects__module">
+            <ul className="uxUiProjects__module">
 
-              {/* -- DevProjects block */}
-              <li className="devProjects__module__square__devProjects">
-                <div className="devProjects__module__square__devProjects__block">
-                  <h2 className="devProjects__module__square__devProjects__block__mainTitle">
-                    <span className="devProjects__module__square__devProjects__block__mainTitle__small__title">Projets</span>
-                    <span className="devProjects__module__square__devProjects__block__mainTitle__big__title">Dev</span>
+              {/* -- uxUiProjects block */}
+              <li className="uxUiProjects__module__square__uxUiProjects">
+                <div className="uxUiProjects__module__square__uxUiProjects__block">
+                  <h2 className="uxUiProjects__module__square__uxUiProjects__block__mainTitle">
+                    <span className="uxUiProjects__module__square__uxUiProjects__block__mainTitle__small__title">Projets</span>
+                    <span className="uxUiProjects__module__square__uxUiProjects__block__mainTitle__big__title">Dev</span>
                   </h2>
-                  <p className="devProjects__module__square__devProjects__block__description">Explorez mes projets</p>
+                  <p className="uxUiProjects__module__square__uxUiProjects__block__description">Explorez mes projets</p>
                 </div>
               </li>
 
               {/* -- Kikiveu block */}
-              <li className="devProjects__module__square__kikiveu">
-                <div className="devProjects__module__square__kikiveu__block">
-                  <h2 className="devProjects__module__square__kikiveu__block__mainTitle">
-                    <span className="devProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
-                    <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Kikiveu</span>
+              <li className="uxUiProjects__module__square__kikiveu">
+                <div className="uxUiProjects__module__square__kikiveu__block">
+                  <h2 className="uxUiProjects__module__square__kikiveu__block__mainTitle">
+                    <span className="uxUiProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
+                    <span className="uxUiProjects__module__square__kikiveu__block__mainTitle__big__title">Kikiveu</span>
                   </h2>
-                  <p className="devProjects__module__square__kikiveu__block__description">React / Symfony</p>
+                  <p className="uxUiProjects__module__square__kikiveu__block__description">React / Symfony</p>
                 </div>
               </li>
 
               {/* -- Blog block */}
-              <li className="devProjects__module__square__blog">
-                <div className="devProjects__module__square__blog__block">
-                  <h2 className="devProjects__module__square__blog__block__mainTitle">
-                    <span className="devProjects__module__square__blog__block__mainTitle__small__title">Blog</span>
-                    <span className="devProjects__module__square__blog__block__mainTitle__big__title">Blog</span>
+              <li className="uxUiProjects__module__square__blog">
+                <div className="uxUiProjects__module__square__blog__block">
+                  <h2 className="uxUiProjects__module__square__blog__block__mainTitle">
+                    <span className="uxUiProjects__module__square__blog__block__mainTitle__small__title">Blog</span>
+                    <span className="uxUiProjects__module__square__blog__block__mainTitle__big__title">Blog</span>
                   </h2>
-                  <p className="devProjects__module__square__blog__block__description">PHP / Bootstrap</p>
+                  <p className="uxUiProjects__module__square__blog__block__description">PHP / Bootstrap</p>
                 </div>
               </li>
 
               {/* -- Api block */}
-              <li className="devProjects__module__square__api">
-                <div className="devProjects__module__square__api__block">
-                  <h2 className="devProjects__module__square__api__block__mainTitle">
-                    <span className="devProjects__module__square__api__block__mainTitle__small__title">Qui je</span>
-                    <span className="devProjects__module__square__api__block__mainTitle__big__title">GIT API</span>
+              <li className="uxUiProjects__module__square__api">
+                <div className="uxUiProjects__module__square__api__block">
+                  <h2 className="uxUiProjects__module__square__api__block__mainTitle">
+                    <span className="uxUiProjects__module__square__api__block__mainTitle__small__title">Qui je</span>
+                    <span className="uxUiProjects__module__square__api__block__mainTitle__big__title">GIT API</span>
                   </h2>
-                  <p className="devProjects__module__square__api__block__description">Javascript / Ajax</p>
+                  <p className="uxUiProjects__module__square__api__block__description">Javascript / Ajax</p>
                 </div>
               </li>
 
               {/* -- ToDoList block */}
-              <li className="devProjects__module__square__toDoList">
-                <div className="devProjects__module__square__toDoList__block">
-                  <h2 className="devProjects__module__square__toDoList__block__mainTitle">
-                    <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">Qui je</span>
-                    <span className="devProjects__module__square__toDoList__block__mainTitle__big__title">To Do List</span>
+              <li className="uxUiProjects__module__square__toDoList">
+                <div className="uxUiProjects__module__square__toDoList__block">
+                  <h2 className="uxUiProjects__module__square__toDoList__block__mainTitle">
+                    <span className="uxUiProjects__module__square__toDoList__block__mainTitle__small__title">Qui je</span>
+                    <span className="uxUiProjects__module__square__toDoList__block__mainTitle__big__title">To Do List</span>
                   </h2>
-                  <p className="devProjects__module__square__toDoList__block__description">Javascript</p>
+                  <p className="uxUiProjects__module__square__toDoList__block__description">Javascript</p>
                 </div>
               </li>
 

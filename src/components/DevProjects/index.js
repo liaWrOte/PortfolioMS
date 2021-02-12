@@ -8,89 +8,118 @@ import Header from '../../microComponents/Header';
 import Aside from '../../microComponents/Aside';
 import Footer from '../../microComponents/Footer';
 import Intro from '../../microComponents/Intro';
-import BigSquaredTag from '../../microComponents/BigSquaredTag';
+import BigRoundedTag from '../../microComponents/BigRoundedTag';
 import SmallTag from '../../microComponents/SmallTag';
 import BigButton from '../../microComponents/BigButton';
 
 import './index.scss';
 
 const DevProjects = () => {
-    // animations on load
+  // animations on load
 
-    const styles = {
-      fadeIn: {
-        animation: 'x 1s',
-        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
-      },
-    };
+  const styles = {
+    fadeIn: {
+      animation: 'x 1s',
+      animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+    },
+  };
 
   return (
     <>
-    <StyleRoot>
-      <div className="devProjects">
+      <StyleRoot>
+        <div className="devProjects">
 
-        <div>
-          <ul className="devProjects__module" style={styles.fadeIn}>
-            {/* -- DevProjects block */}
-            <li className="devProjects__module__square__devProjects">
-              <div className="devProjects__module__square__devProjects__block">
-                <h2 className="devProjects__module__square__devProjects__block__mainTitle">
-                  <span className="devProjects__module__square__devProjects__block__mainTitle__small__title">Projets</span>
-                  <span className="devProjects__module__square__devProjects__block__mainTitle__big__title">Dev</span>
-                </h2>
-                <p className="devProjects__module__square__devProjects__block__description">Explorez mes projets</p>
-              </div>
-            </li>
-
-            {/* -- Kikiveu block */}
-            <Link to="/projets-dev/kikiveu">
-              <li className="devProjects__module__square__kikiveu">
-                <div className="devProjects__module__square__kikiveu__block">
-                  <h2 className="devProjects__module__square__kikiveu__block__mainTitle">
-                    <span className="devProjects__module__square__kikiveu__block__mainTitle__small__title">Qui je</span>
-                    <span className="devProjects__module__square__kikiveu__block__mainTitle__big__title">Kikiveu</span>
+          <div>
+            <ul className="devProjects__module" style={styles.fadeIn}>
+              {/* -- DevProjects block */}
+              <li className="devProjects__module__square__devProjects">
+                <div className="devProjects__module__square__devProjects__block">
+                  <h2 className="devProjects__module__square__devProjects__block__mainTitle">
+                    <span className="devProjects__module__square__devProjects__block__mainTitle__small__title">Projets</span>
+                    <span className="devProjects__module__square__devProjects__block__mainTitle__big__title">Dev</span>
                   </h2>
-                  <p className="devProjects__module__square__kikiveu__block__description">React / Symfony</p>
+                  <p className="devProjects__module__square__devProjects__block__description">Explorez mes projets</p>
                 </div>
               </li>
-            </Link>
 
-            {/* -- Blog block */}
-            <li className="devProjects__module__square__blog">
-              <div className="devProjects__module__square__blog__block">
-                <h2 className="devProjects__module__square__blog__block__mainTitle">
-                  <span className="devProjects__module__square__blog__block__mainTitle__small__title">Blog</span>
-                  <span className="devProjects__module__square__blog__block__mainTitle__big__title">Blog</span>
-                </h2>
-                <p className="devProjects__module__square__blog__block__description">PHP / Bootstrap</p>
-              </div>
-            </li>
+              {/* -- Kikiveu block */}
 
-            {/* -- Api block */}
-            <li className="devProjects__module__square__api">
-              <div className="devProjects__module__square__api__block">
-                <h2 className="devProjects__module__square__api__block__mainTitle">
-                  <span className="devProjects__module__square__api__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__api__block__mainTitle__big__title">GIT API</span>
-                </h2>
-                <p className="devProjects__module__square__api__block__description">Javascript / Ajax</p>
-              </div>
-            </li>
+              <li className="devProjects__module__square__kikiveu">
+                <Link to="/projets-dev/kikiveu">
+                  <div className="devProjects__module__square__kikiveu__block" />
+                  <div className="devProjects__module__square__kikiveu__content">
+                    <h2 className="devProjects__module__square__kikiveu__content__mainTitle">
+                      <div className="devProjects__module__square__kikiveu__content__mainTitle__small__title">
+                        <BigRoundedTag text="Kikiveu" />
+                      </div>
+                    </h2>
+                    <div className="devProjects__module__square__kikiveu__content__description">
+                      <SmallTag text="React/Redux/Axios" />
+                    </div>
 
-            {/* -- ToDoList block */}
-            <li className="devProjects__module__square__toDoList">
-              <div className="devProjects__module__square__toDoList__block">
-                <h2 className="devProjects__module__square__toDoList__block__mainTitle">
-                  <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">Qui je</span>
-                  <span className="devProjects__module__square__toDoList__block__mainTitle__big__title">To Do List</span>
-                </h2>
-                <p className="devProjects__module__square__toDoList__block__description">Javascript</p>
-              </div>
-            </li>
+                  </div>
+                </Link>
+              </li>
 
-          </ul>
+              {/* -- Portfolio 2021 */}
+              <li className="devProjects__module__square__portfolio2021">
+                <Link to="/projets-dev/portfolio2021">
+                  <div className="devProjects__module__square__portfolio2021__block" />
+                  <div className="devProjects__module__square__portfolio2021__content">
+                    <h2 className="devProjects__module__square__portfolio2021__content__mainTitle">
+                      <div className="devProjects__module__square__portfolio2021__content__mainTitle__small__title">
+                        <BigRoundedTag text="Portfolio 2021" />
+                      </div>
+                    </h2>
+                    <div className="devProjects__module__square__portfolio2021__content__description">
+                      <SmallTag text="React" />
+                    </div>
+
+                  </div>
+                </Link>
+              </li>
+
+              {/* -- Api block */}
+              <li className="devProjects__module__square__api">
+                <div className="devProjects__module__square__api__block">
+                  <h2 className="devProjects__module__square__api__block__mainTitle">
+                    <span className="devProjects__module__square__api__block__mainTitle__small__title">Git API</span>
+                  </h2>
+                  <p className="devProjects__module__square__api__block__description">HTML/CSS/Javascript/Ajax</p>
+                </div>
+              </li>
+
+              {/* -- ToDoList block */}
+              <li className="devProjects__module__square__toDoList">
+                <div className="devProjects__module__square__toDoList__block">
+                  <h2 className="devProjects__module__square__toDoList__block__mainTitle">
+                    <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">To do list</span>
+                  </h2>
+                  <p className="devProjects__module__square__toDoList__block__description">HTML/CSS/Javascript</p>
+                </div>
+              </li>
+
+              {/* -- Portfolio 2020 */}
+              <li className="devProjects__module__square__portfolio2020">
+                <Link to="/projets-dev/portfolio2020">
+                  <div className="devProjects__module__square__portfolio2020__block" />
+                  <div className="devProjects__module__square__portfolio2020__content">
+                    <h2 className="devProjects__module__square__portfolio2020__content__mainTitle">
+                      <div className="devProjects__module__square__portfolio2020__content__mainTitle__small__title">
+                        <BigRoundedTag text="Portfolio 2020" />
+                      </div>
+                    </h2>
+                    <div className="devProjects__module__square__portfolio2020__content__description">
+                      <SmallTag text="HTML/SCSS/Jquery" />
+                    </div>
+
+                  </div>
+                </Link>
+              </li>
+
+            </ul>
+          </div>
         </div>
-      </div>
       </StyleRoot>
     </>
   );
