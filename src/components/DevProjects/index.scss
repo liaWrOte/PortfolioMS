@@ -158,8 +158,6 @@
       transition: all 0.3s ease-in-out;
         }
         &__mainTitle {
-          display: block;
-          width: 100%;
           position: relative;
           z-index: 10;
           text-align: center;
@@ -425,7 +423,7 @@
     height: 340vh;
     &__square {
 
-      &__devProject {
+      &__devProjects {
         grid-row: span 4;
       grid-column: 1;
       height: 100%;
