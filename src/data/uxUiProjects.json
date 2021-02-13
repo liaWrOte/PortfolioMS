@@ -1,0 +1,175 @@
+{
+  "wordpress": [
+     {
+      "title": "Pitch",
+      "data": [
+        "En tant qu'intégratrice Wordpress et webdesign chez Cogi-T Québec, il m'a été donné l'occasion de travailler sur plusieurs projets différents",
+        "J'ai intégré des sites vitrines, institutionnels, e-commerce entre autres"
+      ]
+    },
+    {
+      "title": "Caractéristiques techniques",
+      "data": [
+        "CMS: Wordpress",
+        "Maquettage : Adobe XD"
+      ]
+    },
+    {
+      "title": "Mon travail sur le projet",
+      "data": [
+        "Prise de contact avec le client",
+        "Cahier des charges : Maquettage de l'application (wireframes), charte graphique (logo et icônes), MVP, fonctionnalités, user stories",
+        "Recherche et prise de décisions sur le splugins nécessaires",
+        "Intégration sous Wordpress",
+        "Livraison accompagnée d'un kit de ocntinuation pour le client (vidéos de tâches simples, pdf des identifiants de connexion"
+      ]
+    },
+    {
+      "title": "Organisation",
+      "data": [
+        "Travail par itération",
+        "Retour client à chaque fin d'itération"
+      ]
+    },
+    {
+      "title": "Liens",
+      "links": [
+        {
+          "label": "Visiter Le Temps des Cigales",
+          "link":  "https://www.letempsdescigales.com/"
+        }
+      ]
+    },
+    {
+      "screenshots" : [
+        "/images/10f0830e997f40c8b138198763e0c4df.jpg",
+        "/images/27431b8ada7739a4733332f4d12b988d.jpg"
+      ]
+    }
+  ],
+  "ifps": [
+    {
+     "title": "Pitch",
+     "data": [
+       "L'Intitut de Formation aux Professions de Santé de Fougères est rattaché au site du Centre Hospitalier de Fougères.",
+       "L'institut avait donc besoin de sa propre présence sur le web afin d'affirmer sa présence dans la formation des professionels de santé en région Bretagne.",
+       "Le mot d'ordre était d'obtenir une facilité à la recherche d'informations, et un souffle de dynamisme pour séduire un public jeune."
+     ]
+   },
+   {
+     "title": "Caractéristiques techniques",
+     "data": [
+       "Intégration : Wordpress",
+       "Webdesign et image de marque : Adobe Illustrator, Adobe XD"
+     ]
+   },
+   {
+     "title": "Mon travail sur le projet",
+     "data": [
+       "Création d'un nouveau logo pour l'institut",
+       "Création de la nouvelle charte graphique",
+       "Présentation de la nouvelle charte au client",
+       "Intégration sous Wordpress d'un site responsive"
+     ]
+   },
+   {
+     "title": "Organisation",
+     "data": [
+       "Travail par itération avec le client"
+     ]
+   },
+   {
+    "title": "Liens",
+    "links": [
+      {
+        "label": "Voir la maquette interactive",
+        "link":  "https://xd.adobe.com/view/1f72a33f-1723-4f45-ad59-edf0b36fc659-4a21/?fullscreen"
+      }
+    ]
+  },
+  {
+    "screenshots" : [
+      "/images/149c0e5135e2736b5370343fbfb52352.jpg",
+      "/images/92de2945cc3461cd04d06eb02b9d18d9.jpg"
+    ]
+  }
+ ],
+ "illustration": [
+  {
+   "title": "Pitch",
+   "data": [
+     "Illustrations réalisées dans le cadre de mon emploi de Webdesign en freelance",
+     "Je créé aussi des émoticones, des logos",
+     "Je créé des animations avec After Effects",
+     "Je fais aussi de la peinture à l'huile, essentiellement des portraits dont l'essence tourne autour de la couleur"
+   ]
+ },
+ {
+   "title": "Caractéristiques techniques",
+   "data": [
+     "Illustrations: Adobe Illustrator, Adobe Photoshop",
+     "Peinture: Portraits à la peinture à l'huile",
+     "Animations: Adobe After Effects, Adobe Photoshop"
+   ]
+ },
+ {
+  "title": "Liens",
+  "links": [
+    {
+      "label": "Voir mes peintures sur Instagram",
+      "link":  "https://www.instagram.com/lia_foliedouce/"
+    }
+  ]
+},
+{
+  "screenshots" : [
+    "/images/53da690cade2560a6e3c9bbc3e74a7ab.jpg",
+      "/images/a8107d8dc82cb82a13883cade78cd245.jpg"
+  ]
+}
+],
+"affiches": [
+  {
+   "title": "Pitch",
+   "data": [
+     "Affiches réalisées dans le cadre d'un stage de 3 mois réalisées Pôle de Formation des Professionnels de Santé du CHU de rennes ",
+     "À l'occasion de ses portes ouvertes aux futurs étudiants, il avait besoin de faire la promotion de cette nouvelle formation",
+     "Ce duo d'affiches inclusives a également été affiché dans le métro Rennais. La prochaine session de cette formation a trouvé tous ses futurs étudiants.",
+     "Concernant la deuxième affiche, la plage de Trou d'eau à la réunion avait besoin d'un visuel fort pour sa soirée Maloya qui se déroule tous les ans ",
+     "Il a été décidé de créer un montage fort sous Photoshop afin d'attirer l'oeil et d'assoir la soirée comme un évènement incontournable des soirées réunionnaises.",
+     "Cette affiche servira de base graphique aux futurs visuels à destination des réseaux sociaux."
+   ]
+ },
+ {
+   "title": "Caractéristiques techniques",
+   "data": [
+     "Graphisme: Adobe Photoshop"
+   ]
+ },
+ {
+   "title": "Mon travail sur le projet",
+   "data": [
+     "Rédaction du cahier des charges avec le client",
+     "Création des visuels sous Photoshop",
+     "Communication avec l'imprimeur",
+     "Retours client pour modifications"
+   ]
+ },
+ {
+  "title": "Liens",
+  "links": [
+    {
+      "label": "Le site du PFPS",
+      "link":  "https://www.ifchurennes.fr/"
+    }
+  ]
+},
+{
+  "screenshots" : [
+    "/images/5618473da23e5498af4ab51613144234.jpg",
+      "/images/eefe4fb6ae1f69a373d89f5e34e72159.jpg"
+  ]
+}
+]
+}
+

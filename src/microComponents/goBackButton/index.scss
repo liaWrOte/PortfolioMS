@@ -1,0 +1,24 @@
+@use '../../styles/vars';
+
+.goBackButton {
+  width: 80px;
+  height: 80px;
+  text-transform: uppercase;
+  color: vars.$darkBrown;
+  background-color: vars.$yellow;
+  font-size: vars.$smallGutter;
+  border: none;
+  padding: (vars.$smallGutter)/2 vars.$smallGutter;
+  font-weight: 700;
+  transition: all .2s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  &__svg {
+    color: vars.$darkBrown;
+  }
+  &:hover {
+    background-color: vars.$orange;
+    transition: all .2s ease-in-out;
+  }
+}

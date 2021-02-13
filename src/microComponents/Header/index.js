@@ -5,8 +5,8 @@ import React, {
 import './index.scss';
 
 const Header = () => {
-  // eye logo animation, follow cursor move
-  /* const [animation, setAnimation] = useState({ left: null, top: null });
+// eye logo animation, follow cursor move
+/* const [animation, setAnimation] = useState({ left: null, top: null });
 
   useEffect(() => {
     document.addEventListener('mousemove', (e) => {
@@ -26,7 +26,7 @@ const Header = () => {
     return rot;
   }, []); */
 
-  const eyeRef = useRef(null);
+  /* const eyeRef = useRef(null);
 
   const useMousePosition = () => {
     const [mousePosition, setMousePosition] = useState({ x: null, y: null });
@@ -70,7 +70,7 @@ const Header = () => {
       const rad = Math.atan2(x - offsetValues.vertical, y - offsetValues.horizontal);
       console.log(offsetValues.vertical);
       const rot = (rad * (180 / Math.PI) * -1) + 180;
-  
+
       setEyeStyle({
         WebkitTransform: `rotate(${rot}deg)`,
         MozTransform: `rotate(${rot}deg)`,
@@ -78,25 +78,78 @@ const Header = () => {
         transform: `rotate(${rot}deg)`,
       });
     }
-   
-  }, [offsetValues]);
 
+  }, [offsetValues]); */
+
+  const [activeMenu, setActiveMenu] = useState(null);
+
+  useEffect(() => {
+
+  }, []);
+
+  const toggleMenu = () => {
+    if (activeMenu === null) {
+      setActiveMenu('active');
+    }
+    else {
+      setActiveMenu(null);
+    }
+  };
 
   return (
     <ul className="header">
-      <div className="header__logoContainer" ref={eyeRef}>
+      <div className="header__links">
+        {/* <div className="header__logoContainer" ref={eyeRef}>
 
         <svg viewBox="0 0 100 100" width="100" className="header__logoContainer__circle" style={eyeStyle}>
           <circle fill="lightblue" stroke="darkgray" cx="50" cy="50" r="20" />
         </svg>
 
+      </div> */}
+        <a href="https://github.com/liaWrOte" target="_blank" rel="noreferrer noopener">
+          <li className="header__links__link">GIT</li>
+        </a>
+        <a href="https://www.linkedin.com/in/sandrinemze/" target="_blank" rel="noreferrer noopener">
+          <li className="header__links__link">LINKEDIN</li>
+        </a>
       </div>
-      <a href="https://github.com/liaWrOte" target="_blank" rel="noreferrer noopener">
-        <li className="header__link">GIT</li>
-      </a>
-      <a href="https://www.linkedin.com/in/sandrinemze/" target="_blank" rel="noreferrer noopener">
-        <li className="header__link">LINKEDIN</li>
-      </a>
+      <div className="header__hamburger">
+        <span className="header__hamburger__circle" onClick={() => toggleMenu()} />
+      </div>
+
+      <div className="header__modal">
+        <span className={activeMenu ? 'header__modal__circle__grow' : 'header__modal__circle'} />
+      </div>
+
+      {/* (activeMenu) !== null && (
+      <div className="header__hamburger__circle__menu ombre_portee">
+        <div className="header__hamburger__circle__menuWrapper">
+          <div className="header__hamburger__circle__menuWrapper__menuLink" data-modal="header__hamburger__circle__menuWrapper__menuLink__menuModal">
+            <span className="header__hamburger__circle__menuWrapper__menuLink__menuModal__menuIcon" />
+          </div>
+          <div className="header__hamburger__circle__menuWrapper__modalMask">
+            <div className="header__hamburger__circle__menuWrapper__modalMask__menuModal">
+              <div className="header__hamburger__circle__menuWrappermodalMask__menuModal__navWrapper">
+                <div className="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav">
+                  <div className="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__logoNav">
+                    <img src="header__hamburger__circle__menuWrapper__./image/logo_lia/logo_oeil_lia.png" alt="header__hamburger__circle__Log lia Web Design" id="header__hamburger__circle__oeil" />
+                    <h1>Lia WebDesign</h1>
+                  </div>
+                  <nav className="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__link">
+                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#">Accueil</a>
+                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#balise_services">Services</a>
+                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#realisations_bloc">Réalisations</a>
+                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#contact">Contact</a>
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      ) */}
+
     </ul>
   );
 };
