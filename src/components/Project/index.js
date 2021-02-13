@@ -7,6 +7,7 @@ import Radium, { StyleRoot } from 'radium';
 import BigRoundedTag from '../../microComponents/BigRoundedTag';
 import SmallTag from '../../microComponents/SmallTag';
 import BigButton from '../../microComponents/BigButton';
+import GoBackButton from '../../microComponents/goBackButton';
 
 // Imports for backrgound-images
 // devProjects
@@ -175,8 +176,9 @@ const Project = ({
                     );
                   })
                 )}
-
+                <GoBackButton />
               </div>
+              
             </li>
           </ul>
         </div>
