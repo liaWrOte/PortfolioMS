@@ -312,3 +312,56 @@
   object-fit: contain;
   object-position: center;
 }
+
+// Responsive tablet
+/*=====================================*/
+
+@media (max-width: 1000px) {
+
+  .home__module {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(20, 1fr);
+    height: 260vh;
+    &__square {
+
+      &__dev {
+        grid-row: span 5;
+      grid-column: 1;
+      height: 100%;
+      }
+
+      &__me {
+        grid-row: 6/span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+
+      &__uxUi {
+        grid-row: span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+
+      &__contact {
+        grid-row: span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+  }
+}
+
+
+/* Responsive smartphone */
+/*=====================================*/
+
+@media (max-width: 562px) {
+
+  .border {
+  	width: 100%;
+  }
+
+  .categories {
+  	display: block;
+  }
+}
+}

@@ -26,7 +26,7 @@ const Header = () => {
     return rot;
   }, []); */
 
-  const eyeRef = useRef(null);
+  /*const eyeRef = useRef(null);
 
   const useMousePosition = () => {
     const [mousePosition, setMousePosition] = useState({ x: null, y: null });
@@ -79,18 +79,18 @@ const Header = () => {
       });
     }
    
-  }, [offsetValues]);
+  }, [offsetValues]);*/
 
 
   return (
     <ul className="header">
-      <div className="header__logoContainer" ref={eyeRef}>
+      {/*<div className="header__logoContainer" ref={eyeRef}>
 
         <svg viewBox="0 0 100 100" width="100" className="header__logoContainer__circle" style={eyeStyle}>
           <circle fill="lightblue" stroke="darkgray" cx="50" cy="50" r="20" />
         </svg>
 
-      </div>
+      </div>*/}
       <a href="https://github.com/liaWrOte" target="_blank" rel="noreferrer noopener">
         <li className="header__link">GIT</li>
       </a>
