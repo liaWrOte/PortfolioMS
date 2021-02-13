@@ -9,12 +9,23 @@ import SmallTag from '../../microComponents/SmallTag';
 import BigButton from '../../microComponents/BigButton';
 
 // Imports for backrgound-images
+// devProjects
 import kikiveuScreenshot1 from '../../assets/images/devProjects/kikiveu_screenshot.png';
 import kikiveuScreenshot2 from '../../assets/images/devProjects/kikiveu_screenshot_2.png';
 import portfolioScreenshot1 from '../../assets/images/devProjects/portfolio_screenshot.png';
 import portfolioScreenshot2 from '../../assets/images/devProjects/portfolio_screenshot_2.png';
 import portfolioWebdesignScreenshot1 from '../../assets/images/devProjects/portfolio_webdesign_screenshot.png';
 import portfolioWebdesignScreenshot2 from '../../assets/images/devProjects/portfolio_webdesign_screenshot_2.png';
+// uxUiProjects
+import iconeScreenshot from '../../assets/images/uxUiProjects/icone_vignette.jpg';
+import leTempsDesCigalesScreenshot from '../../assets/images/uxUiProjects/le_temps_des_cigales_vignette.jpg';
+import ifpsScreenshot1 from '../../assets/images/uxUiProjects/ifps.jpg';
+import ifpsScreenshot2 from '../../assets/images/uxUiProjects/ifps_2.jpg';
+import illustrationSreenshot1 from '../../assets/images/uxUiProjects/illustration_lia_japan_style_vignette.jpg';
+import illustrationSreenshot2 from '../../assets/images/uxUiProjects/illustration_lia_saliot_vignette.jpg';
+import afficheScreenshot1 from '../../assets/images/uxUiProjects/portes_ouvertes_pfps_vignette.jpg';
+import afficheScreenshot2 from '../../assets/images/uxUiProjects/black_tropical_woman_lia_vignette.jpg';
+
 
 import './index.scss';
 
@@ -56,6 +67,14 @@ const Project = ({
         portfolioScreenshot2,
         portfolioWebdesignScreenshot1,
         portfolioWebdesignScreenshot2,
+        iconeScreenshot,
+        leTempsDesCigalesScreenshot,
+        ifpsScreenshot1,
+        ifpsScreenshot2,
+        illustrationSreenshot1,
+        illustrationSreenshot2,
+        afficheScreenshot1,
+        afficheScreenshot2,
       ];
       setImages(images);
     }

@@ -3,6 +3,7 @@
 
 .uxUiProjects {
     display: flex;
+    margin-left: (vars.$bigGutter)*5;
     &__squares {
       &__flex {
         display: flex;
@@ -18,7 +19,6 @@
             height: 80%;
             justify-content: center;
             align-items: center;
-
             &__top {
               font-family: vars.$smallFont;
               color: vars.$darkBrown;
@@ -54,11 +54,11 @@
 
 .uxUiProjects__module {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   width: 80vw;
   list-style: none;
   display: grid;
-  height: 200vh;
+  height: 150vh;
   &__square {
     grid-column: 1;
     position: relative;
@@ -68,52 +68,6 @@
       grid-column: 1;
       height: 100%;
       &__block {
-        background-image: url('../../assets/images/devProjects/kikiveu_screenshot.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        color: vars.$darkBrown;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        vertical-align: center;
-        width: 100%;
-        position: relative;
-        &__mainTitle {
-          display: block;
-          width: 100%;
-          position: relative;
-          z-index: 10;
-          &__small__title {
-            display: block;
-            font-size: (vars.$bigGutter)*1.5;
-            font-family: vars.$smallFont;
-            font-style: italic;
-            text-transform: uppercase;
-            text-align: center;
-          }
-          &__big__title {
-            display: block;
-            font-size:( vars.$bigGutter*10);
-            font-family: vars.$largeFont;
-            text-transform: uppercase;
-            text-align: center;
-          } 
-        }
-         &__description {
-            position: absolute;
-            width: 100%;
-            bottom: (vars.$bigGutter)*2;
-            text-align: center;
-            font-size: vars.$smallGutter;
-          }
-      }
-    }
-    &__kikiveu {
-      grid-row: span 3;
-      grid-column: 2;
-      height: 100%;
-      &__block {
         background-image: url('../../assets/images/dev.jpg');
         background-repeat: no-repeat;
         background-position: center;
@@ -155,12 +109,146 @@
           }
       }
     }
-    &__blog {
+    &__wordpress {
       grid-row: span 5;
+      grid-column: 2; 
+      height: 100%;
+      position: relative;
+      &__block {
+        background-image: url('../../assets/images/uxUiProjects/icone_vignette.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: vars.$darkBrown;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        vertical-align: center;
+        width: 100%;
+        position: relative;
+        
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      &__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        backdrop-filter: grayscale(50%) blur(1px) brightness(0.6);
+        -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        &:hover {
+          backdrop-filter: grayscale(30%) blur(0px) brightness(0.9);
+          -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        }
+        &__mainTitle {
+          position: relative;
+          z-index: 10;
+          text-align: center;
+          margin: 0 auto;
+          
+          &__small__title {
+            font-size: (vars.$bigGutter)*1.5;
+            text-transform: uppercase;
+            
+          }
+        }
+         &__description {
+            position: absolute;
+            width: 100%;
+            bottom: (vars.$bigGutter)*2;
+            text-align: center;
+          }
+      }
+    }
+    &__ifps {
+      grid-row: 6/span 4;
+      grid-column: 2; 
+      height: 100%;
+      position: relative;
+      &__block {
+        background-image: url('../../assets/images/uxUiProjects/ifps.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        color: vars.$darkBrown;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        vertical-align: center;
+        width: 100%;
+        position: relative;
+        
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      &__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        backdrop-filter: grayscale(50%) blur(1px) brightness(0.6);
+        -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        &:hover {
+          backdrop-filter: grayscale(30%) blur(0px) brightness(0.9);
+          -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        }
+        &__mainTitle {
+          position: relative;
+          z-index: 10;
+          text-align: center;
+          margin: 0 auto;
+          
+          &__small__title {
+            font-size: (vars.$bigGutter)*1.5;
+            text-transform: uppercase;
+            
+          }
+        }
+         &__description {
+            position: absolute;
+            width: 100%;
+            bottom: (vars.$bigGutter)*2;
+            text-align: center;
+          }
+      }
+    }
+
+    &__illustration{
+      grid-row: 5/span 2;
       grid-column: 1; 
       height: 100%;
+      position: relative;
       &__block {
-        background-image: url('../../assets/images/dev.jpg');
+        background-image: url('../../assets/images/uxUiProjects/illustration_lia_japan_style_vignette.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -171,42 +259,63 @@
         vertical-align: center;
         width: 100%;
         position: relative;
+        
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      &__content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        backdrop-filter: grayscale(50%) blur(1px) brightness(0.6);
+        -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        &:hover {
+          backdrop-filter: grayscale(30%) blur(0px) brightness(0.9);
+          -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        }
         &__mainTitle {
-          display: block;
-          width: 100%;
           position: relative;
           z-index: 10;
+          text-align: center;
+          margin: 0 auto;
+          
           &__small__title {
-            display: block;
             font-size: (vars.$bigGutter)*1.5;
-            font-family: vars.$smallFont;
-            font-style: italic;
             text-transform: uppercase;
-            text-align: center;
+            
           }
-          &__big__title {
-            display: block;
-            font-size:( vars.$bigGutter*10);
-            font-family: vars.$largeFont;
-            text-transform: uppercase;
-            text-align: center;
-          } 
         }
          &__description {
             position: absolute;
             width: 100%;
             bottom: (vars.$bigGutter)*2;
             text-align: center;
-            font-size: vars.$smallGutter;
           }
       }
     }
-    &__api{
-      grid-row: 4/span 5;
-      grid-column: 2;
+    
+    &__affiches {
+      grid-row: 7/span 3;
+      grid-column: 1; 
       height: 100%;
+      position: relative;
       &__block {
-        background-image: url('../../assets/images/dev.jpg');
+        background-image: url('../../assets/images/uxUiProjects/portes_ouvertes_pfps_vignette.jpg');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -217,82 +326,56 @@
         vertical-align: center;
         width: 100%;
         position: relative;
-        &__mainTitle {
-          display: block;
-          width: 100%;
-          position: relative;
-          z-index: 10;
-          &__small__title {
-            display: block;
-            font-size: (vars.$bigGutter)*1.5;
-            font-family: vars.$smallFont;
-            font-style: italic;
-            text-transform: uppercase;
-            text-align: center;
-          }
-          &__big__title {
-            display: block;
-            font-size:( vars.$bigGutter*10);
-            font-family: vars.$largeFont;
-            text-transform: uppercase;
-            text-align: center;
-          } 
+        
+        &:hover {
+          transform: scale(1.2);
         }
-         &__description {
-            position: absolute;
-            width: 100%;
-            bottom: (vars.$bigGutter)*2;
-            text-align: center;
-            font-size: vars.$smallGutter;
-          }
       }
-    }
-    &__toDoList {
-      grid-row: span 3;
-      grid-column: 1;
-      height: 100%;
-      &__block {
-        background-image: url('../../assets/images/dev.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        color: vars.$darkBrown;
+      &__content {
+        position: absolute;
+        width: 100%;
         height: 100%;
+        z-index: 10;
+        top: 0;
+        left: 0;
         display: flex;
         align-items: center;
-        vertical-align: center;
-        width: 100%;
-        position: relative;
+        text-align: center;
+        backdrop-filter: grayscale(50%) blur(1px) brightness(0.6);
+        -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        &:hover {
+          backdrop-filter: grayscale(30%) blur(0px) brightness(0.9);
+          -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+        }
         &__mainTitle {
-          display: block;
-          width: 100%;
           position: relative;
           z-index: 10;
+          text-align: center;
+          margin: 0 auto;
+          
           &__small__title {
-            display: block;
             font-size: (vars.$bigGutter)*1.5;
-            font-family: vars.$smallFont;
-            font-style: italic;
             text-transform: uppercase;
-            text-align: center;
+            
           }
-          &__big__title {
-            display: block;
-            font-size:( vars.$bigGutter*10);
-            font-family: vars.$largeFont;
-            text-transform: uppercase;
-            text-align: center;
-          } 
         }
          &__description {
             position: absolute;
             width: 100%;
             bottom: (vars.$bigGutter)*2;
             text-align: center;
-            font-size: vars.$smallGutter;
           }
       }
     }
+
   }
 }
 
@@ -303,3 +386,4 @@
   transform: scale(0);
   transition: all .2s ease-in-out;
 }
+
