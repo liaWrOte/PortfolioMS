@@ -3,51 +3,40 @@
      {
       "title": "Pitch",
       "data": [
-        "Kikiveu est une application basée sur la géolocalisation qui permet d'organiser et de particper à des balades canines autour de chez soi.",
-        "Projet de fin de formation.",
-        "Équipe de 4 développeurs sur le projet en 21 jours."
+        "En tant qu'intégratrice Wordpress et webdesign chez Cogi-T Québec, il m'a été donné l'occasion de travailler sur plusieurs projets différents",
+        "J'ai intégré des sites vitrines, institutionnels, e-commerce entre autres"
       ]
     },
     {
       "title": "Caractéristiques techniques",
       "data": [
-        "Front : HTML, SCSS (BEM), React, Redux, React Leaflet, Axios, React Router, Yarn",
-        "Back : Symfony, PHP, npm, mySQL, Doctrine, Composer",
-        "Npm, Yarn"
+        "CMS: Wordpress",
+        "Maquettage : Adobe XD"
       ]
     },
     {
       "title": "Mon travail sur le projet",
       "data": [
-        "Product owner de Kikiveu et lead front end developer",
-        "Cahier des charges : Maquettage de l'application (wireframes), charte graphique (logo et icônes), MVP, fonctionnalités, user stories, fichier de routes.",
-        "Mise en place des composants, gestion du state avec React redux",
-        "Requêtes à l'API créée en Symfony avec Axios ",
-        "Sécurisation du formulaire d'inscription en front avec la vérification des champs contrôlés.",
-        "Débuggage du state avec Redux-dev-tools"
+        "Prise de contact avec le client",
+        "Cahier des charges : Maquettage de l'application (wireframes), charte graphique (logo et icônes), MVP, fonctionnalités, user stories",
+        "Recherche et prise de décisions sur le splugins nécessaires",
+        "Intégration sous Wordpress",
+        "Livraison accompagnée d'un kit de ocntinuation pour le client (vidéos de tâches simples, pdf des identifiants de connexion"
       ]
     },
     {
-      "title": "Versionning et organisation",
+      "title": "Organisation",
       "data": [
-        "GIT",
-        "Méthode Agile SCRUM"
+        "Travail par itération",
+        "Retour client à chaque fin d'itération"
       ]
     },
     {
       "title": "Liens",
       "links": [
         {
-          "label": "Voir l'application",
-          "link": "https://kikiveuapp.me/"
-        },
-        {
-          "label": "Voir le code sur GIT",
-          "link":  "https://github.com/liaWrOte/Kikiveu"
-        },
-        {
-          "label": "Voir l'app sur Youtube",
-          "link":  "https://www.youtube.com/watch?v=1zFkeA-Gzek&t=2196s&ab_channel=O%27clock"
+          "label": "Visite Le Temps des Cigales",
+          "link":  "https://www.letempsdescigales.com/"
         }
       ]
     },
@@ -62,39 +51,39 @@
     {
      "title": "Pitch",
      "data": [
-       "Je suis actuellement à la recherche d'un poste de développeur web front-end",
-       "Portfolio réalisé principalement en React pour montrer mes projets de développement"
+       "L'Intitut de Formation aux Professions de Santé de Fougères est rattaché au site du Centre Hospitalier de Fougères.",
+       "L'institut avait donc besoin de sa propre présence sur le web afin d'affirmer sa présence dans la formation des professionels de santé en région Bretagne.",
+       "Le mot d'ordre était d'obtenir une facilité à la recherche d'informations, et un souffle de dynamisme pour séduire un public jeune."
      ]
    },
    {
      "title": "Caractéristiques techniques",
      "data": [
-       "Front : HTML, SCSS (BEM), React, React-animations",
-       "Yarn"
+       "Intégration : Wordpress",
+       "Webdesign et image de marque : Adobe Illustrator, Adobe XD"
      ]
    },
    {
      "title": "Mon travail sur le projet",
      "data": [
-       "Création des composant et micro-composants en React",
-       "Mise en place du SCSS avec la création de variables",
-       "Création de fichiers JSON contenant toutes les data sur mes projets",
-       "Mise en place d'animations de fadeIn avec React-animations",
-       "Mise en place d'animations personnalisées sur la page Home"
+       "Création d'un nouveau logo pour l'institut",
+       "Création de la nouvelle charte graphique",
+       "Présentation de la nouvelle charte au client",
+       "Intégration sous Wordpress d'un site responsive"
      ]
    },
    {
-     "title": "Versionning et organisation",
+     "title": "Organisation",
      "data": [
-       "GIT"
+       "Travail par itération avec le client"
      ]
    },
    {
     "title": "Liens",
     "links": [
       {
-        "label": "Voir le code sur GIT",
-        "link":  "https://github.com/liaWrOte/PortfolioMS"
+        "label": "Voir la maquette interactive",
+        "link":  "https://xd.adobe.com/view/1f72a33f-1723-4f45-ad59-edf0b36fc659-4a21/?fullscreen"
       }
     ]
   },
@@ -109,39 +98,32 @@
   {
    "title": "Pitch",
    "data": [
-     "Portfolio réalisé en 2020 dans le cadre de mon activité de freelance en intégratrice Wordpress et Webdesign",
-     "L'accent a été mis sur les animations pour des missions en motion design"
+     "Illustrations réalisées dans le cadre de mon emploi de Webdesign en freelance",
+     "Je créé aussi des émoticones, des logos",
+     "Je créé des animations avec After Effects",
+     "Je fais aussi de la peinture à l'huile, essentiellement des portraits dont l'essence tourne autour de la couleur"
    ]
  },
  {
    "title": "Caractéristiques techniques",
    "data": [
-     "Front : HTML, SCSS, Jquery, Koala SASS Compiler",
-     "Animations: Gif personnalisés réalisés avec After Effects et Illustrator"
-   ]
- },
- {
-   "title": "Mon travail sur le projet",
-   "data": [
-     "Création de la maquette sur Adobe XD",
-     "Création des animations",
-     "Intégration de la maquette",
-     "Mise en place d'un spinner en svg au chargement du site",
-     "Création d'un carousel avec l'aide des Flexbox"
+     "Illustrations: Adobe Illustrator, Adobe Photoshop",
+     "Peinture: Portraits à la peinture à l'huile",
+     "Animations: Adobe After Effects, Adobe Photoshop"
    ]
  },
  {
   "title": "Liens",
   "links": [
     {
-      "label": "Voir le code sur GIT",
-      "link":  "https://github.com/liaWrOte/Portfolio2020-webdesign-"
+      "label": "Voir mes peintures sur Instagram",
+      "link":  "https://www.instagram.com/lia_foliedouce/"
     }
   ]
 },
 {
   "screenshots" : [
-    "/images/075c72a3e4b9bbfef84f5ee76986ef8a.jpg",
+    "/images/53da690cade2560a6e3c9bbc3e74a7ab.jpg",
       "/images/a8107d8dc82cb82a13883cade78cd245.jpg"
   ]
 }
@@ -150,33 +132,35 @@
   {
    "title": "Pitch",
    "data": [
-     "Portfolio réalisé en 2020 dans le cadre de mon activité de freelance en intégratrice Wordpress et Webdesign",
-     "L'accent a été mis sur les animations pour des missions en motion design"
+     "Affiches réalisées dans le cadre d'un stage de 3 mois réalisées Pôle de Formation des Professionnels de Santé du CHU de rennes ",
+     "À l'occasion de ses portes ouvertes aux futurs étudiants, il avait besoin de faire la promotion de cette nouvelle formation",
+     "Ce duo d'affiches inclusives a également été affiché dans le métro Rennais. La prochaine session de cette formation a trouvé tous ses futurs étudiants.",
+     "Concernant la deuxième affiche, la plage de Trou d'eau à la réunion avait besoin d'un visuel fort pour sa soirée Maloya qui se déroule tous les ans ",
+     "Il a été décidé de créer un montage fort sous Photoshop afin d'attirer l'oeil et d'assoir la soirée comme un évènement incontournable des soirées réunionnaises.",
+     "Cette affiche servira de base graphique aux futurs visuels à destination des réseaux sociaux."
    ]
  },
  {
    "title": "Caractéristiques techniques",
    "data": [
-     "Front : HTML, SCSS, Jquery, Koala SASS Compiler",
-     "Animations: Gif personnalisés réalisés avec After Effects et Illustrator"
+     "Graphisme: Adobe Photoshop"
    ]
  },
  {
    "title": "Mon travail sur le projet",
    "data": [
-     "Création de la maquette sur Adobe XD",
-     "Création des animations",
-     "Intégration de la maquette",
-     "Mise en place d'un spinner en svg au chargement du site",
-     "Création d'un carousel avec l'aide des Flexbox"
+     "Rédaction du cahier des charges avec le client",
+     "Création des visuels sous Photoshop",
+     "Communication avec l'imprimeur",
+     "Retours client pour modifications"
    ]
  },
  {
   "title": "Liens",
   "links": [
     {
-      "label": "Voir le code sur GIT",
-      "link":  "https://github.com/liaWrOte/Portfolio2020-webdesign-"
+      "label": "Le site du PFPS",
+      "link":  "https://www.ifchurennes.fr/"
     }
   ]
 },

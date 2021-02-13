@@ -21,7 +21,7 @@ import iconeScreenshot from '../../assets/images/uxUiProjects/icone_vignette.jpg
 import leTempsDesCigalesScreenshot from '../../assets/images/uxUiProjects/le_temps_des_cigales_vignette.jpg';
 import ifpsScreenshot1 from '../../assets/images/uxUiProjects/ifps.jpg';
 import ifpsScreenshot2 from '../../assets/images/uxUiProjects/ifps_2.jpg';
-import illustrationSreenshot1 from '../../assets/images/uxUiProjects/illustration_lia_japan_style_vignette.jpg';
+import illustrationSreenshot1 from '../../assets/images/uxUiProjects/peinture_lia_3_filles_vignette.jpg';
 import illustrationSreenshot2 from '../../assets/images/uxUiProjects/illustration_lia_saliot_vignette.jpg';
 import afficheScreenshot1 from '../../assets/images/uxUiProjects/portes_ouvertes_pfps_vignette.jpg';
 import afficheScreenshot2 from '../../assets/images/uxUiProjects/black_tropical_woman_lia_vignette.jpg';
@@ -35,7 +35,7 @@ const Project = ({
   // To have the right data in the json file
   const dataInProject = { ...data };
   const dataToMap = dataInProject[projectTitle];
-
+  console.log(illustrationSreenshot1);
   // animations on load
 
   const styles = {
