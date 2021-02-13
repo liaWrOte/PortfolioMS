@@ -4,6 +4,8 @@
 .devProjects {
     display: flex;
     margin-left: (vars.$bigGutter)*5;
+    margin-right: (vars.$bigGutter)*5;
+    max-width: 100%;
     &__squares {
       &__flex {
         display: flex;
@@ -55,7 +57,7 @@
 .devProjects__module {
   grid-template-columns: 1fr 1fr;
   grid-template-rows: repeat(12, 1fr);
-  width: 80vw;
+  width: 100%;
   list-style: none;
   display: grid;
   height: 200vh;
@@ -156,6 +158,8 @@
       transition: all 0.3s ease-in-out;
         }
         &__mainTitle {
+          display: block;
+          width: 100%;
           position: relative;
           z-index: 10;
           text-align: center;
@@ -410,3 +414,67 @@
   transition: all .2s ease-in-out;
 }
 
+// Responsive tablet
+/*=====================================*/
+
+@media (max-width: 1000px) {
+
+  .devProjects__module {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(24, 1fr);
+    height: 340vh;
+    &__square {
+
+      &__devProject {
+        grid-row: span 4;
+      grid-column: 1;
+      height: 100%;
+      }
+
+      &__kikiveu {
+        grid-row: 5/span 4;
+      grid-column: 1;
+      height: 100%;
+      }
+
+      &__portfolio2021 {
+        grid-row: 9/span 4;
+        grid-column: 1;
+        height: 100%;
+      }
+
+      &__api {
+        grid-row: 13/span 4;
+        grid-column: 1;
+        height: 100%;
+      }
+
+      &__toDoList {
+        grid-row: 17/span 4;
+        grid-column: 1;
+        height: 100%;
+      }
+
+      &__portfolio2020 {
+        grid-row: 21/span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+  }
+}
+
+
+/* Responsive smartphone */
+/*=====================================*/
+
+@media (max-width: 562px) {
+
+  .border {
+  	width: 100%;
+  }
+
+  .categories {
+  	display: block;
+  }
+}
+}
