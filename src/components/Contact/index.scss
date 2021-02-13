@@ -202,8 +202,46 @@
           }
           
         }
-        
       }
     }
   }
+
+  // Responsive tablet
+/*=====================================*/
+
+@media (max-width: 1138px) {
+
+  .contact__module {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, 1fr);
+    height: 150vh;
+    &__square {
+
+      &__contact {
+        display: none;
+      }
+
+      &__form {
+        grid-row: span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+
+  }
+}
+
+/* Responsive smartphone */
+/*=====================================*/
+
+@media (max-width: 562px) {
+
+  .border {
+  	width: 100%;
+  }
+
+  .categories {
+  	display: block;
+  }
+}
+}
 
