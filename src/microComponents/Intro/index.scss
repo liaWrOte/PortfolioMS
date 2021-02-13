@@ -26,3 +26,39 @@
   }
 }
 
+@media (max-width: 879px) {
+  .intro {
+    &__name {
+      font-size: (vars.$bigGutter)*4;
+    }
+    &__skills {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      vertical-align: center;
+      margin-bottom: (vars.$smallGutter)/2;
+      &__and {
+        visibility: hidden;
+        font-size: 0px;
+        margin: (vars.$smallGutter)/2;
+      }
+    }
+  }
+  
+}
+
+
+/* Responsive smartphone */
+/*=====================================*/
+
+@media (max-width: 562px) {
+
+  .border {
+  	width: 100%;
+  }
+
+  .categories {
+  	display: block;
+  }
+}
+
