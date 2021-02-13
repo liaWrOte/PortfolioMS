@@ -53,12 +53,32 @@
 
 @media (max-width: 562px) {
 
-  .border {
-  	width: 100%;
-  }
-
-  .categories {
-  	display: block;
+  .intro {
+    &__name {
+      font-size: (vars.$bigGutter)*2;
+    }
+    &__skills {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      vertical-align: center;
+      margin-bottom: (vars.$smallGutter)/2;
+      &__and {
+        visibility: hidden;
+        font-size: 0px;
+        margin: (vars.$smallGutter)/2;
+      }
+    }
   }
 }
 
+@media (max-width: 562px) {
+
+  .intro {
+   margin-left: (vars.$bigGutter);
+   margin-right: (vars.$bigGutter);
+   &__name {
+    font-size: (vars.$bigGutter)*4;
+   }
+  }
+ }

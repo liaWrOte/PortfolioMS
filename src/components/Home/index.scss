@@ -357,12 +357,9 @@ position: relative;
 
 @media (max-width: 562px) {
 
-  .border {
-  	width: 100%;
-  }
-
-  .categories {
-  	display: block;
-  }
+ .home {
+  margin-left: (vars.$bigGutter);
+  margin-right: (vars.$bigGutter);
+ }
 }
 }
