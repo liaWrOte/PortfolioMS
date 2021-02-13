@@ -45,7 +45,13 @@ const App = () =>  {
         </Route>
       </Switch>
       <Route exact path="/projets-dev/kikiveu">
-        <Project data={devProjects} projectTitle="kikiveu" projectDate="2021" />
+        <Project data={devProjects} projectTitle="kikiveu" projectDate="2021" image1="../../assets/images/devProjects/kikiveu_screenshot.png" />
+      </Route>
+      <Route exact path="/projets-dev/portfolio2021">
+        <Project data={devProjects} projectTitle="portfolio 2021" projectDate="" />
+      </Route>
+      <Route exact path="/projets-dev/portfolio2020">
+        <Project data={devProjects} projectTitle="portfolio 2020" projectDate="" />
       </Route>
       <Footer />
     </div>

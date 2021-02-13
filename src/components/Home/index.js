@@ -75,7 +75,6 @@ const Home = () => {
             {/* -- Dev block */}
             <li
               className="home__module__square__dev"
-            
               onMouseEnter={() => onMouseEnterHandlerDev('dev')}
               onMouseLeave={() => onMouseLeaveHandler()}
             >

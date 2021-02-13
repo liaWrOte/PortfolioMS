@@ -37,10 +37,114 @@
     {
       "title": "Liens",
       "links": [
-        "Voir l'application",
-        "Voir le code sur GIT"
+        {
+          "label": "Voir l'application",
+          "link": "https://kikiveuapp.me/"
+        },
+        {
+          "label": "Voir le code sur GIT",
+          "link":  "https://github.com/liaWrOte/Kikiveu"
+        },
+        {
+          "label": "Voir l'app sur Youtube",
+          "link":  "https://www.youtube.com/watch?v=1zFkeA-Gzek&t=2196s&ab_channel=O%27clock"
+        }
+      ]
+    },
+    {
+      "screenshots" : [
+        "/images/6760fb3f94e57f05598dc68004d2378e.png",
+        "/images/7000b10e868a6b741f947b0707596833.png"
       ]
     }
+  ],
+  "portfolio 2021": [
+    {
+     "title": "Pitch",
+     "data": [
+       "Je suis actuellement à la recherche d'un poste de développeur web front-end",
+       "Portfolio réalisé principalement en React pour montrer mes projets de développement"
+     ]
+   },
+   {
+     "title": "Caractéristiques techniques",
+     "data": [
+       "Front : HTML, SCSS (BEM), React, React-animations",
+       "Yarn"
+     ]
+   },
+   {
+     "title": "Mon travail sur le projet",
+     "data": [
+       "Création des composant et micro-composants en React",
+       "Mise en place du SCSS avec la création de variables",
+       "Création de fichiers JSON contenant toutes les data sur mes projets",
+       "Mise en place d'animations de fadeIn avec React-animations",
+       "Mise en place d'animations personnalisées sur la page Home"
+     ]
+   },
+   {
+     "title": "Versionning et organisation",
+     "data": [
+       "GIT"
+     ]
+   },
+   {
+    "title": "Liens",
+    "links": [
+      {
+        "label": "Voir le code sur GIT",
+        "link":  "https://github.com/liaWrOte/PortfolioMS"
+      }
+    ]
+  },
+  {
+    "screenshots" : [
+      "/images/e845cee3febd7d8d3378d5767c2c0efc.png",
+    "/images/fd7008f2498a7ef47e9214d3d97eacd1.png"
+    ]
+  }
+ ],
+ "portfolio 2020": [
+  {
+   "title": "Pitch",
+   "data": [
+     "Portfolio réalisé en 2020 dans le cadre de mon activité de freelance en intégratrice Wordpress et Webdesign",
+     "L'accent a été mis sur les animations pour des missions en motion design"
+   ]
+ },
+ {
+   "title": "Caractéristiques techniques",
+   "data": [
+     "Front : HTML, SCSS, Jquery, Koala SASS Compiler",
+     "Animations: Gif personnalisés réalisés avec After Effects et Illustrator"
+   ]
+ },
+ {
+   "title": "Mon travail sur le projet",
+   "data": [
+     "Création de la maquette sur Adobe XD",
+     "Création des animations",
+     "Intégration de la maquette",
+     "Mise en place d'un spinner en svg au chargement du site",
+     "Création d'un carousel avec l'aide des Flexbox"
+   ]
+ },
+ {
+  "title": "Liens",
+  "links": [
+    {
+      "label": "Voir le code sur GIT",
+      "link":  "https://github.com/liaWrOte/Portfolio2020-webdesign-"
+    }
   ]
+},
+{
+  "screenshots" : [
+    "/images/93d0a221b64cc9c32b490a62c3199a07.png",
+      "/images/149edddc62a000c42e857362a8bb88b9.png"
+  ]
+}
+]
 }
 
