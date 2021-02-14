@@ -467,12 +467,9 @@
 
 @media (max-width: 562px) {
 
-  .border {
-  	width: 100%;
-  }
-
-  .categories {
-  	display: block;
+  .devProjects {
+    margin-right: vars.$bigGutter;
+    margin-left: vars.$bigGutter;
   }
 }
 }

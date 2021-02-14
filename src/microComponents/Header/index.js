@@ -1,6 +1,10 @@
 import React, {
   useEffect, Component, useRef, useState,
 } from 'react';
+import { NavLink } from 'react-router-dom';
+
+// import nav picto
+import navPicto from '../../assets/images/pictos/menu.svg';
 
 import './index.scss';
 
@@ -90,9 +94,11 @@ const Header = () => {
   const toggleMenu = () => {
     if (activeMenu === null) {
       setActiveMenu('active');
+      console.log('was null, now active');
     }
     else {
       setActiveMenu(null);
+      console.log('was active, now null');
     }
   };
 
@@ -114,41 +120,49 @@ const Header = () => {
         </a>
       </div>
       <div className="header__hamburger">
-        <span className="header__hamburger__circle" onClick={() => toggleMenu()} />
+        <span className="header__hamburger__circle" onClick={() => toggleMenu()}>
+          <img src={navPicto} alt="bouton hamburger" className={(activeMenu !== null) ? 'header__hamburger__circle__picto__rotate' : 'header__hamburger__circle__picto'} />
+        </span>
       </div>
 
       <div className="header__modal">
-        <span className={activeMenu ? 'header__modal__circle__grow' : 'header__modal__circle'} />
+        <span className={(activeMenu !== null) ? 'header__modal__circle__grow' : 'header__modal__circle'} />
       </div>
 
-      {/* (activeMenu) !== null && (
-      <div className="header__hamburger__circle__menu ombre_portee">
-        <div className="header__hamburger__circle__menuWrapper">
-          <div className="header__hamburger__circle__menuWrapper__menuLink" data-modal="header__hamburger__circle__menuWrapper__menuLink__menuModal">
-            <span className="header__hamburger__circle__menuWrapper__menuLink__menuModal__menuIcon" />
-          </div>
-          <div className="header__hamburger__circle__menuWrapper__modalMask">
-            <div className="header__hamburger__circle__menuWrapper__modalMask__menuModal">
-              <div className="header__hamburger__circle__menuWrappermodalMask__menuModal__navWrapper">
-                <div className="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav">
-                  <div className="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__logoNav">
-                    <img src="header__hamburger__circle__menuWrapper__./image/logo_lia/logo_oeil_lia.png" alt="header__hamburger__circle__Log lia Web Design" id="header__hamburger__circle__oeil" />
-                    <h1>Lia WebDesign</h1>
-                  </div>
-                  <nav className="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__link">
-                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#">Accueil</a>
-                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#balise_services">Services</a>
-                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#realisations_bloc">Réalisations</a>
-                    <a href="header__hamburger__circle__menuWrapper__modalMask__menuModal__navWrapper__mainNav__#contact">Contact</a>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      ) */}
+      <ul className={(activeMenu !== null) ? 'header__nav__active' : 'header__nav'}>
+        <li className="header__nav__link" onClick={() => toggleMenu()}>
+          <NavLink exact to="/" activeClassName="header__nav__link__selected">
+            HOME
+          </NavLink>
+        </li>
+        <li className="header__nav__link" onClick={() => toggleMenu()}>
+          <NavLink exact to="/projets-dev" activeClassName="header__nav__link__selected">
+            DEV
+          </NavLink>
+        </li>
+        <li className="header__nav__link" onClick={() => toggleMenu()}>
+          <NavLink exact to="/projets-ux-ui" activeClassName="header__nav__link__selected">
+            UX/UI
+          </NavLink>
+        </li>
+        <li className="header__nav__link" onClick={() => toggleMenu()}>
+          <NavLink exact to="/qui-je-suis" activeClassName="header__link__selected">
+            QUI JE SUIS
+          </NavLink>
+        </li>
+        <li className="header__nav__link" onClick={() => toggleMenu()}>
+          <NavLink exact to="/contact" activeClassName="header__link__selected">
+            CONTACT
+          </NavLink>
+        </li>
+        <li className="header__nav__link" />
+        <a href="https://github.com/liaWrOte" target="_blank" rel="noreferrer noopener">
+          <li className="header__nav__link" onClick={() => toggleMenu()}>GIT</li>
+        </a>
+        <a href="https://www.linkedin.com/in/sandrinemze/" target="_blank" rel="noreferrer noopener">
+          <li className="header__nav__link" onClick={() => toggleMenu()}>LINKEDIN</li>
+        </a>
+      </ul>
 
     </ul>
   );

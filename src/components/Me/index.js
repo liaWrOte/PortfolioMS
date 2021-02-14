@@ -1,12 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 
 // Components
-import Header from '../../microComponents/Header';
-import Aside from '../../microComponents/Aside';
-import Footer from '../../microComponents/Footer';
-import Intro from '../../microComponents/Intro';
 import BigSquaredTag from '../../microComponents/BigSquaredTag';
 import SmallTag from '../../microComponents/SmallTag';
 import BigButton from '../../microComponents/BigButton';
@@ -14,19 +10,19 @@ import BigButton from '../../microComponents/BigButton';
 import './index.scss';
 
 const Me = () => {
-    // animations on load
+  // animations on load
 
-    const styles = {
-      fadeIn: {
-        animation: 'x 1s',
-        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
-      },
-    };
+  const styles = {
+    fadeIn: {
+      animation: 'x 1s',
+      animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+    },
+  };
 
   return (
     <>
-    <StyleRoot>
-      <div className="me" style={styles.fadeIn}>
+      <StyleRoot>
+        <div className="me" style={styles.fadeIn}>
           <ul className="me__module">
 
             {/* -- Me block */}
@@ -44,8 +40,8 @@ const Me = () => {
             <li className="me__module__square__aspirations">
               <div className="me__module__square__aspirations__block">
                 <p className="me__module__square__aspirations__block__description">
-                  « Après deux formations consécutives en tant de Développeur web et de Web designer et 3 ans d’expérience en tant qu’intégratice Wordpress, <br/> je suis à la recherche d’un poste de <br/>développeur web front-end sur Rennes et sa région.
-                  <br/><br/>Passionnée par la création d'expériences utilisateur digitales, mes qualités créatives et d'organisation me rendent polyvalente dans le développement d'applications web »
+                  « Après deux formations consécutives en tant de Développeur web et de Web designer et 3 ans d’expérience en tant qu’intégratice Wordpress, <br /> je suis à la recherche d’un poste de <br />développeur web front-end sur Rennes et sa région.
+                  <br /><br />Passionnée par la création d'expériences utilisateur digitales, mes qualités créatives et d'organisation me rendent polyvalente dans le développement d'applications web »
                 </p>
               </div>
             </li>
@@ -143,7 +139,7 @@ const Me = () => {
             </li>
           </ul>
         </div>
-        </StyleRoot>
+      </StyleRoot>
     </>
   );
 };

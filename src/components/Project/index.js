@@ -27,7 +27,7 @@ import illustrationSreenshot2 from '../../assets/images/uxUiProjects/illustratio
 import afficheScreenshot1 from '../../assets/images/uxUiProjects/portes_ouvertes_pfps_vignette.jpg';
 import afficheScreenshot2 from '../../assets/images/uxUiProjects/black_tropical_woman_lia_vignette.jpg';
 
-
+// import css
 import './index.scss';
 
 const Project = ({
@@ -36,9 +36,8 @@ const Project = ({
   // To have the right data in the json file
   const dataInProject = { ...data };
   const dataToMap = dataInProject[projectTitle];
-  console.log(illustrationSreenshot1);
-  // animations on load
 
+  // animations on load
   const styles = {
     fadeIn: {
       animation: 'x 1s',
@@ -95,12 +94,7 @@ const Project = ({
 
   useEffect(() => {
     if (allImages !== null) {
-      console.log('allimages:', allImages);
-      console.log('screenshotsData:', screenshotsData.screenshots[0]);
-      console.log(allImages[screenshotsData.screenshots[0]]);
-      console.log(allImages.diff(screenshotsData.screenshots));
       setImagesToShow(allImages.diff(screenshotsData.screenshots));
-      console.log(imagesToShow);
     }
   }, [allImages]);
 
@@ -159,8 +153,7 @@ const Project = ({
                       );
                     } if (array.length - 1 === i) {
                       return (
-                        <>
-                        </>
+                        <div key={Math.random()} />
                       );
                     }
                     // else display text
@@ -178,7 +171,7 @@ const Project = ({
                 )}
                 <GoBackButton />
               </div>
-              
+
             </li>
           </ul>
         </div>

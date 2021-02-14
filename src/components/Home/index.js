@@ -3,17 +3,11 @@ import { Link } from 'react-router-dom';
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 
-// Components
-import Header from '../../microComponents/Header';
-import Aside from '../../microComponents/Aside';
-import Footer from '../../microComponents/Footer';
-import Intro from '../../microComponents/Intro';
-
 // import images
 import eyes from '../../assets/images/eye_3.svg';
 import stars from '../../assets/images/stars_8.svg';
 import diamonds from '../../assets/images/diamonds_5.svg';
-import lights from '../../assets/images/lights_1.svg';
+import lights from '../../assets/images/lights_3.svg';
 
 import './index.scss';
 
@@ -49,7 +43,6 @@ const Home = () => {
   };
 
   const onMouseLeaveHandler = () => {
-    console.log('leave');
     setAnimationDev(false);
     setAnimationMe(false);
     setAnimationBlog(false);
@@ -93,7 +86,6 @@ const Home = () => {
             {/* -- Me block */}
             <li
               className="home__module__square__me"
-            
               onMouseEnter={() => onMouseEnterHandlerMe(('me'))}
               onMouseLeave={() => onMouseLeaveHandler()}
             >

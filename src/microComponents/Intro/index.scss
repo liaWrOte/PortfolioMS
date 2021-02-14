@@ -77,6 +77,17 @@
   .intro {
    margin-left: (vars.$bigGutter);
    margin-right: (vars.$bigGutter);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin: 0 auto;
+   &__skills {
+     display: flex;
+     flex-direction: column;
+     align-items: center;;
+   }
+
    &__name {
     font-size: (vars.$bigGutter)*4;
    }
