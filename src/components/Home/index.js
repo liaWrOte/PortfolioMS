@@ -13,7 +13,7 @@ import Intro from '../../microComponents/Intro';
 import eyes from '../../assets/images/eye_3.svg';
 import stars from '../../assets/images/stars_8.svg';
 import diamonds from '../../assets/images/diamonds_5.svg';
-import lights from '../../assets/images/lights_1.svg';
+import lights from '../../assets/images/lights_3.svg';
 
 import './index.scss';
 
