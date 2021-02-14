@@ -178,3 +178,63 @@
     }
   }
 
+  /* Responsive smartphone */
+/*=====================================*/
+
+@media (max-width: 1000px) {
+
+ 
+
+  .project__module {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    width: 100%;
+    list-style: none;
+    display: grid;
+    height: auto;
+    &__square {
+      &__project {
+        grid-row: 7/span 3;
+      grid-column: 1;
+      }
+      &__image {
+        grid-row: 10/span 3;
+      grid-column: 1;
+      }
+      &__description {
+        grid-row: span 6;
+      grid-column: 1;
+      }
+    }
+
+}
+}
+
+@media (max-width: 562px) {
+
+  .project{
+    display: flex;
+    margin-left: vars.$bigGutter;
+    margin-right: vars.$bigGutter;
+  }
+
+  .intro {
+   margin-left: (vars.$bigGutter);
+   margin-right: (vars.$bigGutter);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   margin: 0 auto;
+   &__skills {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+   }
+
+   &__name {
+    font-size: (vars.$bigGutter)*4;
+   }
+  }
+ }
+

@@ -269,12 +269,71 @@
 
 @media (max-width: 562px) {
 
-  .border {
-  	width: 100%;
+  .me {
+    margin-right: vars.$bigGutter;
+    margin-left: vars.$bigGutter;
   }
 
-  .categories {
-  	display: block;
+  .me__module {
+    height: 600vh;
+    grid-template-rows: repeat(17, 1fr);
+    &__square {
+
+      &__me {
+        grid-row: span 2;
+      grid-column: 1;
+      height: 100%;
+      }
+
+      &__aspirations {
+        grid-row: 3/span 3;
+        grid-column: 1;
+        height: 100%;
+        &__block {
+          padding: vars.$smallGutter;
+        }
+      }
+
+      &__competences {
+        grid-row: 10/span 3;
+        grid-column: 1;
+        height: 100%;
+        &__block {
+          padding: vars.$smallGutter;
+          padding-top: (vars.$bigGutter) * 2;
+        }
+      }
+
+      &__experience {
+        grid-row: 6/span 4;
+        grid-column: 1;
+        height: 100%;
+        &__block {
+          padding: vars.$smallGutter;
+          padding-top: (vars.$bigGutter) * 2;
+        }
+      }
+
+      &__hobbies {
+        grid-row: 16/span 2;
+        grid-column: 1;
+        height: 100%;
+        &__block {
+          padding: vars.$smallGutter;
+          padding-top: (vars.$bigGutter) * 2;
+        }
+      }
+
+      &__formation {
+        grid-row: 13/span 3;
+        grid-column: 1;
+        height: 100%;
+        &__block {
+          padding: vars.$smallGutter;
+          padding-top: (vars.$bigGutter) * 2;
+        }
+      }
   }
+}
 }
 }

@@ -213,8 +213,8 @@
 
   .contact__module {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(10, 1fr);
-    height: 150vh;
+    grid-template-rows: repeat(5, 1fr);
+    height: 75vh;
     &__square {
 
       &__contact {
@@ -235,13 +235,27 @@
 
 @media (max-width: 562px) {
 
-  .border {
-  	width: 100%;
+  .contact {
+    margin-right: vars.$bigGutter;
+    margin-left: vars.$bigGutter;
   }
+  .contact__module {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 75vh;
+    &__square {
 
-  .categories {
-  	display: block;
+      &__contact {
+        display: none;
+      }
+
+      &__form {
+        grid-row: span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+
   }
 }
 }
-
+}

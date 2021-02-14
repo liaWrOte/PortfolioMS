@@ -82,7 +82,7 @@ const DevProjects = () => {
             <li className="devProjects__module__square__api">
               <div className="devProjects__module__square__api__block">
                 <h2 className="devProjects__module__square__api__block__mainTitle">
-                  <span className="devProjects__module__square__api__block__mainTitle__small__title">Git API</span>
+                  <span className="devProjects__module__square__api__block__mainTitle__small__title">Git API<br />(À venir)</span>
                 </h2>
                 <p className="devProjects__module__square__api__block__description">HTML/CSS/Javascript/Ajax</p>
               </div>
@@ -92,7 +92,7 @@ const DevProjects = () => {
             <li className="devProjects__module__square__toDoList">
               <div className="devProjects__module__square__toDoList__block">
                 <h2 className="devProjects__module__square__toDoList__block__mainTitle">
-                  <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">To do list</span>
+                  <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">To do list<br /> (À venir)</span>
                 </h2>
                 <p className="devProjects__module__square__toDoList__block__description">HTML/CSS/Javascript</p>
               </div>

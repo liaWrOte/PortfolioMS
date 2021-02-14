@@ -61,6 +61,9 @@
     &__header {
       display: none;
     }
+    &__nav {
+      display: none;
+    }
 }
 
 @media (max-width: 562px) {
@@ -125,6 +128,7 @@
       transition: transform .2s ease-in-out;
      }
      }
+     
     }
 
     &__nav {
