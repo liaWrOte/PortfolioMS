@@ -3,30 +3,24 @@ import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 
 // Components
-import Header from '../../microComponents/Header';
-import Aside from '../../microComponents/Aside';
-import Footer from '../../microComponents/Footer';
-import Intro from '../../microComponents/Intro';
-import BigSquaredTag from '../../microComponents/BigSquaredTag';
-import SmallTag from '../../microComponents/SmallTag';
 import BigButton from '../../microComponents/BigButton';
 
 import './index.scss';
 
 const Contact = () => {
-    // animations on load
+  // animations on load
 
-    const styles = {
-      fadeIn: {
-        animation: 'x 1s',
-        animationName: Radium.keyframes(fadeIn, 'fadeIn'),
-      },
-    };
+  const styles = {
+    fadeIn: {
+      animation: 'x 1s',
+      animationName: Radium.keyframes(fadeIn, 'fadeIn'),
+    },
+  };
 
   return (
     <>
-    <StyleRoot>
-      <div className="contact">
+      <StyleRoot>
+        <div className="contact">
           <ul className="contact__module">
 
             {/* -- contact block */}
@@ -76,7 +70,7 @@ const Contact = () => {
 
           </ul>
         </div>
-        </StyleRoot>
+      </StyleRoot>
     </>
   );
 };

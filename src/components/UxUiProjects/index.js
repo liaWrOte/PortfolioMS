@@ -1,18 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 import { Link } from 'react-router-dom';
 
 // Components
-import Header from '../../microComponents/Header';
-import Aside from '../../microComponents/Aside';
-import Footer from '../../microComponents/Footer';
-import Intro from '../../microComponents/Intro';
-import BigSquaredTag from '../../microComponents/BigSquaredTag';
 import BigRoundedTag from '../../microComponents/BigRoundedTag';
 import SmallTag from '../../microComponents/SmallTag';
-import BigButton from '../../microComponents/BigButton';
 
+// import css
 import './index.scss';
 
 const UxUiProjects = () => {

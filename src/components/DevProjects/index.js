@@ -4,13 +4,8 @@ import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
 
 // Components
-import Header from '../../microComponents/Header';
-import Aside from '../../microComponents/Aside';
-import Footer from '../../microComponents/Footer';
-import Intro from '../../microComponents/Intro';
 import BigRoundedTag from '../../microComponents/BigRoundedTag';
 import SmallTag from '../../microComponents/SmallTag';
-import BigButton from '../../microComponents/BigButton';
 
 import './index.scss';
 
