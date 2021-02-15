@@ -21,7 +21,7 @@ import devProjects from '../../data/devProjects.json';
 import uxUiProjects from '../../data/uxUiProjects.json';
 
 // == Composant
-const App = () =>  (
+const App = () => (
   <div className="app">
     <Aside />
     <Header />

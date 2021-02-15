@@ -317,7 +317,7 @@ position: relative;
 // Responsive tablet
 /*=====================================*/
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
   .home__module {
     grid-template-columns: 1fr;
@@ -355,7 +355,7 @@ position: relative;
 /* Responsive smartphone */
 /*=====================================*/
 
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
 
  .home {
   margin-left: (vars.$bigGutter);

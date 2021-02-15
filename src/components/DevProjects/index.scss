@@ -415,7 +415,7 @@
 // Responsive tablet
 /*=====================================*/
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
   .devProjects__module {
     grid-template-columns: 1fr;
@@ -465,7 +465,7 @@
 /* Responsive smartphone */
 /*=====================================*/
 
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
 
   .devProjects {
     margin-right: vars.$bigGutter;
