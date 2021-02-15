@@ -236,5 +236,9 @@
     font-size: (vars.$bigGutter)*4;
    }
   }
+
+  * {
+    font-family: vars.$smallFont;
+  }
  }
 

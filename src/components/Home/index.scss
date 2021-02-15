@@ -361,5 +361,8 @@ position: relative;
   margin-left: (vars.$bigGutter);
   margin-right: (vars.$bigGutter);
  }
+ .bigTitle {
+   font-size: (vars.$bigGutter)*4;
+ }
 }
 }
