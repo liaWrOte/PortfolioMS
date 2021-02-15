@@ -30,7 +30,7 @@ const Me = () => {
               <div className="me__module__square__me__block">
                 <h2 className="me__module__square__me__block__mainTitle">
                   <span className="me__module__square__me__block__mainTitle__small__title">Qui je</span>
-                  <span className="me__module__square__me__block__mainTitle__big__title">Suis</span>
+                  <span className="me__module__square__me__block__mainTitle__big__title bigTitle">Suis</span>
                 </h2>
                 <p className="me__module__square__me__block__description">Aptitudes & aspirations</p>
               </div>

@@ -23,7 +23,7 @@ const Intro = () => {
 
   return (
     <div className="intro">
-      <h1 className="intro__name" >SANDRINE M'ZE</h1>
+      <h1 className="intro__name bigTitle">SANDRINE M'ZE</h1>
       <div className="intro__skills">
         <BigSquaredTag text={devText} />
         <p className="intro__skills__and">&</p>

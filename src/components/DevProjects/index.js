@@ -30,7 +30,7 @@ const DevProjects = () => {
               <div className="devProjects__module__square__devProjects__block">
                 <h2 className="devProjects__module__square__devProjects__block__mainTitle">
                   <span className="devProjects__module__square__devProjects__block__mainTitle__small__title">Projets</span>
-                  <span className="devProjects__module__square__devProjects__block__mainTitle__big__title">Dev</span>
+                  <span className="devProjects__module__square__devProjects__block__mainTitle__big__title bigTitle">Dev</span>
                 </h2>
                 <p className="devProjects__module__square__devProjects__block__description">Explorez mes projets</p>
               </div>
