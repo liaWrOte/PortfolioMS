@@ -1,0 +1,63 @@
+@use '../../styles/vars';
+
+
+.legal {
+    display: flex;
+    flex-direction: column;
+    margin-left: (vars.$bigGutter)*5;
+    margin-right: (vars.$bigGutter)*5;
+  }
+
+  // Responsive tablet
+/*=====================================*/
+
+@media (max-width: 1138px) {
+
+  .legal {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 75vh;
+    &__square {
+
+      &__contact {
+        display: none;
+      }
+
+      &__form {
+        grid-row: span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+
+  }
+}
+
+/* Responsive smartphone */
+/*=====================================*/
+
+@media (max-width: 562px) {
+
+  .contact {
+    margin-right: vars.$bigGutter;
+    margin-left: vars.$bigGutter;
+  }
+  .contact__module {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    height: 75vh;
+    &__square {
+
+      &__contact {
+        display: none;
+      }
+
+      &__form {
+        grid-row: span 5;
+        grid-column: 1;
+        height: 100%;
+      }
+
+  }
+}
+}
+}
