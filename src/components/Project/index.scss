@@ -181,7 +181,7 @@
   /* Responsive smartphone */
 /*=====================================*/
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
  
 
@@ -210,7 +210,7 @@
 }
 }
 
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
 
   .project{
     display: flex;

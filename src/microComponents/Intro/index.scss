@@ -26,7 +26,7 @@
   }
 }
 
-@media (max-width: 879px) {
+@media screen and (max-width: 879px) {
   .intro {
     &__name {
       font-size: (vars.$bigGutter)*4;
@@ -51,7 +51,7 @@
 /* Responsive smartphone */
 /*=====================================*/
 
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
 
   .intro {
     &__name {
@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
 
   .intro {
    margin-left: (vars.$bigGutter);

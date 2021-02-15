@@ -391,7 +391,7 @@
   // Responsive tablet
 /*=====================================*/
 
-@media (max-width: 1138px) {
+@media screen and (max-width: 1138px) {
 
   .uxUiProjects__module {
     grid-template-columns: 1fr;
@@ -435,7 +435,7 @@
 /* Responsive smartphone */
 /*=====================================*/
 
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
 
   .uxUiProjects {
     margin-right: vars.$bigGutter;

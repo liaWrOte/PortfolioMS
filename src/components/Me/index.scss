@@ -218,7 +218,7 @@
 // Responsive tablet
 /*=====================================*/
 
-@media (max-width: 1138px) {
+@media screen and (max-width: 1138px) {
 
   .me__module {
     grid-template-columns: 1fr;
@@ -267,7 +267,7 @@
 /* Responsive smartphone */
 /*=====================================*/
 
-@media (max-width: 562px) {
+@media screen and (max-width: 562px) {
 
   .me {
     margin-right: vars.$bigGutter;
