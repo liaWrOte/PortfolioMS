@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './index.scss';
 
 const Footer = () => (
   <ul className="footer">
-    <li className="footer__link">Légal</li>
-    <li className="footer__link">Privacy</li>
-    <li className="footer__link">Cookies</li>
+    <Link to="/mentions-legales">
+      <li className="footer__link">Mentions Légales</li>
+    </Link>
   </ul>
 );
 

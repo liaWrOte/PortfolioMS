@@ -14,6 +14,7 @@ import Aside from '../../microComponents/Aside';
 import Header from '../../microComponents/Header';
 import Intro from '../../microComponents/Intro';
 import Footer from '../../microComponents/Footer';
+import Legal from '../Legal';
 
 // import data projects
 import devProjects from '../../data/devProjects.json';
@@ -40,6 +41,9 @@ const App = () =>  (
       </Route>
       <Route exact path="/contact">
         <Contact />
+      </Route>
+      <Route exact path="/mentions-legales">
+        <Legal />
       </Route>
     </Switch>
     <Route exact path="/projets-dev/kikiveu">
