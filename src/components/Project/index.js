@@ -80,6 +80,22 @@ const Project = ({
     }
   }, [screenshotsData]);
 
+/*  Array.prototype.diff = function (arr2) {
+    const ret = [];
+    this.sort();
+    arr2.sort();
+    for (let i = 0; i < this.length; i += 1) {
+      if (arr2.indexOf(this[i]) > -1) {
+        ret.push(this[i]);
+        for(let j = 0; j < globalThis.length; j += 1) {
+          console.log(arr2.indexOf(ret));
+        }
+        
+      }
+    }
+    return ret;
+  };*/
+
   Array.prototype.diff = function (arr2) {
     const ret = [];
     this.sort();
@@ -87,14 +103,19 @@ const Project = ({
     for (let i = 0; i < this.length; i += 1) {
       if (arr2.indexOf(this[i]) > -1) {
         ret.push(this[i]);
+        for(let j = 0; j < globalThis.length; j += 1) {
+          console.log(arr2.indexOf(ret));
+        }    
       }
     }
     return ret;
   };
 
+
   useEffect(() => {
     if (allImages !== null) {
       setImagesToShow(allImages.diff(screenshotsData.screenshots));
+
     }
   }, [allImages]);
 
@@ -109,7 +130,7 @@ const Project = ({
                 <div
                   className="project__module__square__project__block"
                   style={{
-                    backgroundImage: `url(${imagesToShow[0]})`,
+                    backgroundImage: `url(${allImages[allImages.indexOf(screenshotsData.screenshots[0])]})`,
                     color: 'green',
                     zIndex: 20,
                   }}
@@ -120,7 +141,7 @@ const Project = ({
                 <div
                   className="project__module__square__image__block"
                   style={{
-                    backgroundImage: `url(${imagesToShow[1]})`,
+                    backgroundImage: `url(${allImages[allImages.indexOf(screenshotsData.screenshots[1])]})`,
                     color: 'green',
                     zIndex: 20,
                   }}

@@ -42,8 +42,8 @@
     },
     {
       "screenshots" : [
-        "/images/10f0830e997f40c8b138198763e0c4df.jpg",
-        "/images/27431b8ada7739a4733332f4d12b988d.jpg"
+        "./images/10f0830e997f40c8b138198763e0c4df.jpg",
+        "./images/27431b8ada7739a4733332f4d12b988d.jpg"
       ]
     }
   ],
@@ -89,8 +89,8 @@
   },
   {
     "screenshots" : [
-      "/images/149c0e5135e2736b5370343fbfb52352.jpg",
-      "/images/92de2945cc3461cd04d06eb02b9d18d9.jpg"
+      "./images/149c0e5135e2736b5370343fbfb52352.jpg",
+      "./images/92de2945cc3461cd04d06eb02b9d18d9.jpg"
     ]
   }
  ],
@@ -166,8 +166,8 @@
 },
 {
   "screenshots" : [
-    "/images/5618473da23e5498af4ab51613144234.jpg",
-      "/images/eefe4fb6ae1f69a373d89f5e34e72159.jpg"
+    "./images/5618473da23e5498af4ab51613144234.jpg",
+      "./images/eefe4fb6ae1f69a373d89f5e34e72159.jpg"
   ]
 }
 ]

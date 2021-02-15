@@ -53,8 +53,8 @@
     },
     {
       "screenshots" : [
-        "/images/6760fb3f94e57f05598dc68004d2378e.png",
-        "/images/7000b10e868a6b741f947b0707596833.png"
+        "./images/6760fb3f94e57f05598dc68004d2378e.png",
+        "./images/7000b10e868a6b741f947b0707596833.png"
       ]
     }
   ],
@@ -100,8 +100,8 @@
   },
   {
     "screenshots" : [
-      "/images/e845cee3febd7d8d3378d5767c2c0efc.png",
-    "/images/fd7008f2498a7ef47e9214d3d97eacd1.png"
+      "./images/e845cee3febd7d8d3378d5767c2c0efc.png",
+    "./images/fd7008f2498a7ef47e9214d3d97eacd1.png"
     ]
   }
  ],
@@ -141,8 +141,8 @@
 },
 {
   "screenshots" : [
-    "/images/93d0a221b64cc9c32b490a62c3199a07.png",
-      "/images/149edddc62a000c42e857362a8bb88b9.png"
+    "./images/93d0a221b64cc9c32b490a62c3199a07.png",
+      "./images/149edddc62a000c42e857362a8bb88b9.png"
   ]
 }
 ]
