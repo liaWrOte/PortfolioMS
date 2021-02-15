@@ -12,7 +12,7 @@ module.exports = merge(common, {
   output: {
     path: paths.build,
     publicPath: './',
-    filename: 'js/[name].[contenthash].js',
+    filename: './js/[name].[contenthash].js',
   },
   plugins: [
     new MiniCssExtractPlugin({

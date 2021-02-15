@@ -115,7 +115,6 @@ const Project = ({
   useEffect(() => {
     if (allImages !== null) {
       setImagesToShow(allImages.diff(screenshotsData.screenshots));
-
     }
   }, [allImages]);
 
