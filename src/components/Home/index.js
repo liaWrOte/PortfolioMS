@@ -75,7 +75,7 @@ const Home = () => {
                 <div className="home__module__square__dev__block">
                   <h2 className="home__module__square__dev__block__mainTitle">
                     <span className="home__module__square__dev__block__mainTitle__small__title">Projets</span>
-                    <span className="home__module__square__dev__block__mainTitle__big__title">Dev</span>
+                    <span className="home__module__square__dev__block__mainTitle__big__title bigTitle">Dev</span>
                   </h2>
                   <img className={animateDev ? cssExpand : 'cssDefault'} src={eyes} alt="circle animation" />
                   <p className="home__module__square__dev__block__description">Explorez mes projets</p>
