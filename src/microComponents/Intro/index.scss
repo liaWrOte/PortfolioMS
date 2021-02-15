@@ -88,8 +88,9 @@
      align-items: center;;
    }
 
-   &__name {
+  }
+
+  .bigTitle {
     font-size: (vars.$bigGutter)*4;
-   }
   }
  }

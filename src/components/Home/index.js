@@ -93,7 +93,7 @@ const Home = () => {
                 <div className="home__module__square__me__block">
                   <h2 className="home__module__square__me__block__mainTitle">
                     <span className="home__module__square__me__block__mainTitle__small__title">Qui je</span>
-                    <span className="home__module__square__me__block__mainTitle__big__title">Suis</span>
+                    <span className="home__module__square__me__block__mainTitle__big__title bigTitle">Suis</span>
                   </h2>
                   <img className={animateMe ? cssExpand : 'cssDefault'} src={stars} alt="circle animation" />
                   <p className="home__module__square__me__block__description">Aptitudes & aspirations</p>
@@ -107,7 +107,7 @@ const Home = () => {
                 <div className="home__module__square__uxUi__block">
                   <h2 className="home__module__square__uxUi__block__mainTitle">
                     <span className="home__module__square__uxUi__block__mainTitle__small__title">Projets</span>
-                    <span className="home__module__square__uxUi__block__mainTitle__big__title">UX / UI</span>
+                    <span className="home__module__square__uxUi__block__mainTitle__big__title bigTitle">UX / UI</span>
                   </h2>
                   <img className={animateBlog ? cssExpand : 'cssDefault'} src={diamonds} alt="circle animation" />
                   <p className="home__module__square__uxUi__block__description">Design, illustrations</p>
@@ -121,7 +121,7 @@ const Home = () => {
                 <div className="home__module__square__contact__block">
                   <h2 className="home__module__square__contact__block__mainTitle">
                     <span className="home__module__square__contact__block__mainTitle__small__title">Contactez</span>
-                    <span className="home__module__square__contact__block__mainTitle__big__title">Moi</span>
+                    <span className="home__module__square__contact__block__mainTitle__big__title bigTitle">Moi</span>
                   </h2>
                   <img className={animateContact ? cssExpand : 'cssDefault'} src={lights} alt="circle animation" />
                   <p className="home__module__square__contact__block__description">Et rencontrons-nous</p>

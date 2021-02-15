@@ -441,6 +441,9 @@
     margin-right: vars.$bigGutter;
     margin-left: vars.$bigGutter;
   }
+  .bigTitle {
+    font-size: (vars.$bigGutter)*4;
+  }
 }
 }
 
