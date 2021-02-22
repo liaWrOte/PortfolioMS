@@ -165,7 +165,7 @@ const Project = ({
                         <div key={Math.random()}>
                           <SmallTag text={item.title} key={Math.random()} />
                           {item.links.map((subItem) => (
-                            <div key={Math.random()}>
+                            <div key={Math.random()} className="project__module__square__description__block__button">
                               <BigButton text={subItem.label} link={subItem.link} key={Math.random()} />
                             </div>
                           ))}

@@ -1,23 +1,27 @@
 @use '../../styles/vars';
 
-.bigButton{
-  text-transform: uppercase;
-  color: vars.$darkBrown;
-  background-color: vars.$yellow;
-  font-size: vars.$bigGutter;
-  font-weight: 500;
-  font-size: vars.$smallGutter;
-  border: solid 2px vars.$yellow;
-  border-radius: vars.$smallGutter;
-  padding: (vars.$smallGutter)/2 vars.$smallGutter;
-  font-weight: 700;
-  margin-top: vars.$smallGutter;
-  margin-bottom: vars.$bigGutter;
-  transition: all .2s ease-in-out;
-  float: right;
-  border: 2px solid vars.$orange;
-  &:hover {
-    box-shadow: 5px 5px 2px 1px vars.$darkBrown;
+.bigButton {
+  display: block;
+  &__item {
+    text-transform: uppercase;
+    color: vars.$darkBrown;
+    background-color: vars.$yellow;
+    font-size: vars.$bigGutter;
+    font-weight: 500;
+    font-size: vars.$smallGutter;
+    border: solid 2px vars.$yellow;
+    border-radius: vars.$smallGutter;
+    padding: (vars.$smallGutter)/2 vars.$smallGutter;
+    font-weight: 700;
+    margin-top: vars.$smallGutter;
+    margin-bottom: vars.$bigGutter;
     transition: all .2s ease-in-out;
+    float: right;
+    border: 2px solid vars.$orange;
+    &:hover {
+      box-shadow: 5px 5px 2px 1px vars.$darkBrown;
+      transition: all .2s ease-in-out;
+    }
   }
+ 
 }

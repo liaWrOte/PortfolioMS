@@ -1,7 +1,7 @@
 @use '../../styles/vars';
 
 
-.project{
+.project {
     display: flex;
     margin-left: (vars.$bigGutter)*5;
     margin-right: (vars.$bigGutter)*5;
@@ -172,6 +172,10 @@
           &__date {
             align-self: flex-end;
             }
+          }
+          &__button {
+            display: flex;
+            align-items: flex-end;
           }
         } 
       }
