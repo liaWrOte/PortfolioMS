@@ -2,10 +2,10 @@
 
 .aside {
   position : fixed;
-  height: 90%;
+  height: 90vh;
   display: flex;
   flex-direction: column-reverse;
-  bottom: 0;
+  bottom: -3rem;
   justify-content: flex-start;
   width: (vars.$bigGutter)*5;
     &__link {
@@ -34,5 +34,12 @@
 
   .aside {
     display: none;
+}
+}
+
+@media screen and (max-height: 713px) {
+
+  .aside {
+    font-size: (vars.$bigGutter)/2;
 }
 }

@@ -6,6 +6,9 @@
     flex-direction: column;
     margin-left: (vars.$bigGutter)*5;
     margin-right: (vars.$bigGutter)*5;
+    background-color: vars.$lightBrown;
+    padding: (vars.$bigGutter)*2;
+    height: auto;
   }
 
   // Responsive tablet
@@ -16,7 +19,10 @@
   .legal {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5, 1fr);
-    height: 75vh;
+    height: auto;
+    margin-left: vars.$bigGutter;
+    margin-right: vars.$bigGutter;
+    padding: vars.$smallGutter;
     &__square {
 
       &__contact {
