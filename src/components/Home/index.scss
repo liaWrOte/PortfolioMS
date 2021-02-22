@@ -24,7 +24,7 @@
             align-items: center;
 
             &__top {
-              font-family: vars.$smallFont;
+              font-family:vars.$smallFont;
               color: vars.$darkBrown;
               text-transform: uppercase;
               font-style: italic;
@@ -366,3 +366,16 @@ position: relative;
  }
 }
 }
+
+@media screen and (max-height: 862px) {
+  .bigTitle {
+    font-size: (vars.$bigGutter)*6;
+  }
+ }
+ 
+ @media screen and (max-height: 720px) {
+  .bigTitle {
+    font-size: (vars.$smallGutter)*7;
+  }
+ }
+
