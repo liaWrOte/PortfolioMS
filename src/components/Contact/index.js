@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { fadeIn } from 'react-animations';
 import Radium, { StyleRoot } from 'radium';
+// make contact form send to mailbox with form spree
+import { useForm, ValidationError } from '@formspree/react';
 
 // Components
 import BigButton from '../../microComponents/BigButton';
@@ -9,7 +11,6 @@ import './index.scss';
 
 const Contact = () => {
   // animations on load
-
   const styles = {
     fadeIn: {
       animation: 'x 1s',
@@ -17,9 +18,16 @@ const Contact = () => {
     },
   };
 
+  // wire up the form component
+  const [state, handleSubmit] = useForm('contactForm');
+  if (state.succeeded) {
+    return <p>Thanks for joining!</p>;
+  }
+
   return (
     <>
       <StyleRoot>
+
         <div className="contact">
           <ul className="contact__module">
 
@@ -37,7 +45,8 @@ const Contact = () => {
             {/* -- Form block */}
             <li className="contact__module__square__form" style={styles.fadeIn}>
               <div className="contact__module__square__form__block">
-                <form action="" method="get" className="contact__module__square__form__block__form">
+                <form onSubmit={handleSubmit}
+                className="contact__module__square__form__block__form">
                   <div className="contact__module__square__form__block__form__labelBlock">
                     <label htmlFor="name" className="contact__module__square__form__block__form__labelBlock__label">
                       Votre nom :
@@ -63,7 +72,7 @@ const Contact = () => {
                     </label>
                     <textarea type="text" name="message" id="message" className="contact__module__square__form__block__form__labelBlock__input__message" required />
                   </div>
-                  <BigButton text="Envoyer" />
+                  <BigButton text="Envoyer" disabled={state.submitting} />
                 </form>
               </div>
             </li>
