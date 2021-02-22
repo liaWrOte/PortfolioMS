@@ -6,6 +6,8 @@
     flex-direction: column;
     margin-left: (vars.$bigGutter)*5;
     margin-right: (vars.$bigGutter)*5;
+    background-color: vars.$lightBrown;
+    padding: (vars.$bigGutter)*2;
   }
 
   // Responsive tablet
