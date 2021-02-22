@@ -1,5 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
+// Package for contact form posting to my mailbox
+import { FormspreeProvider } from '@formspree/react';
 
 // == Import composants
 import Home from '../Home';
@@ -40,7 +42,9 @@ const App = () => (
         <UxUiProjects />
       </Route>
       <Route exact path="/contact">
-        <Contact />
+        <FormspreeProvider project="1619423438160526507">
+          <Contact />
+        </FormspreeProvider>
       </Route>
       <Route exact path="/mentions-legales">
         <Legal />

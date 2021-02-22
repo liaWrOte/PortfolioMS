@@ -187,6 +187,9 @@
               border-radius: vars.$smallGutter;
               border: none;
               color: vars.$beige;
+              &:focus {
+                border: solid 2px vars.$orange;
+              }
               &__message {
                 display: inline-block;
               margin-bottom: vars.$bigGutter;
@@ -196,6 +199,9 @@
               border-radius: vars.$smallGutter;
               border: none;
               color: vars.$beige;
+              &:focus {
+                border: solid 2px vars.$orange;
+              }
               }
             }
           }

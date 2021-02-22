@@ -55,6 +55,7 @@
     "webpack-merge": "^5.2.0"
   },
   "dependencies": {
+    "@formspree/react": "^2.2.3",
     "json-loader": "^0.5.7",
     "prop-types": "^15.7.2",
     "radium": "^0.26.1",
