@@ -77,6 +77,8 @@ const Project = ({
         illustrationSreenshot2,
         afficheScreenshot1,
         afficheScreenshot2,
+        gitApiSearchScreenshot,
+        gitApiSearchScreenshot2,
       ];
       setImages(images);
       console.log(images);
