@@ -38,10 +38,6 @@
       "title": "Liens",
       "links": [
         {
-          "label": "Voir l'application",
-          "link": "https://kikiveuapp.me/"
-        },
-        {
           "label": "Voir le code sur GIT",
           "link":  "https://github.com/liaWrOte/Kikiveu"
         },
