@@ -82,6 +82,7 @@ const Project = ({
       ];
       setImages(images);
       console.log(images);
+      console.log(images);
     }
     
   }, [screenshotsData]);
