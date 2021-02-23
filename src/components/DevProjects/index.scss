@@ -56,11 +56,11 @@
 
 .devProjects__module {
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: repeat(12, 1fr);
+  grid-template-rows: repeat(10, 1fr);
   width: 100%;
   list-style: none;
   display: grid;
-  height: 200vh;
+  height: 170vh;
   &__square {
     grid-column: 1;
     position: relative;
@@ -178,7 +178,7 @@
       }
     }
     &__portfolio2021 {
-      grid-row: span 3;
+      grid-row: 5/span 3;
       grid-column: 1; 
       height: 100%;
       position: relative;
@@ -244,8 +244,8 @@
       }
     }
     &__api {
-      grid-row: span 3;
-      grid-column: 1; 
+      grid-row: 4/span 3;
+      grid-column: 2; 
       height: 100%;
       position: relative;
       &__block {
@@ -310,7 +310,7 @@
       }
     }
     &__toDoList {
-      grid-row: span 3;
+      grid-row: 8/span 3;
       grid-column: 1;
       height: 100%;
       &__block {
@@ -356,7 +356,7 @@
       }
     }
     &__portfolio2020 {
-      grid-row: span 3;
+      grid-row: 7/span 4;
       grid-column: 2; 
       height: 100%;
       position: relative;
