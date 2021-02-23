@@ -17,6 +17,8 @@ import portfolioScreenshot1 from '../../assets/images/devProjects/portfolio_scre
 import portfolioScreenshot2 from '../../assets/images/devProjects/portfolio_screenshot_2.png';
 import portfolioWebdesignScreenshot1 from '../../assets/images/devProjects/portfolio_webdesign_screenshot.png';
 import portfolioWebdesignScreenshot2 from '../../assets/images/devProjects/portfolio_webdesign_screenshot_2.png';
+import gitApiSearchScreenshot from '../../assets/images/devProjects/git_api_screenshot.png';
+import gitApiSearchScreenshot2 from '../../assets/images/devProjects/git_api_screenshot2.png';
 // uxUiProjects
 import iconeScreenshot from '../../assets/images/uxUiProjects/icone_vignette.jpg';
 import leTempsDesCigalesScreenshot from '../../assets/images/uxUiProjects/le_temps_des_cigales_vignette.jpg';
@@ -77,7 +79,9 @@ const Project = ({
         afficheScreenshot2,
       ];
       setImages(images);
+      console.log(images);
     }
+    
   }, [screenshotsData]);
 
 /*  Array.prototype.diff = function (arr2) {

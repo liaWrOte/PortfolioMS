@@ -75,12 +75,20 @@ const DevProjects = () => {
 
             {/* -- Api block */}
             <li className="devProjects__module__square__api">
-              <div className="devProjects__module__square__api__block">
-                <h2 className="devProjects__module__square__api__block__mainTitle">
-                  <span className="devProjects__module__square__api__block__mainTitle__small__title">Git API<br />(À venir)</span>
-                </h2>
-                <p className="devProjects__module__square__api__block__description">HTML/CSS/Javascript/Ajax</p>
-              </div>
+              <Link to="/projets-dev/git-api-search">
+                <div className="devProjects__module__square__api__block" />
+                <div className="devProjects__module__square__api__content">
+                  <h2 className="devProjects__module__square__api__content__mainTitle">
+                    <div className="devProjects__module__square__api__content__mainTitle__small__title">
+                      <BigRoundedTag text="Git API - Search" />
+                    </div>
+                  </h2>
+                  <div className="devProjects__module__square__api__content__description">
+                    <SmallTag text="React/Requêtes API Rest - Axios/Semantic UI React" />
+                  </div>
+
+                </div>
+              </Link>
             </li>
 
             {/* -- ToDoList block */}

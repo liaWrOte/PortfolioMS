@@ -58,6 +58,9 @@ const App = () => (
       <Route exact path="/projets-dev/portfolio2020">
         <Project data={devProjects} projectTitle="portfolio 2020" projectDate="" />
       </Route>
+      <Route exact path="/projets-dev/git-api-search">
+        <Project data={devProjects} projectTitle="git API" projectDate="" />
+      </Route>
       <Route exact path="/projets-uxui/wordpress">
         <Project data={uxUiProjects} projectTitle="wordpress" projectDate="2017/2020" />
       </Route>
