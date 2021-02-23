@@ -105,29 +105,26 @@
     ]
   }
  ],
- "portfolio 2020": [
+"git API": [
   {
    "title": "Pitch",
    "data": [
-     "Portfolio réalisé en 2020 dans le cadre de mon activité de freelance en intégratrice Wordpress et Webdesign",
-     "L'accent a été mis sur les animations pour des missions en motion design"
+     "App de recherche de dépôts GIT déployant les résultats sous forme de cards",
+     "Requêtes à l'API Rest de Git avec Axios",
+    "Utilisation de React Semantic UI pour la mise en forme des composants"
    ]
  },
  {
    "title": "Caractéristiques techniques",
    "data": [
-     "Front : HTML, SCSS, Jquery, Koala SASS Compiler",
-     "Animations: Gif personnalisés réalisés avec After Effects et Illustrator"
+     "Front : HTML, React, React Semantic UI, Axios ",
+     "Yarn, Npm"
    ]
  },
  {
-   "title": "Mon travail sur le projet",
+   "title": "Versionning et organisation",
    "data": [
-     "Création de la maquette sur Adobe XD",
-     "Création des animations",
-     "Intégration de la maquette",
-     "Mise en place d'un spinner en svg au chargement du site",
-     "Création d'un carousel avec l'aide des Flexbox"
+     "GIT"
    ]
  },
  {
@@ -135,15 +132,60 @@
   "links": [
     {
       "label": "Voir le code sur GIT",
-      "link":  "https://github.com/liaWrOte/Portfolio2020-webdesign-"
+      "link":  "https://github.com/liaWrOte/Git_search_API"
+    },
+    {
+      "label": "Voir l'app'",
+      "link":  "http://www.gitApi.surge.sh"
     }
   ]
 },
 {
   "screenshots" : [
-    "./images/93d0a221b64cc9c32b490a62c3199a07.png",
-      "./images/149edddc62a000c42e857362a8bb88b9.png"
+    "./images/a8107d8dc82cb82a13883cade78cd245.jpg",
+  "./images/eefe4fb6ae1f69a373d89f5e34e72159.jpg"
   ]
+}
+],
+"portfolio 2020": [
+{
+ "title": "Pitch",
+ "data": [
+   "Portfolio réalisé en 2020 dans le cadre de mon activité de freelance en intégratrice Wordpress et Webdesign",
+   "L'accent a été mis sur les animations pour des missions en motion design"
+ ]
+},
+{
+ "title": "Caractéristiques techniques",
+ "data": [
+   "Front : HTML, SCSS, Jquery, Koala SASS Compiler",
+   "Animations: Gif personnalisés réalisés avec After Effects et Illustrator"
+ ]
+},
+{
+ "title": "Mon travail sur le projet",
+ "data": [
+   "Création de la maquette sur Adobe XD",
+   "Création des animations",
+   "Intégration de la maquette",
+   "Mise en place d'un spinner en svg au chargement du site",
+   "Création d'un carousel avec l'aide des Flexbox"
+ ]
+},
+{
+"title": "Liens",
+"links": [
+  {
+    "label": "Voir le code sur GIT",
+    "link":  "https://github.com/liaWrOte/Portfolio2020-webdesign-"
+  }
+]
+},
+{
+"screenshots" : [
+  "./images/93d0a221b64cc9c32b490a62c3199a07.png",
+    "./images/149edddc62a000c42e857362a8bb88b9.png"
+]
 }
 ]
 }
