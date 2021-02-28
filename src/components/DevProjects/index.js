@@ -93,12 +93,20 @@ const DevProjects = () => {
 
             {/* -- ToDoList block */}
             <li className="devProjects__module__square__toDoList">
-              <div className="devProjects__module__square__toDoList__block">
-                <h2 className="devProjects__module__square__toDoList__block__mainTitle">
-                  <span className="devProjects__module__square__toDoList__block__mainTitle__small__title">To do list<br /> (À venir)</span>
-                </h2>
-                <p className="devProjects__module__square__toDoList__block__description">HTML/CSS/Javascript</p>
-              </div>
+              <Link to="/projets-dev/todolist-vue">
+                <div className="devProjects__module__square__toDoList__block" />
+                <div className="devProjects__module__square__toDoList__content">
+                  <h2 className="devProjects__module__square__toDoList__content__mainTitle">
+                    <div className="devProjects__module__square__toDoList__content__mainTitle__small__title">
+                      <BigRoundedTag text="Todo List Vue" />
+                    </div>
+                  </h2>
+                  <div className="devProjects__module__square__toDoList__content__description">
+                    <SmallTag text="Vue.js/VueDraggable" />
+                  </div>
+
+                </div>
+              </Link>
             </li>
 
             {/* -- Portfolio 2020 */}
