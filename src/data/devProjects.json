@@ -144,6 +144,41 @@
   ]
 }
 ],
+"Todo List": [
+  {
+   "title": "Pitch",
+   "data": [
+     "Premier projet sur Vue.js",
+     "Fonctionnalités : ajouter/supprimer une tâche, trier les tâches, sélectionner toutes les tâches, réorganiser ses tâches avec du drag&drop"
+   ]
+  },
+  {
+   "title": "Caractéristiques techniques",
+   "data": [
+     "Front : Vue.js, VueDraggable",
+     "Gestionnaire: Npmr"
+   ]
+  },
+  {
+  "title": "Liens",
+  "links": [
+    {
+      "label": "Voir le code sur GIT",
+      "link":  "https://github.com/liaWrOte/TodoList_Vue.js"
+    },
+    {
+      "label": "Voir l'app",
+      "link":  "http://todovue-ms.surge.sh"
+    }
+  ]
+  },
+  {
+  "screenshots" : [
+    "./images/93d0a221b64cc9c32b490a62c3199a07.png",
+      "./images/149edddc62a000c42e857362a8bb88b9.png"
+  ]
+  }
+  ],
 "portfolio 2020": [
 {
  "title": "Pitch",
