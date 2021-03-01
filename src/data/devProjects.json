@@ -156,7 +156,7 @@
    "title": "Caractéristiques techniques",
    "data": [
      "Front : Vue.js, VueDraggable",
-     "Gestionnaire: Npmr"
+     "Gestionnaire: Npm"
    ]
   },
   {
@@ -174,8 +174,8 @@
   },
   {
   "screenshots" : [
-    "./images/93d0a221b64cc9c32b490a62c3199a07.png",
-      "./images/149edddc62a000c42e857362a8bb88b9.png"
+    "./images/629e0a28c0dd2de7c35a1433b99f1388.png",
+      "./images/30025c059dfac3fb4e6843b477f8c91d.png"
   ]
   }
   ],
