@@ -1,0 +1,17 @@
+@use '../../styles/vars';
+
+.bigRoundedLink{
+  text-transform: uppercase;
+  color: vars.$darkBrown;
+  background-color: vars.$yellow;
+  font-size: vars.$bigGutter;
+  font-weight: 500;
+  border: solid 2px vars.$yellow;
+  border-radius: vars.$smallGutter;
+  padding: (vars.$smallGutter)/2;
+  transition: all .2s ease-in-out;
+  &:hover {
+    box-shadow: 5px 5px 2px 1px vars.$darkBrown;
+    transition: all .2s ease-in-out;
+  }
+}

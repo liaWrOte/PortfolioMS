@@ -101,7 +101,7 @@
     ]
   }
  ],
-"git API": [
+"git API search": [
   {
    "title": "Pitch",
    "data": [
@@ -144,7 +144,7 @@
   ]
 }
 ],
-"Todo List": [
+"Todo List Vue": [
   {
    "title": "Pitch",
    "data": [

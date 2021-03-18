@@ -4,13 +4,14 @@ import Radium, { StyleRoot } from 'radium';
 import { Link } from 'react-router-dom';
 
 // Components
-import BigRoundedTag from '../../microComponents/BigRoundedTag';
+import BigRoundedLink from '../../microComponents/BigRoundedLink';
 import SmallTag from '../../microComponents/SmallTag';
 
 // import css
 import './index.scss';
 
-const UxUiProjects = () => {
+const UxUiProjects = ({ data }) => {
+  const dataInProject = { ...data };
   // animations on load
 
   const styles = {
@@ -38,76 +39,16 @@ const UxUiProjects = () => {
               </div>
             </li>
 
-            {/* -- Intégration wordpress */}
-            <li className="uxUiProjects__module__square__wordpress">
-              <Link to="/projets-uxui/wordpress">
-                <div className="uxUiProjects__module__square__wordpress__block" />
-                <div className="uxUiProjects__module__square__wordpress__content">
-                  <h2 className="uxUiProjects__module__square__wordpress__content__mainTitle">
-                    <div className="uxUiProjects__module__square__wordpress__content__mainTitle__small__title">
-                      <BigRoundedTag text="wordpress" />
-                    </div>
-                  </h2>
-                  <div className="uxUiProjects__module__square__wordpress__content__description">
-                    <SmallTag text="Intégration/webdesign" />
+            {/* -- UxUi items */}
+            <li className="uxUiProjects__module__square__items">
+
+              {(dataInProject) && (
+                Object.keys(dataInProject).map((key) => (
+                  <div className="uxUiProjects__module__square__items__link">
+                    <BigRoundedLink text={key} key={Math.random()} link={`/projets-uxui/${key.replace(/ /g, '').toLowerCase()}`} />
                   </div>
+                )))}
 
-                </div>
-              </Link>
-            </li>
-
-            {/* -- IFPS */}
-            <li className="uxUiProjects__module__square__ifps">
-              <Link to="/projets-uxui/ifps">
-                <div className="uxUiProjects__module__square__ifps__block" />
-                <div className="uxUiProjects__module__square__ifps__content">
-                  <h2 className="uxUiProjects__module__square__ifps__content__mainTitle">
-                    <div className="uxUiProjects__module__square__ifps__content__mainTitle__small__title">
-                      <BigRoundedTag text="Webdesign" />
-                    </div>
-                  </h2>
-                  <div className="uxUiProjects__module__square__ifps__content__description">
-                    <SmallTag text="Image de marque/Adobe XD" />
-                  </div>
-
-                </div>
-              </Link>
-            </li>
-
-            {/* -- Illustration */}
-            <li className="uxUiProjects__module__square__illustration">
-              <Link to="/projets-uxui/illustration">
-                <div className="uxUiProjects__module__square__illustration__block" />
-                <div className="uxUiProjects__module__square__illustration__content">
-                  <h2 className="uxUiProjects__module__square__illustration__content__mainTitle">
-                    <div className="uxUiProjects__module__square__illustration__content__mainTitle__small__title">
-                      <BigRoundedTag text="illustration" />
-                    </div>
-                  </h2>
-                  <div className="uxUiProjects__module__square__illustration__content__description">
-                    <SmallTag text="Adobe Illustrator" />
-                  </div>
-
-                </div>
-              </Link>
-            </li>
-
-            {/* -- Affiches */}
-            <li className="uxUiProjects__module__square__affiches">
-              <Link to="/projets-uxui/affiches">
-                <div className="uxUiProjects__module__square__affiches__block" />
-                <div className="uxUiProjects__module__square__affiches__content">
-                  <h2 className="uxUiProjects__module__square__affiches__content__mainTitle">
-                    <div className="uxUiProjects__module__square__affiches__content__mainTitle__small__title">
-                      <BigRoundedTag text="affiches" />
-                    </div>
-                  </h2>
-                  <div className="uxUiProjects__module__square__affiches__content__description">
-                    <SmallTag text="Adobe Photoshop" />
-                  </div>
-
-                </div>
-              </Link>
             </li>
 
           </ul>
