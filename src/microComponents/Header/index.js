@@ -112,10 +112,12 @@ const Header = () => {
         </svg>
 
       </div> */}
-        <a href="https://github.com/liaWrOte" target="_blank" rel="noreferrer noopener">
+        <a href="https://github.com/liaWrOte" target="_blank" rel="noreferrer noopener" className="header__links__item">
+          <div className="header__links__item__logoGit" />
           <li className="header__links__link">GIT</li>
         </a>
-        <a href="https://www.linkedin.com/in/sandrinemze/" target="_blank" rel="noreferrer noopener">
+        <a href="https://www.linkedin.com/in/sandrinemze/" target="_blank" rel="noreferrer noopener" className="header__links__item">
+          <div className="header__links__item__logoLinkedin" />
           <li className="header__links__link">LINKEDIN</li>
         </a>
       </div>

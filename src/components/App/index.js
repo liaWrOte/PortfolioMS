@@ -33,13 +33,13 @@ const App = () => (
         <Home />
       </Route>
       <Route exact path="/projets-dev">
-        <DevProjects />
+        <DevProjects data={devProjects}/>
       </Route>
       <Route exact path="/qui-je-suis">
         <Me />
       </Route>
       <Route exact path="/projets-ux-ui">
-        <UxUiProjects />
+        <UxUiProjects data={uxUiProjects} />
       </Route>
       <Route exact path="/contact">
         <FormspreeProvider project="1619423438160526507">
@@ -49,17 +49,20 @@ const App = () => (
       <Route exact path="/mentions-legales">
         <Legal />
       </Route>
+      <Route exact path="/projets-dev/greencode">
+        <Project data={devProjects} projectTitle="greencode" projectDate="2021" />
+      </Route>
       <Route exact path="/projets-dev/kikiveu">
         <Project data={devProjects} projectTitle="kikiveu" projectDate="2021" />
       </Route>
       <Route exact path="/projets-dev/portfolio2021">
         <Project data={devProjects} projectTitle="portfolio 2021" projectDate="" />
       </Route>
-      <Route exact path="/projets-dev/git-api-search">
-        <Project data={devProjects} projectTitle="git API" projectDate="2021" />
+      <Route exact path="/projets-dev/gitapisearch">
+        <Project data={devProjects} projectTitle="git API search" projectDate="2021" />
       </Route>
-      <Route exact path="/projets-dev/todolist-vue">
-        <Project data={devProjects} projectTitle="Todo List" projectDate="2021" />
+      <Route exact path="/projets-dev/todolistvue">
+        <Project data={devProjects} projectTitle="Todo List Vue" projectDate="2021" />
       </Route>
       <Route exact path="/projets-dev/portfolio2020">
         <Project data={devProjects} projectTitle="portfolio 2020" projectDate="" />

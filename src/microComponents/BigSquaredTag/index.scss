@@ -7,3 +7,9 @@
   border: solid 2px vars.$beige;
   padding: (vars.$smallGutter)/2;
 }
+
+@media screen and (max-width: 562px) { 
+  .bigSquaredTag {
+    font-size: (vars.$smallGutter) * 1.2;
+  }
+}

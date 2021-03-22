@@ -9,27 +9,33 @@
     z-index:100;
     position: relative;
     &__links {
-      &__logoContainer {
-        width: 100px;
-        height: 100px;
-        background-color: vars.$yellow;
-        position: relative;
-        display: inline-block;
-        &__circle {
-          position: absolute;
-          bottom: 17px;
-          right: 10px;
-  
+      display: flex;
+      &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: vars.$bigGutter;
+        &__logoGit {
+          width: 20px;
+          height: 20px;
+          background-image: url('../../assets/images/pictos/github_picto.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &__logoLinkedin {
+          width: 20px;
+          height: 20px;
+          background-image: url('../../assets/images/pictos/linkedin_picto.svg');
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
       }
       &__link {
         display: inline-block;
-        margin-left: vars.$bigGutter;
+        margin-left: (vars.$smallGutter) / 2;
         text-align: right;
-        &:hover {
-          transition: all .2s ease-in-out;
-          color: vars.$yellow;
-        }
     }
     }
     &__hamburger {
@@ -120,11 +126,11 @@
       margin-top: 22px;
       transform-origin: center;
       background-color: vars.$orange;
-      -webkit-transform: scale(60);
-      -moz-transform: scale(60);
-      -ms-transform: scale(60);
-      -o-transform: scale(60);
-      transform: scale(60);
+      -webkit-transform: scale(50);
+      -moz-transform: scale(50);
+      -ms-transform: scale(50);
+      -o-transform: scale(50);
+      transform: scale(50);
       transition: transform .2s ease-in-out;
      }
      }
@@ -159,3 +165,4 @@
     }
 }
 }
+
