@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 
 // Components
 import BigRoundedLink from '../../microComponents/BigRoundedLink';
-import SmallTag from '../../microComponents/SmallTag';
 
 import './index.scss';
 
@@ -20,8 +19,6 @@ const DevProjects = ({ data }) => {
       animationName: Radium.keyframes(fadeIn, 'fadeIn'),
     },
   };
-
-  console.log(dataInProject);
 
   return (
     <>
@@ -46,7 +43,7 @@ const DevProjects = ({ data }) => {
 
               {(dataInProject) && (
                 Object.keys(dataInProject).map((key) => (
-                  <div className="devProjects__module__square__items__link">
+                  <div className="devProjects__module__square__items__link" key={Math.random()}>
                     <BigRoundedLink text={key} key={Math.random()} link={`/projets-dev/${key.replace(/ /g, '').toLowerCase()}`} />
                   </div>
                 )))}

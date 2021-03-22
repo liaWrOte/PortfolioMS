@@ -10,3 +10,9 @@
   border-radius: vars.$smallGutter;
   padding: (vars.$smallGutter)/2;
 }
+
+@media screen and (max-width: 562px) { 
+  .bigRoundedTag {
+    font-size: (vars.$smallGutter);
+  }
+}

@@ -141,6 +141,9 @@
   transform: scale(0);
   transition: all .2s ease-in-out;
 }
+}
+
+
 
 // Responsive tablet
 /*=====================================*/
@@ -148,39 +151,42 @@
 @media screen and (max-width: 1000px) {
 
   .devProjects__module {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(24, 1fr);
-    height: 340vh;
+    display: block;
     &__square {
 
       &__devProjects {
-        grid-row: span 4;
-      grid-column: 1;
-      height: 100%;
+        height: 70%;
       }
 
       &__items {
         grid-row: 5/span 4;
       grid-column: 1;
-      height: 100%;
       }
 
   }
 }
 }
 
+
 /* Responsive smartphone */
 /*=====================================*/
 
 @media screen and (max-width: 562px) {
-
   .devProjects {
-    margin-right: vars.$bigGutter;
-    margin-left: vars.$bigGutter;
+    margin-right: vars.$smallGutter;
+    margin-left: vars.$smallGutter;
+    &__module {
+      display: block;
+      &__square {
+        &__devProjects {
+          height: 50%;
+        }
+      }
+    }
   }
 
   .bigTitle {
     font-size: (vars.$bigGutter)*4;
   }
 }
-}
+

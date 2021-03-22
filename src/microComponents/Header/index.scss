@@ -126,11 +126,11 @@
       margin-top: 22px;
       transform-origin: center;
       background-color: vars.$orange;
-      -webkit-transform: scale(60);
-      -moz-transform: scale(60);
-      -ms-transform: scale(60);
-      -o-transform: scale(60);
-      transform: scale(60);
+      -webkit-transform: scale(50);
+      -moz-transform: scale(50);
+      -ms-transform: scale(50);
+      -o-transform: scale(50);
+      transform: scale(50);
       transition: transform .2s ease-in-out;
      }
      }
@@ -166,6 +166,3 @@
 }
 }
 
-svg:hover {
-  fill: vars.$yellow;
-}

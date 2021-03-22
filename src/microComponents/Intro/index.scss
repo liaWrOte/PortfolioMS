@@ -54,27 +54,6 @@
 @media screen and (max-width: 562px) {
 
   .intro {
-    &__name {
-      font-size: (vars.$bigGutter)*2;
-    }
-    &__skills {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      vertical-align: center;
-      margin-bottom: (vars.$smallGutter)/2;
-      &__and {
-        visibility: hidden;
-        font-size: 0px;
-        margin: (vars.$smallGutter)/2;
-      }
-    }
-  }
-}
-
-@media screen and (max-width: 562px) {
-
-  .intro {
    margin-left: (vars.$bigGutter);
    margin-right: (vars.$bigGutter);
    display: flex;
@@ -91,6 +70,7 @@
   }
 
   .bigTitle {
-    font-size: (vars.$bigGutter)*2;
+    font-size: (vars.$bigGutter)*3;
+    text-shadow: none;
   }
  }

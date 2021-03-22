@@ -21,6 +21,8 @@ import gitApiSearchScreenshot from '../../assets/images/devProjects/git_api_scre
 import gitApiSearchScreenshot2 from '../../assets/images/devProjects/git_api_screenshot2.png';
 import todoListScreenshot from '../../assets/images/devProjects/todolist_screenshot.png';
 import todoListScreenshot2 from '../../assets/images/devProjects/todolist_screenshot2.png';
+import greencodeScreenshot from '../../assets/images/devProjects/greencode_screenshot1.png';
+import greencodeScreenshot2 from '../../assets/images/devProjects/greencode_screenshot2.png';
 
 // uxUiProjects
 import iconeScreenshot from '../../assets/images/uxUiProjects/icone_vignette.jpg';
@@ -84,14 +86,15 @@ const Project = ({
         gitApiSearchScreenshot2,
         todoListScreenshot,
         todoListScreenshot2,
+        greencodeScreenshot,
+        greencodeScreenshot2,
       ];
       setImages(images);
-      console.log(images);
       console.log(images);
     }
   }, [screenshotsData]);
 
-/*  Array.prototype.diff = function (arr2) {
+  /*  Array.prototype.diff = function (arr2) {
     const ret = [];
     this.sort();
     arr2.sort();
@@ -101,11 +104,11 @@ const Project = ({
         for(let j = 0; j < globalThis.length; j += 1) {
           console.log(arr2.indexOf(ret));
         }
-        
+
       }
     }
     return ret;
-  };*/
+  }; */
 
   Array.prototype.diff = function (arr2) {
     const ret = [];
@@ -114,20 +117,20 @@ const Project = ({
     for (let i = 0; i < this.length; i += 1) {
       if (arr2.indexOf(this[i]) > -1) {
         ret.push(this[i]);
-        for(let j = 0; j < globalThis.length; j += 1) {
+        for (let j = 0; j < globalThis.length; j += 1) {
           console.log(arr2.indexOf(ret));
-        }    
+        }
       }
     }
     return ret;
   };
-
 
   useEffect(() => {
     if (allImages !== null) {
       setImagesToShow(allImages.diff(screenshotsData.screenshots));
     }
   }, [allImages]);
+
 
   return (
     <>

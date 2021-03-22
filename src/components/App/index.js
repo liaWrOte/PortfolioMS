@@ -49,6 +49,9 @@ const App = () => (
       <Route exact path="/mentions-legales">
         <Legal />
       </Route>
+      <Route exact path="/projets-dev/greencode">
+        <Project data={devProjects} projectTitle="greencode" projectDate="2021" />
+      </Route>
       <Route exact path="/projets-dev/kikiveu">
         <Project data={devProjects} projectTitle="kikiveu" projectDate="2021" />
       </Route>

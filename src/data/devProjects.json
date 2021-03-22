@@ -1,4 +1,46 @@
 {
+  "greencode": [
+    {
+     "title": "Pitch",
+     "data": [
+       "Intégration d'un site vitrine pour un IDE fictif",
+       "Responsive desktop, tablette et smartphone"
+     ]
+   },
+   {
+     "title": "Caractéristiques techniques",
+     "data": [
+       "Front : HTML, CSS, Javascript en Programmation Orientée Objet",
+       "StyleIntRc"
+     ]
+   },
+   {
+     "title": "Versionning et Production",
+     "data": [
+       "GIT",
+       "Netlify"
+     ]
+   },
+   {
+     "title": "Liens",
+     "links": [
+       {
+         "label": "Voir le code sur GIT",
+         "link":  "https://github.com/liaWrOte/GreenCode"
+       },
+       {
+         "label": "Voir l'app",
+         "link":  "https://stupefied-rosalind-732cd2.netlify.app/"
+       }
+     ]
+   },
+   {
+     "screenshots" : [
+       "./images/9ca253cac86318383535904eac5dce06.png",
+       "./images/04f2a1b8fd14e3406f3069715e3a2086.png"
+     ]
+   }
+ ],
   "kikiveu": [
      {
       "title": "Pitch",
